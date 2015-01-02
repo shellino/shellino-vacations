@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+    <html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <!-- If you delete this meta tag World War Z will become a reality -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Shellino vacations</title>
+
+        <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="/vendor/foundation/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="/vendor/foundation/css/foundation.css" />
+        <link rel="stylesheet" type="text/css" href="/vendor/foundation/css/foundation-icons.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/foundation-ext.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/indexTemplate.css" />
+
+        <!-- Custom CSS files on page -->
+        {{#if css}}
+            {{#each css}}
+                <link rel="stylesheet" type="text/css" href="{{this}}" />
+            {{else}}
+                <link rel="stylesheet" type="text/css" href="{{css}}" />
+            {{/each}}
+        {{/if}}
+
+        <script src="/vendor/modernizr/modernizr.js"></script>
+    </head>
+
+    <body>
+        {{> indexHeader}}
+        {{{ contents }}}
+        <!-- body content here -->
+        <script type="text/javascript" src="/vendor/jQuery/jQuery.js"></script>
+        <script type="text/javascript" src="/vendor/fastclick.js"></script>
+        <script type="text/javascript" src="/vendor/foundation/js/foundation.min.js"></script>
+        <script type="text/javascript">
+            $(document).foundation();
+        </script>
+
+        <!-- Custom JavaScript files on page -->
+        {{#if js}}
+            {{#each js}}
+                <script type="text/javascript" src="{{this}}"></script>
+            {{else}}
+                <script type="text/javascript" src="{{js}}"></script>
+            {{/each}}
+        {{/if}}
+
+
+    </body>
+
+</html>

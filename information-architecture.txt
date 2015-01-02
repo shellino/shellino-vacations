@@ -1,0 +1,37 @@
+Main navigation menu
+    00. Home
+        01. What is Shellino
+        02. What Shellino offers
+    01. Shellino
+        01. All Shellino details
+    02. India
+        01. Weather
+        02. Culture
+        03. History
+        04. Food
+    03. Guide
+        01. Region wise (North, South, East, West, Central, North-east)
+            01. States
+        02. Demography (The mountain company, Kings and royales, The seashore, plain regions)
+        03. On a mighty quest (Honeymoon, Adventure, Food, Wild life / safari, Religious)
+        04. Group quest (Ladies only, Family, Students, Seniors, Lone survivors)
+        05. Festival guide (Through all the festivals)
+    04. Archive/Blog
+        01. What we have learned so far.
+    05. Contact us
+
+Values Shellino vacations
+    01. Understanding the meaning of vacation. It is not holiday.
+    02. Not just for profit. It is about improving quality of travel in India.
+    03. Mission to build India
+    04. It is not about Shellino. It is about India and its rich culture.
+    05. Every tour is custom made. We think each experience and vacation is unique just like people doing it.
+
+Vacation is different than holiday
+http://english.stackexchange.com/questions/31166/is-there-a-difference-between-holiday-and-vacation
+
+Vacation is life
+Come and find your vacation story
+Dream, explore and discover.
+
+Crafted with love, Tailor made for all
