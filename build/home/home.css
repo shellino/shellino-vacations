@@ -51,6 +51,10 @@
     background-color: rgba(0, 0, 0, 0.3);
 
     -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .video-cover .fi-play:before {
@@ -71,6 +75,10 @@
     width: 100%;
     margin: 0;
 
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
 }
 
@@ -87,6 +95,11 @@
 
     top: 100%;
     opacity: 0.5;
+
+    -webkit-transition: all 0.4s ease-out 0.1s;
+    -moz-transition: all 0.4s ease-out 0.1s;
+    -ms-transition: all 0.4s ease-out 0.1s;
+    -o-transition: all 0.4s ease-out 0.1s;
     transition: all 0.4s ease-out 0.1s;
 }
 
@@ -101,7 +114,13 @@
 }
 
 .video-cover:hover .video-cover-text {
+
     -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+
     opacity: 1;
     background-color: rgba(243, 243, 243, 1);
 }
