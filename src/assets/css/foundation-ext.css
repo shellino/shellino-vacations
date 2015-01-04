@@ -9,6 +9,48 @@
     height: 100%;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
 .white-text {
     color: #FFFFFF;
+}
+
+.no-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.zero-opacity {
+    opacity: 0;
+}
+
+
+@media only screen and (min-width: 40.063em) {
+
+    .heading-with-line {
+        background-repeat: repeat-x;
+        background-position: left center;
+    }
+
+    .heading-with-line:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        top: 50%;
+        background-color: red;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .heading-with-line h3 {
+        display: inline-block;
+        padding-right: 15px;
+        background-color: #FFF;
+        z-index: 1;
+        position: relative;
+    }
+
 }

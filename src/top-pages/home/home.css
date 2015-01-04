@@ -1,60 +1,154 @@
+.panel.idea-panel {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.panel.idea-panel .button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+
+    .panel.idea-panel .button {
+        padding-left:  2rem;
+        padding-right:  2rem;
+    }
+}
+
+#incredible-india-video {
+    padding-top: 0;
+    background-color: #000000;
+}
+
+.video-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(/assets/img/home/incredible_india.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-cover:hover {
+    cursor: pointer;
+}
+
+.video-cover .fi-play {
+    position: absolute;
+    font-size: 5rem;
+    top: 40%;
+    left: 50%;
+
+    line-height: 110px;
+    height: 110px;
+    border: 2px solid #FFFFFF;
+    border-radius: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    -webkit-transform: translate3d(-50%, -50%, 0);
+}
+
+.video-cover .fi-play:before {
+    width: 110px;
+}
+
+.video-cover:hover .fi-play {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover-heading {
+    background-color: rgba(243, 243, 243, 0.8);
+
+    border: none;
+    position: absolute;
+    padding: 10px 15px;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+
+    transition: all 0.2s linear 0s;
+}
+
+.video-cover:hover .cover-heading {
+    opacity: 0;
+    bottom: -10px;
+}
+
+.video-cover-text {
+    background-color: rgba(243, 243, 243, 0.8);
+    border: none;
+    position: absolute;
+    padding: 10px 15px;
+
+    top: 100%;
+    opacity: 0.5;
+    transition: all 0.4s ease-out 0.1s;
+}
+
+.cover-heading,
+.video-cover-text > h4 {
+    font-size: 1.4375rem;
+}
+
+.video-cover-text > h4,
+.video-cover-text > p {
+    margin: 0;
+}
+
+.video-cover:hover .video-cover-text {
+    -webkit-transform: translateY(-100%);
+    opacity: 1;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+
+.make-your-vacation i {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.make-your-vacation i:before {
+    width: 45px;
+}
+
+.make-your-vacation li i,
+.make-your-vacation li span {
+    vertical-align: middle;
+}
+
 .shellino-groups {
     margin-bottom: 24px;
 }
 
-/*
-.shellino-groups li {
-    border: 1px solid #FFFFFF;
-}
-
-.shellino-groups li:nth-child(1),
-.shellino-groups li:nth-child(4),
-.shellino-groups li:nth-child(5) {
-    background-color: #F2F2F2;
-}
-
 .shellino-groups i[class] {
-    font-size: 4rem;
+    font-size: 3rem;
+    border-radius: 48px;
+    padding: 0 18px;
+    display: inline-block;
+    border-right: 1px solid #BABABA;
+
+    text-shadow: 0 0 12px, 0 0 4px #FFFFFF;
+}
+
+.shellino-groups i:before {
+    width: 48px;
 }
 
 @media only screen and (min-width: 40.063em) {
     .shellino-groups i[class] {
-        font-size: 5rem;
+        font-size: 4rem;
+
+        border-radius: 66px;
+        padding: 0 24px;
     }
 
-    .shellino-groups li:nth-child(n) {
-        background-color: transparent;
+    .shellino-groups i:before {
+        width: 66px;
     }
-
-    .shellino-groups li:nth-child(2n) {
-        background-color: #F2F2F2;
-    }
-
 }
 
-@media only screen and (min-width: 64.063em) {
-    .shellino-groups i[class] {
-        font-size: 6rem;
-    }
-
-    .shellino-groups li:nth-child(2n) {
-        background-color: #FAFAFA;
-    }
-
-    .shellino-groups li:nth-child(2n + 1) {
-        background-color: #F2F2F2;
-    }
-}*/
-
-.shellino-groups i[class] {
-    font-size: 4rem;
-    1background-color: #F2F2F2;
-    border-radius: 60px;
-    padding: 0 24px;
-    display: inline-block;
-    border-right: 1px solid #BABABA;
-}
-
-.shellino-groups i:before {
-    width: 60px;
-}

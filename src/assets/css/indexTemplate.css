@@ -1,19 +1,75 @@
 #home-wall {
-    background-image: url("/assets/img/walls/agra_fort_india-normal.jpg");
+    min-height: 100%;
+    position: relative;
+}
+
+.wall-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wall-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
     background-position: center center;
     background-size: cover;
-
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    min-height: 100%;
-    position: relative;
+    -webkit-transition: opacity 2s ease-in-out 0s;
+    -moz-transition: opacity 2s ease-in-out 0s;
+    -ms-transition: opacity 2s ease-in-out 0s;
+    -o-transition: opacity 2s ease-in-out 0s;
+    transition: opacity 2s ease-in-out 0s;
 
+}
+
+.wall-background[data-index="0"] {
+    background-image: url("/assets/img/walls/agra-fort-india-1600x1000.jpg");
+}
+
+.wall-background[data-index="1"] {
+    background-image: url("/assets/img/walls/kanchanjanga-from-darjeeling-1600x1000.jpg");
+}
+
+.wall-background[data-index="2"] {
+    background-image: url("/assets/img/walls/lord-shankar-at-namchi-1600x1000.jpg");
+}
+
+.wall-background[data-index="3"] {
+    background-image: url("/assets/img/walls/lotus-temple-1600x1000.jpg");
+}
+
+.wall-background[data-index="4"] {
+    background-image: url("/assets/img/walls/lakhnow-city-1600x1000.jpg");
+}
+
+.wall-background[data-index="5"] {
+    background-image: url("/assets/img/walls/rajasthan-camel-fair-1600x1000.jpg");
+}
+
+.wall-background[data-index="6"] {
+    background-image: url("/assets/img/walls/kerala-houseboat-1600x1000.jpg");
+}
+
+.wall-background[data-index="7"] {
+    background-image: url("/assets/img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg");
 }
 
 .master-header {
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -112,6 +168,8 @@
 
 .tagline-panel {
     padding: 24px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .tagline-feature i {
@@ -131,7 +189,7 @@
         left: 0.9375rem;
         right: 0.9375rem;
         top: 50%;
-        z-index: 0;
+        z-index: 2;
     }
 
     .tagline {
