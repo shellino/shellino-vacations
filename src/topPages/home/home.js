@@ -77,21 +77,21 @@
         var images;
 
         images = [{
-            src: "/assets/img/walls/agra-fort-india-1600x1000.jpg",
+            src: "/commons/img/walls/agra-fort-india-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/kanchanjanga-from-darjeeling-1600x1000.jpg",
+            src: "/commons/img/walls/kanchanjanga-from-darjeeling-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/lord-shankar-at-namchi-1600x1000.jpg",
+            src: "/commons/img/walls/lord-shankar-at-namchi-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/lotus-temple-1600x1000.jpg",
+            src: "/commons/img/walls/lotus-temple-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/lakhnow-city-1600x1000.jpg",
+            src: "/commons/img/walls/lakhnow-city-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/rajasthan-camel-fair-1600x1000.jpg",
+            src: "/commons/img/walls/rajasthan-camel-fair-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/kerala-houseboat-1600x1000.jpg",
+            src: "/commons/img/walls/kerala-houseboat-1600x1000.jpg",
         }, {
-            src: "/assets/img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg",
+            src: "/commons/img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg",
         }];
 
         return images;

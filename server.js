@@ -3,7 +3,7 @@ var static = require('node-static');
 //
 // Create a node-static server instance to serve the './build' folder
 //
-var file = new static.Server('./build', {
+var file = new static.Server('./dist', {
     cache: 0
 });
 

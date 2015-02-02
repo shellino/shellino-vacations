@@ -96,16 +96,16 @@ metalsmith(__dirname)
     .use(rawUrlExtractor)
     .use(markdown())
     .use(branch()
-            .pattern("top-pages/**/*.*")
-            .use(permalinks({
-                pattern: ":title",
-                relative: true
-            }))
-            .use(relative({
-                methodName: "relative"
-            }))
-            .use(templates('handlebars'))
-        )
+        .pattern("top-pages/**/*.*")
+        .use(permalinks({
+            pattern: ":title",
+            relative: true
+        }))
+        .use(relative({
+            methodName: "relative"
+        }))
+        .use(templates('handlebars'))
+    )
     .use(rawUrlSubstituter)
     .destination('./build')
     .build(function (err, files) {
