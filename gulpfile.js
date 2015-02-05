@@ -35,25 +35,29 @@ var pkg = require("./package.json");
 var buildMode = process.argv[2] || "dev";
 
 // System wide paths
-var paths = {
-    dest: "./dist/",
-    src: "./src/",
-    templates: "./src/templates/"
-};
+var paths = (function () {
 
-// Gulp options
-var gulpOptions = {
-    gulp: gulp,
-    src: paths.src,
-    templates: paths.templates,
-    dest: paths.dest,
-    mode: buildMode
-};
+    var src = "./src/";
 
-var src = paths.src,
-    dest = paths.dest,
-    templates = paths.templates,
-    templateRegistry = {},
+    return {
+        src: src,
+        dest: "./dist/",
+        templates: src + "templates/",
+        partials: src + "templates/partials/"
+    };
+})();
+
+var filters = (function () {
+    return {
+        all: "**/*.*",
+        md: "**/*.md",
+        html: "**/*.html",
+        mdhtml: "**/*.{md,html}",
+        templates: "**/*.hbs.html"
+    };
+})();
+
+var templateRegistry = {},
     compiledTemplates = {};
 
 registerHandlebarPartials();
@@ -79,7 +83,7 @@ var handleBarPipeline = function () {
 
 var htmlPipeline = function () {
 
-    var mdFilter = gulpFilter("**/*.md");
+    var mdFilter = gulpFilter(filters.md);
 
     return lazypipe()
         .pipe(frontMatter, {
@@ -91,7 +95,7 @@ var htmlPipeline = function () {
                 var extension = path.extname(file.path);
 
                 if (extension === ".md" || extension === ".html") {
-                    templateRegistry[path.relative(process.cwd() + "/" + src, file.path)] = file.frontMatter.template;
+                    templateRegistry[path.relative(process.cwd() + "/" + paths.src, file.path)] = file.frontMatter.template;
                 }
 
                 this.push(file);
@@ -126,63 +130,64 @@ var renamePipeline = function () {
 };
 
 gulp.task("handlebars", function () {
-    return gulp.src(["templates/**/*.hbs.html"], { base: src, cwd: src })
+    return gulp.src(filters.templates, { base: paths.src, cwd: paths.templates })
         .pipe(handleBarPipeline());
 });
 
 gulp.task("dev", ["clean", "handlebars"], function () {
 
-    var htmlMdFilter = gulpFilter(["**/*.{html,md}", "!templates/**/*"]);
+    var htmlMdFilter = gulpFilter([filters.mdhtml]);
 
-    return gulp.src(["**/*.*", "!templates/**/*"], { base: src, cwd: src })
+    //return gulp.src(["**/*.*", "!templates/**/*"], { base: src, cwd: src })
+    return gulp.src([filters.all, "!" + filters.templates], { base: paths.src, cwd: paths.src })
         .pipe(htmlMdFilter)
         .pipe(htmlPipeline()())
         .pipe(htmlMdFilter.restore())
         .pipe(renamePipeline())
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(paths.dest));
 });
 
 gulp.task("watch", function (done) {
 
-    gulp.watch([src + "**/*.{css,js,png,jpg}"], function (event) {
+    gulp.watch([paths.src + "**/*.{css,js,png,jpg}"], function (event) {
         // Do simple copy
         var file = getFileInfo(event);
 
-        gulp.src(file, { base: src, cwd: src })
+        gulp.src(file, { base: paths.src, cwd: paths.src })
             .pipe(renamePipeline())
-            .pipe(gulp.dest(dest).on("finish", function () {
+            .pipe(gulp.dest(paths.dest).on("finish", function () {
                 gutil.log("Modified:", colors.yellow(file));
             }));
     });
 
-    gulp.watch([src + "**/*.{html,md}", "!" + src + "templates/**/*"], function (event) {
+    gulp.watch([paths.src + "**/*.{html,md}", "!" + paths.src + "templates/**/*"], function (event) {
         var file = getFileInfo(event);
 
-        gulp.src(file, { base: src, cwd: src })
+        gulp.src(file, { base: paths.src, cwd: paths.src })
             .pipe(htmlPipeline()())
             .pipe(renamePipeline())
-            .pipe(gulp.dest(dest).on("finish", function () {
+            .pipe(gulp.dest(paths.dest).on("finish", function () {
                 gutil.log("Modified:", colors.yellow(file));
             }));
     });
 
-    gulp.watch(src + "templates/*.*", function (event) {
+    gulp.watch(paths.src + "templates/*.*", function (event) {
 
         var file = getFileInfo(event),
             htmlfiles = [],
             templateName = path.basename(file, ".hbs.html");
 
-        compiledTemplates[templateName] = handlebars.compile(fs.readFileSync(src + file).toString());
+        compiledTemplates[templateName] = handlebars.compile(fs.readFileSync(paths.src + file).toString());
         gutil.log("Template:", colors.yellow(templateName));
 
         htmlfiles = Object.keys(templateRegistry).filter(function (key) {
             return templateRegistry[key] === templateName;
         });
 
-        gulp.src(htmlfiles, { base: src, cwd: src })
+        gulp.src(htmlfiles, { base: paths.src, cwd: paths.src })
             .pipe(htmlPipeline()())
             .pipe(renamePipeline())
-            .pipe(gulp.dest(dest));
+            .pipe(gulp.dest(paths.dest));
     });
 
     // When a partial is modified
@@ -191,12 +196,12 @@ gulp.task("watch", function (done) {
     done();
 
     function getFileInfo(event) {
-        return path.relative(process.cwd() + "/" + src, event.path);
+        return path.relative(process.cwd() + "/" + paths.src, event.path);
     }
 });
 
 gulp.task("clean", function (done) {
-    del.sync([dest]);
+    del.sync([paths.dest]);
     done();
 });
 
@@ -285,7 +290,7 @@ function escapeRegExp(string) {
 }
 
 function registerHandlebarPartials() {
-    handlebars.registerPartial('indexHeader', fs.readFileSync(templates + "partials/indexHeader.hbs.html").toString());
+    handlebars.registerPartial('indexHeader', fs.readFileSync(paths.partials + "indexHeader.hbs.html").toString());
 }
 
 //.pipe(function () {
