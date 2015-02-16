@@ -21,6 +21,7 @@ var gulpCheerio = require("gulp-cheerio");
 
 // CSS, SASS, JS related modules
 var sass = require("gulp-sass");
+var minifyCSS = require("gulp-minify-css");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 
@@ -140,6 +141,7 @@ var sassPipeline = function () {
         })
         .pipe(sourcemaps.init)
         .pipe(sass)
+        .pipe(buildMode === "prod" ? minifyCSS : gutil.noop)
         .pipe(sourcemaps.write, ".", { addComment: false })
         .pipe(appendSourcemap, ".css")
         .pipe(sassFilter.restore)();
