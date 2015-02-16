@@ -144,3 +144,29 @@ switch (buildMode) {
 }
 
 gulp.task("default", ["dev"]);
+
+//.pipe(function () {
+//    return through2.obj(function (file, enc, cb) {
+//        console.log("Filtered:", file.path);
+//        this.push(file);
+//        cb();
+//    });
+//})
+
+//gulp.task("dev", ["clean"], function () {
+
+//    var hbFilter = gulpFilter(["templates/**/*.hbs.html"]),
+//        htmlMdFilter = gulpFilter(["**/*.{html,md}", "!templates/**/*"]);
+
+//    return gulp.src("**/*.*", { base: src, cwd: src })
+//        .pipe(hbFilter)
+//        .pipe(handleBarPipeline())
+//        .pipe(hbFilter.restore())
+//        .pipe(htmlMdFilter)
+//        .pipe(frontMatterPipeline())
+//        .pipe(templateRegistryPipeline())
+//        .pipe(htmlPipeline()())
+//        .pipe(htmlMdFilter.restore())
+//        .pipe(renamePipeline())
+//        .pipe(gulp.dest(dest));
+//});

@@ -1,8 +1,3 @@
-.panel.idea-panel {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .panel.idea-panel .button {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -65,7 +60,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cover-heading {
+.video-cover .cover-heading {
     background-color: rgba(243, 243, 243, 0.8);
 
     border: none;
@@ -153,29 +148,6 @@
 }
 
 .shellino-groups i[class] {
-    font-size: 3rem;
-    border-radius: 48px;
-    padding: 0 18px;
-    display: inline-block;
-    border-right: 1px solid #BABABA;
-
+    font-size: 4rem;
     text-shadow: 0 0 12px, 0 0 4px #FFFFFF;
 }
-
-.shellino-groups i:before {
-    width: 48px;
-}
-
-@media only screen and (min-width: 40.063em) {
-    .shellino-groups i[class] {
-        font-size: 4rem;
-
-        border-radius: 66px;
-        padding: 0 24px;
-    }
-
-    .shellino-groups i:before {
-        width: 66px;
-    }
-}
-

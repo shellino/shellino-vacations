@@ -1,3 +1,18 @@
+// package.json entries
+/*
+    "metalsmith": "^1.0.1",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-branch": "0.0.4",
+    "metalsmith-collections": "^0.6.0",
+    "metalsmith-copy": "^0.2.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-relative": "^1.0.3",
+    "metalsmith-serve": "0.0.3",
+    "metalsmith-templates": "^0.6.0",
+    "metalsmith-watch": "^0.1.1",
+    "rimraf": "^2.2.8"
+*/
 var //assets = require('metalsmith-assets'),
     branch = require('metalsmith-branch'),
     collections = require('metalsmith-collections'),

@@ -43,8 +43,11 @@
 @media only screen and (min-width: 40.063em) {
 
     .heading-with-line {
-        background-repeat: repeat-x;
-        background-position: left center;
+        position: relative;
+
+        line-height: 1;
+        margin-top: 0.2rem;
+        margin-bottom: 0.625rem;
     }
 
     .heading-with-line:before {
@@ -53,16 +56,17 @@
         position: absolute;
         height: 1px;
         top: 50%;
-        background-color: red;
+        background-color: #CDCDCD;
         width: 100%;
         z-index: 0;
     }
 
-    .heading-with-line h3 {
+    .heading-with-line .heading-with-line-title {
         display: inline-block;
         padding-right: 15px;
         background-color: #FFF;
         z-index: 1;
+        margin: 0;
         position: relative;
     }
 

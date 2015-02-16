@@ -1,0 +1,15 @@
+﻿// Importing normalize CSS
+@import "../../bower_components/foundation/scss/normalize.scss";
+
+// Importing foundation for sites (F4S)
+@import "settings";
+@import "foundation";
+
+@import "extension";
+
+@import "../../bower_components/foundation-icon-fonts/_foundation-icons.scss";
+
+@import "../../bower_components/slick.js/slick/slick.scss";
+
+$slick-font-path: "./" !default;
+@import "../../bower_components/slick.js/slick/slick-theme.scss";

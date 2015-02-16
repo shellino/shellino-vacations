@@ -2,6 +2,7 @@
 var gulp = require("gulp");
 var gulpFilter = require("gulp-filter");
 var cache = require("gulp-cached");
+var sourcemaps = require("gulp-sourcemaps");
 
 // Logger modules
 var gutil = require("gulp-util");
@@ -16,9 +17,12 @@ var rename = require("gulp-rename");
 
 // DOM parser modules
 var cheerio = require("cheerio");
+var gulpCheerio = require("gulp-cheerio");
 
-// CSS, SASS related modules
-var sass = require('gulp-sass');
+// CSS, SASS, JS related modules
+var sass = require("gulp-sass");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
 
 // Stream related modules
 var merge = require("merge-stream");
@@ -37,26 +41,47 @@ var buildMode = process.argv[2] || "dev";
 // System wide paths
 var paths = (function () {
 
-    var src = "./src/";
+    var src = "./src/",
+        bower = "./bower_components/";
 
     return {
         src: src,
         dest: "./dist/",
+        bower: bower,
+        js: "./js/",
         templates: src + "templates/",
-        partials: src + "templates/partials/"
+        partials: src + "templates/partials/",
+        fonts: [
+            "foundation-icon-fonts/",
+            "slick.js/slick/fonts/",
+            "!foundation-icon-fonts/svgs/"
+        ],
+        jsBundle: [
+            bower + "jquery/dist/jquery.js",
+            bower + "fastclick/lib/fastclick.js",
+            bower + "foundation/js/foundation.js",
+            bower + "slick.js/slick/slick.js",
+            src + "js/app.js"
+        ]
     };
 })();
 
+// File selection filters
 var filters = (function () {
     return {
         all: "**/*.*",
+        js: "**/*.js",
         md: "**/*.md",
+        scss: "**/*.scss",
         html: "**/*.html",
         mdhtml: "**/*.{md,html}",
+        fonts: "**/*.{eot,svg,ttf,woff}",
         templates: "**/*.hbs.html"
     };
 })();
 
+
+// Local variables used throughout
 var templateRegistry = {},
     compiledTemplates = {};
 
@@ -65,12 +90,36 @@ registerHandlebarPartials();
 var handleBarPipeline = function () {
 
     return lazypipe()
+        .pipe(gulpCheerio, function ($, file) {
+
+            var title = $("title"),
+                scriptTag = $("<script type='text/javascript'></script>")
+                linkTag = $("<link type='text/css' rel='stylesheet' />")
+
+            title.after(linkTag.clone().attr("href", "/scss/main.css"));
+            title.after(linkTag.clone().attr("href", "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic"));
+
+            $("head").append(scriptTag.clone().attr("src", "/js/modernizr.js"));
+
+            $("body").contents().filter(function () {
+
+                if (this.nodeType === 8 && this.data === "bundle.js") {
+                    $(this).after(scriptTag.clone().attr("src", "/js/bundle.js"));
+                }
+
+                return true;
+            });
+
+        })
         .pipe(function () {
             return through2.obj(function (file, enc, cb) {
 
-                var templateName = path.basename(file.path, ".hbs.html");
+                var templateName = path.basename(file.path, ".hbs.html"),
+                    contents = file.contents.toString().replace("{{&gt;", "{{>");
 
-                compiledTemplates[templateName] = handlebars.compile(file.contents.toString());
+                //console.log(file.contents.toString());
+
+                compiledTemplates[templateName] = handlebars.compile(contents);
 
                 //this.push(file) should not be used as gulp will copy them in destination.
                 //this.push(file);
@@ -79,6 +128,21 @@ var handleBarPipeline = function () {
                 cb();
             });
         })();
+};
+
+var sassPipeline = function () {
+
+    var sassFilter = gulpFilter(filters.scss);
+
+    return lazypipe()
+        .pipe(function () {
+            return sassFilter;
+        })
+        .pipe(sourcemaps.init)
+        .pipe(sass)
+        .pipe(sourcemaps.write, ".", { addComment: false })
+        .pipe(appendSourcemap, ".css")
+        .pipe(sassFilter.restore)();
 };
 
 var htmlPipeline = function () {
@@ -129,27 +193,79 @@ var renamePipeline = function () {
         })();
 };
 
+var uglifyPipeline = function () {
+
+    var jsFilter = gulpFilter(filters.js),
+        pipeline = lazypipe();
+
+    if (buildMode == "prod") {
+        pipeline = pipeline.pipe(function () {
+            return jsFilter;
+        })
+        .pipe(sourcemaps.init)
+        .pipe(uglify)
+        .pipe(sourcemaps.write, ".", { addComment: false })
+        .pipe(appendSourcemap, ".js")
+        .pipe(jsFilter.restore);
+    } else {
+        pipeline = pipeline.pipe(gutil.noop);
+    }
+
+    return pipeline();
+};
+
 gulp.task("handlebars", function () {
     return gulp.src(filters.templates, { base: paths.src, cwd: paths.templates })
         .pipe(handleBarPipeline());
 });
 
-gulp.task("dev", ["clean", "handlebars"], function () {
+gulp.task("fonts", function () {
 
-    var htmlMdFilter = gulpFilter([filters.mdhtml]);
+    var fonts = paths.fonts.map(function (fontPath) {
+        return fontPath + filters.fonts;
+    });
 
-    //return gulp.src(["**/*.*", "!templates/**/*"], { base: src, cwd: src })
-    return gulp.src([filters.all, "!" + filters.templates], { base: paths.src, cwd: paths.src })
+    return gulp.src(fonts, {
+        cwd: paths.bower
+    })
+    .pipe(gulp.dest(paths.dest + "scss/"));
+});
+
+gulp.task("build", ["clean", "handlebars", "fonts"], function () {
+
+    var htmlMdFilter = gulpFilter([filters.mdhtml]),
+        sourceStream,
+        modernizrStream,
+        bundleStream;
+
+    sourceStream = gulp.src([filters.all, "!" + filters.templates], { base: paths.src, cwd: paths.src })
         .pipe(htmlMdFilter)
         .pipe(htmlPipeline()())
         .pipe(htmlMdFilter.restore())
+        .pipe(sassPipeline())
         .pipe(renamePipeline())
+        .pipe(uglifyPipeline())
         .pipe(gulp.dest(paths.dest));
+
+    bundleStream = gulp.src(paths.jsBundle)
+        .pipe(gulp.dest(paths.dest + paths.js))
+        .pipe(sourcemaps.init())
+        .pipe(concat("bundle.js"))
+        .pipe(uglify())
+        .pipe(sourcemaps.write(".", { addComment: false }))
+        .pipe(appendSourcemap(".js"))
+        .pipe(gulp.dest(paths.dest + paths.js));
+
+    modernizrStream = gulp.src(paths.bower + "modernizr/modernizr.js")
+        .pipe(uglifyPipeline())
+        .pipe(gulp.dest(paths.dest + paths.js));
+
+    return merge(sourceStream, bundleStream, modernizrStream);
 });
 
 gulp.task("watch", function (done) {
 
-    gulp.watch([paths.src + "**/*.{css,js,png,jpg}"], function (event) {
+    gulp.watch([paths.src + "**/*.{js,png,jpg}"], function (event) {
         // Do simple copy
         var file = getFileInfo(event);
 
@@ -159,6 +275,24 @@ gulp.task("watch", function (done) {
                 gutil.log("Modified:", colors.yellow(file));
             }));
     });
+
+    gulp.watch([paths.src + "**/*.scss"], function (event) {
+        // Do simple copy
+        var file = getFileInfo(event),
+            files = [file];
+
+        if (file.indexOf("scss") === 0) {
+            files[1] = "scss/main.scss";
+        }
+
+        gulp.src(files, { base: paths.src, cwd: paths.src })
+            .pipe(sassPipeline())
+            .pipe(renamePipeline())
+            .pipe(gulp.dest(paths.dest).on("finish", function () {
+                gutil.log("Modified:", colors.yellow(file));
+            }));
+    });
+
 
     gulp.watch([paths.src + "**/*.{html,md}", "!" + paths.src + "templates/**/*"], function (event) {
         var file = getFileInfo(event);
@@ -205,10 +339,42 @@ gulp.task("clean", function (done) {
     done();
 });
 
-gulp.task("default", ["dev", "watch"], function () {
-    gutil.log(colors.bold.yellow("Watchers Established. You can now start coding"));
-    //console.log(templateRegistry);
+gulp.task("dev", ["build", "watch"], function (done) {
+    gutil.log(colors.bold.yellow("Watchers Established. You can now start coding."));
+    done();
 });
+
+gulp.task("prod", ["build"], function (done) {
+    gutil.log(colors.bold.yellow("Product build is ready."));
+});
+
+gulp.task("default", ["dev"], function (done) {
+    done();
+});
+
+function appendSourcemap(extension) {
+    return through2.obj(function (file, enc, cb) {
+
+        var filename = path.basename(file.path),
+            contents = file.contents.toString(),
+            sourceMapComment;
+
+        if (path.extname(file.path) === extension) {
+
+            if (extension === ".js") {
+                sourceMapComment = "//# sourceMappingURL=./" + filename + ".map";
+            } else {
+                sourceMapComment = "/*# sourceMappingURL=./" + filename + ".map */";
+            }
+
+            contents += sourceMapComment;
+            file.contents = new Buffer(contents);
+        }
+
+        this.push(file);
+        cb();
+    });
+}
 
 function generateHtml() {
     return through2.obj(function (file, enc, cb) {
@@ -218,7 +384,7 @@ function generateHtml() {
 
         templateOutput = compiledTemplate({
             contents: file.contents.toString(),
-            css: yaml.css,
+            scss: yaml.scss,
             js: yaml.js
         });
 
@@ -292,29 +458,3 @@ function escapeRegExp(string) {
 function registerHandlebarPartials() {
     handlebars.registerPartial('indexHeader', fs.readFileSync(paths.partials + "indexHeader.hbs.html").toString());
 }
-
-//.pipe(function () {
-//    return through2.obj(function (file, enc, cb) {
-//        console.log("Filtered:", file.path);
-//        this.push(file);
-//        cb();
-//    });
-//})
-
-//gulp.task("dev", ["clean"], function () {
-
-//    var hbFilter = gulpFilter(["templates/**/*.hbs.html"]),
-//        htmlMdFilter = gulpFilter(["**/*.{html,md}", "!templates/**/*"]);
-
-//    return gulp.src("**/*.*", { base: src, cwd: src })
-//        .pipe(hbFilter)
-//        .pipe(handleBarPipeline())
-//        .pipe(hbFilter.restore())
-//        .pipe(htmlMdFilter)
-//        .pipe(frontMatterPipeline())
-//        .pipe(templateRegistryPipeline())
-//        .pipe(htmlPipeline()())
-//        .pipe(htmlMdFilter.restore())
-//        .pipe(renamePipeline())
-//        .pipe(gulp.dest(dest));
-//});
