@@ -185,11 +185,14 @@ var renamePipeline = function () {
 
             if (path.dirname === "home" && path.basename === "home" && path.extname === ".html") {
                 path.dirname = "";
-                path.basename = "index";
             }
 
             if (path.extname === ".md") {
                 path.extname = ".html";
+            }
+
+            if (path.extname === ".html") {
+                path.basename = "index";
             }
 
         })();
@@ -387,7 +390,8 @@ function generateHtml() {
         templateOutput = compiledTemplate({
             contents: file.contents.toString(),
             scss: yaml.scss,
-            js: yaml.js
+            js: yaml.js,
+            title: yaml.title
         });
 
         file.contents = new Buffer(templateOutput);
@@ -441,6 +445,8 @@ function getNormalizedUrl(rawUrl) {
             normalizedUrl = "/";
         } else if (/^(\/topPages){1}/g.test(rawUrl)) {
             normalizedUrl = rawUrl.replace("/topPages", "");
+        } else if (/^\//g.test(rawUrl)) {
+            normalizedUrl = rawUrl;
         } else if (/^([a-z|A-Z])+/g.test(rawUrl)) {
             normalizedUrl = rawUrl;
         } else {

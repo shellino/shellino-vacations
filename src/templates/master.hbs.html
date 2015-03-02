@@ -8,34 +8,37 @@
         <!-- If you delete this meta tag World War Z will become a reality -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Foundation 5</title>
+        <title>{{title}}</title>
 
-        <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
-        <link rel="stylesheet" type="text/css" href="/scss/main.css">
+        <link rel="stylesheet" type="text/css" href="/scss/indexTemplate.css" />
 
         <!-- Custom CSS files on page -->
-        {{#if css}}
-            {{#each css}}
-                <link rel="stylesheet" type="text/css" href="{{this}}" />
+        {{#if scss}}
+            {{#each scss}}
+                <link rel="stylesheet" type="text/css" href="{{this}}.css" />
             {{else}}
-                <link rel="stylesheet" type="text/css" href="{{css}}" />
+                <link rel="stylesheet" type="text/css" href="{{scss}}.css" />
             {{/each}}
         {{/if}}
 
     </head>
 
     <body>
-
+        {{> indexHeader}}
         {{{ contents }}}
-        <!-- body content here -->
-        <script type="text/javascript" src="/vendor/jQuery/jQuery.js"></script>
-        <script type="text/javascript" src="/vendor/fastclick.js"></script>
-        <script type="text/javascript" src="/vendor/foundation/js/foundation.min.js"></script>
-        <script type="text/javascript">
-            $(document).foundation();
-        </script>
+
+        <!-- Common JS bundle go here -->
+
+        <!--bundle.js-->
+        {{#if js}}
+            {{#each js}}
+                <script type="text/javascript" src="{{this}}"></script>
+            {{else}}
+                <script type="text/javascript" src="{{js}}"></script>
+            {{/each}}
+        {{/if}}
+
 
     </body>
 
 </html>
-
