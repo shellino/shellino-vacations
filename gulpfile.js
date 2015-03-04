@@ -86,7 +86,7 @@ var filters = (function () {
 var templateRegistry = {},
     compiledTemplates = {};
 
-registerHandlebarPartials();
+//registerHandlebarPartials();
 
 var handleBarPipeline = function () {
 
@@ -98,7 +98,7 @@ var handleBarPipeline = function () {
                 linkTag = $("<link type='text/css' rel='stylesheet' />")
 
             title.after(linkTag.clone().attr("href", "/scss/main.css"));
-            title.after(linkTag.clone().attr("href", "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic"));
+            title.after(linkTag.clone().attr("href", "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,300,900,700italic,900italic,300italic,100italic,100"));
 
             $("head").append(scriptTag.clone().attr("src", "/js/modernizr.js"));
 
@@ -149,9 +149,13 @@ var sassPipeline = function () {
 
 var htmlPipeline = function () {
 
-    var mdFilter = gulpFilter(filters.md);
+    var htmlMdFilter = gulpFilter([filters.mdhtml]),
+        mdFilter = gulpFilter(filters.md);
 
     return lazypipe()
+        .pipe(function () {
+            return htmlMdFilter;
+        })
         .pipe(frontMatter, {
             property: "frontMatter",
             remove: true
@@ -174,7 +178,8 @@ var htmlPipeline = function () {
         .pipe(markdown)
         .pipe(mdFilter.restore)
         .pipe(generateHtml)
-        .pipe(mapUrl);
+        .pipe(mapUrl)
+        .pipe(htmlMdFilter.restore);
 };
 
 var renamePipeline = function () {
@@ -238,15 +243,12 @@ gulp.task("fonts", function () {
 
 gulp.task("build", ["clean", "handlebars", "fonts"], function () {
 
-    var htmlMdFilter = gulpFilter([filters.mdhtml]),
-        sourceStream,
+    var sourceStream,
         modernizrStream,
         bundleStream;
 
     sourceStream = gulp.src([filters.all, "!" + filters.templates], { base: paths.src, cwd: paths.src })
-        .pipe(htmlMdFilter)
         .pipe(htmlPipeline()())
-        .pipe(htmlMdFilter.restore())
         .pipe(sassPipeline())
         .pipe(renamePipeline())
         .pipe(uglifyPipeline())
