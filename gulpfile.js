@@ -3,6 +3,7 @@ var gulp = require("gulp");
 var gulpFilter = require("gulp-filter");
 var cache = require("gulp-cached");
 var sourcemaps = require("gulp-sourcemaps");
+var runSequence = require("run-sequence");
 
 // Logger modules
 var gutil = require("gulp-util");
@@ -36,34 +37,24 @@ var handlebars = require("handlebars");
 var markdown = require("gulp-markdown");
 
 var pkg = require("./package.json");
+var props = pkg.props;
 
 var buildMode = process.argv[2] || "dev";
 
 // System wide paths
 var paths = (function () {
 
-    var src = "./src/",
-        bower = "./bower_components/";
+    var src = "./src/";
 
     return {
         src: src,
         dest: "./dist/",
-        bower: bower,
         js: "./js/",
         templates: src + "templates/",
         partials: src + "templates/partials/",
-        fonts: [
-            "foundation-icon-fonts/",
-            "slick.js/slick/fonts/",
-            "!foundation-icon-fonts/svgs/"
-        ],
-        jsBundle: [
-            bower + "jquery/dist/jquery.js",
-            bower + "fastclick/lib/fastclick.js",
-            bower + "foundation/js/foundation.js",
-            bower + "slick.js/slick/slick.js",
-            src + "js/app.js"
-        ]
+        resources: props.resources,
+        jsBundle: props.jsBundle,
+        jsBundleName: "bundle.js"
     };
 })();
 
@@ -77,6 +68,7 @@ var filters = (function () {
         html: "**/*.html",
         mdhtml: "**/*.{md,html}",
         fonts: "**/*.{eot,svg,ttf,woff}",
+        images: "**/*.{png,jpg,jpeg,gif}",
         templates: "**/*.hbs.html"
     };
 })();
@@ -86,103 +78,12 @@ var filters = (function () {
 var templateRegistry = {},
     compiledTemplates = {};
 
-//registerHandlebarPartials();
+registerHandlebarPartials();
 
-var handleBarPipeline = function () {
+// Clean the dist directory
+del.sync([paths.dest]);
 
-    return lazypipe()
-        .pipe(gulpCheerio, function ($, file) {
-
-            var title = $("title"),
-                scriptTag = $("<script type='text/javascript'></script>")
-                linkTag = $("<link type='text/css' rel='stylesheet' />")
-
-            title.after(linkTag.clone().attr("href", "/scss/main.css"));
-            title.after(linkTag.clone().attr("href", "http://fonts.googleapis.com/css?family=Lato:400,700,400italic,300,900,700italic,900italic,300italic,100italic,100"));
-
-            $("head").append(scriptTag.clone().attr("src", "/js/modernizr.js"));
-
-            $("body").contents().filter(function () {
-
-                if (this.nodeType === 8 && this.data === "bundle.js") {
-                    $(this).after(scriptTag.clone().attr("src", "/js/bundle.js"));
-                }
-
-                return true;
-            });
-
-        })
-        .pipe(function () {
-            return through2.obj(function (file, enc, cb) {
-
-                var templateName = path.basename(file.path, ".hbs.html"),
-                    contents = file.contents.toString().replace("{{&gt;", "{{>");
-
-                //console.log(file.contents.toString());
-
-                compiledTemplates[templateName] = handlebars.compile(contents);
-
-                //this.push(file) should not be used as gulp will copy them in destination.
-                //this.push(file);
-                cb();
-            }, function (cb) {
-                cb();
-            });
-        })();
-};
-
-var sassPipeline = function () {
-
-    var sassFilter = gulpFilter(filters.scss);
-
-    return lazypipe()
-        .pipe(function () {
-            return sassFilter;
-        })
-        .pipe(sourcemaps.init)
-        .pipe(sass)
-        .pipe(buildMode === "prod" ? minifyCSS : gutil.noop)
-        .pipe(sourcemaps.write, ".", { addComment: false })
-        .pipe(appendSourcemap, ".css")
-        .pipe(sassFilter.restore)();
-};
-
-var htmlPipeline = function () {
-
-    var htmlMdFilter = gulpFilter([filters.mdhtml]),
-        mdFilter = gulpFilter(filters.md);
-
-    return lazypipe()
-        .pipe(function () {
-            return htmlMdFilter;
-        })
-        .pipe(frontMatter, {
-            property: "frontMatter",
-            remove: true
-        })
-        .pipe(function () {
-            return through2.obj(function (file, enc, cb) {
-                var extension = path.extname(file.path);
-
-                if (extension === ".md" || extension === ".html") {
-                    templateRegistry[path.relative(process.cwd() + "/" + paths.src, file.path)] = file.frontMatter.template;
-                }
-
-                this.push(file);
-                cb();
-            });
-        })
-        .pipe(function () {
-            return mdFilter;
-        })
-        .pipe(markdown)
-        .pipe(mdFilter.restore)
-        .pipe(generateHtml)
-        .pipe(mapUrl)
-        .pipe(htmlMdFilter.restore);
-};
-
-var renamePipeline = function () {
+function renamePipeline() {
     return lazypipe()
         .pipe(rename, function (path) {
 
@@ -203,159 +104,172 @@ var renamePipeline = function () {
         })();
 };
 
-var uglifyPipeline = function () {
+function htmlPipeline(files) {
 
-    var jsFilter = gulpFilter(filters.js),
-        pipeline = lazypipe();
+    var mdFilter = gulpFilter(filters.md);
 
-    if (buildMode == "prod") {
-        pipeline = pipeline.pipe(function () {
-            return jsFilter;
-        })
-        .pipe(sourcemaps.init)
-        .pipe(uglify)
-        .pipe(sourcemaps.write, ".", { addComment: false })
-        .pipe(appendSourcemap, ".js")
-        .pipe(jsFilter.restore);
-    } else {
-        pipeline = pipeline.pipe(gutil.noop);
-    }
+    return gulp.src(files, { base: paths.src, cwd: paths.src })
+        .pipe(frontMatter({
+            property: "frontMatter",
+            remove: true
+        }))
+        .pipe(mdFilter)
+        .pipe(markdown())
+        .pipe(mdFilter.restore())
+        .pipe(through2.obj(function (file, enc, cb) {
+            var yaml = file.frontMatter,
+                templateName = yaml.template,
+                templateContent,
+                compiledTemplate,
+                templateOutput;
 
-    return pipeline();
+            templateContent = fs.readFileSync(paths.templates + templateName + ".hbs.html").toString();
+            compiledTemplate = handlebars.compile(templateContent);
+
+            templateOutput = compiledTemplate({
+                contents: file.contents.toString(),
+                scss: yaml.scss,
+                js: yaml.js,
+                title: yaml.title
+            });
+
+            file.contents = new Buffer(templateOutput);
+
+            this.push(file);
+            cb();
+        }))
+        .pipe(mapUrl())
+        .pipe(renamePipeline())
+        .pipe(gulp.dest(paths.dest));
+}
+
+function sassPipeline(files) {
+
+    return gulp.src(files, { base: paths.src, cwd: paths.src })
+        .pipe(sourcemaps.init())
+        .pipe(sass())
+        .pipe(buildMode === "prod" ? minifyCSS() : gutil.noop())
+        .pipe(sourcemaps.write(".", { addComment: false }))
+        .pipe(appendSourcemap(".css"))
+        .pipe(gulp.dest(paths.dest));
 };
 
-gulp.task("handlebars", function () {
-    return gulp.src(filters.templates, { base: paths.src, cwd: paths.templates })
-        .pipe(handleBarPipeline());
-});
+function jsPipeline(files) {
 
-gulp.task("fonts", function () {
+    var stream = gulp.src(files, { base: paths.src, cwd: paths.src });
 
-    var fonts = paths.fonts.map(function (fontPath) {
-        return fontPath + filters.fonts;
-    });
+    if (buildMode == "prod") {
+        stream.pipe(sourcemaps.init)
+        .pipe(uglify())
+        .pipe(sourcemaps.write(".", { addComment: false }))
+        .pipe(appendSourcemap, ".js")
+    }
 
-    return gulp.src(fonts, {
-        cwd: paths.bower
-    })
-    .pipe(gulp.dest(paths.dest + "scss/"));
-});
+    stream.pipe(gulp.dest(paths.dest));
 
-gulp.task("build", ["clean", "handlebars", "fonts"], function () {
+    return stream;
+};
 
-    var sourceStream,
-        modernizrStream,
-        bundleStream;
-
-    sourceStream = gulp.src([filters.all, "!" + filters.templates], { base: paths.src, cwd: paths.src })
-        .pipe(htmlPipeline()())
-        .pipe(sassPipeline())
-        .pipe(renamePipeline())
-        .pipe(uglifyPipeline())
+gulp.task("copy", function () {
+    return gulp.src([filters.fonts, filters.images], { base: paths.src, cwd: paths.src })
         .pipe(gulp.dest(paths.dest));
+});
 
-    bundleStream = gulp.src(paths.jsBundle)
-        .pipe(gulp.dest(paths.dest + paths.js))
+gulp.task("html", function () {
+    return htmlPipeline([filters.mdhtml, "!" + filters.templates]);
+});
+
+gulp.task("sass", function () {
+    return sassPipeline(filters.scss);
+});
+
+gulp.task("js", function () {
+    return jsPipeline(filters.js);
+});
+
+gulp.task("jsbundle", function () {
+    return gulp.src(paths.jsBundle, { base: paths.src, cwd: paths.src })
         .pipe(sourcemaps.init())
-        .pipe(concat("bundle.js"))
+        .pipe(concat(paths.jsBundleName))
         .pipe(uglify())
         .pipe(sourcemaps.write(".", { addComment: false }))
         .pipe(appendSourcemap(".js"))
         .pipe(gulp.dest(paths.dest + paths.js));
-
-    modernizrStream = gulp.src(paths.bower + "modernizr/modernizr.js")
-        .pipe(uglifyPipeline())
-        .pipe(gulp.dest(paths.dest + paths.js));
-
-    return merge(sourceStream, bundleStream, modernizrStream);
 });
 
-gulp.task("watch", function (done) {
+gulp.task("resource", function (done) {
 
-    gulp.watch([paths.src + "**/*.{js,png,jpg}"], function (event) {
-        // Do simple copy
-        var file = getFileInfo(event);
+    var streams = merge(),
+        resources = Object.keys(paths.resources);
 
-        gulp.src(file, { base: paths.src, cwd: paths.src })
-            .pipe(renamePipeline())
-            .pipe(gulp.dest(paths.dest).on("finish", function () {
-                gutil.log("Modified:", colors.yellow(file));
-            }));
-    });
+    if (resources.length > 0) {
+        resources.forEach(function (resource) {
 
-    gulp.watch([paths.src + "**/*.scss"], function (event) {
-        // Do simple copy
-        var file = getFileInfo(event),
-            files = [file];
+            var stream = gulp.src(resource, { cwd: paths.src })
+                            .pipe(rename(function (path) {
+                                path.dirname = "";
+                            }))
+                            .pipe(gulp.dest(paths.dest + paths.resources[resource]));
 
-        if (file.indexOf("scss") === 0) {
-            files[1] = "scss/main.scss";
-        }
-
-        gulp.src(files, { base: paths.src, cwd: paths.src })
-            .pipe(sassPipeline())
-            .pipe(renamePipeline())
-            .pipe(gulp.dest(paths.dest).on("finish", function () {
-                gutil.log("Modified:", colors.yellow(file));
-            }));
-    });
-
-
-    gulp.watch([paths.src + "**/*.{html,md}", "!" + paths.src + "templates/**/*"], function (event) {
-        var file = getFileInfo(event);
-
-        gulp.src(file, { base: paths.src, cwd: paths.src })
-            .pipe(htmlPipeline()())
-            .pipe(renamePipeline())
-            .pipe(gulp.dest(paths.dest).on("finish", function () {
-                gutil.log("Modified:", colors.yellow(file));
-            }));
-    });
-
-    gulp.watch(paths.src + "templates/*.*", function (event) {
-
-        var file = getFileInfo(event),
-            htmlfiles = [],
-            templateName = path.basename(file, ".hbs.html");
-
-        compiledTemplates[templateName] = handlebars.compile(fs.readFileSync(paths.src + file).toString());
-        gutil.log("Template:", colors.yellow(templateName));
-
-        htmlfiles = Object.keys(templateRegistry).filter(function (key) {
-            return templateRegistry[key] === templateName;
+            streams.add(stream);
         });
 
-        gulp.src(htmlfiles, { base: paths.src, cwd: paths.src })
-            .pipe(htmlPipeline()())
-            .pipe(renamePipeline())
-            .pipe(gulp.dest(paths.dest));
+        return streams;
+    } else {
+        done();
+    }
+
+});
+
+gulp.task("watcher", function (done) {
+
+    gulp.watch([paths.src + filters.scss], function (event) {
+        sassPipeline([event.path]);
+        gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
     });
 
-    // When a partial is modified
-    //gulp.watch(src + "", function () { });
+    gulp.watch([filters.mdhtml, "!" + filters.templates], { cwd: paths.src }, function (event) {
+        htmlPipeline(event.path);
+        gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
+    });
+
+    gulp.watch(filters.js, { cwd: paths.src }, function (event) {
+        jsPipeline(event.path);
+        gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
+    });
+
+    // Since app.js is part of jsbundle, create watch on this file and execute jsbundle task.
+    gulp.watch("js/app.js", { cwd: paths.src }, ["jsbundle"]);
+
+    gulp.watch(filters.templates, { cwd: paths.templates }, function (event) {
+        if (event.path.indexOf("partials")) {
+            registerHandlebarPartials();
+        }
+
+        runSequence("html", function () {
+            gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
+        });
+    });
 
     done();
 
-    function getFileInfo(event) {
+    function getRelativePath(event) {
         return path.relative(process.cwd() + "/" + paths.src, event.path);
     }
 });
 
-gulp.task("clean", function (done) {
-    del.sync([paths.dest]);
-    done();
-});
+gulp.task("common", ["copy", "html", "sass", "js", "jsbundle", "resource"]);
 
-gulp.task("dev", ["build", "watch"], function (done) {
+gulp.task("dev", ["common", "watch"], function (done) {
     gutil.log(colors.bold.yellow("Watchers Established. You can now start coding."));
     done();
 });
 
-gulp.task("prod", ["build"], function (done) {
+gulp.task("release", ["common"], function (done) {
     gutil.log(colors.bold.yellow("Product build is ready."));
 });
 
-gulp.task("default", ["dev"], function (done) {
+gulp.task("default", ["release"], function (done) {
     done();
 });
 
@@ -377,26 +291,6 @@ function appendSourcemap(extension) {
             contents += sourceMapComment;
             file.contents = new Buffer(contents);
         }
-
-        this.push(file);
-        cb();
-    });
-}
-
-function generateHtml() {
-    return through2.obj(function (file, enc, cb) {
-        var yaml = file.frontMatter,
-            compiledTemplate = compiledTemplates[yaml.template],
-            templateOutput;
-
-        templateOutput = compiledTemplate({
-            contents: file.contents.toString(),
-            scss: yaml.scss,
-            js: yaml.js,
-            title: yaml.title
-        });
-
-        file.contents = new Buffer(templateOutput);
 
         this.push(file);
         cb();

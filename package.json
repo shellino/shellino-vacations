@@ -28,6 +28,21 @@
         "lazypipe": "^0.2.2",
         "merge-stream": "^0.1.7",
         "node-static": "^0.7.6",
+        "run-sequence": "^1.0.2",
         "through2": "^0.6.3"
+    },
+    "props": {
+        "resources": {
+            "../bower_components/foundation-icon-fonts/*.{eot,svg,ttf,woff}": "scss/",
+            "../bower_components/slick.js/slick/fonts/*.{eot,svg,ttf,woff}": "scss/"
+        },
+        "jsBundle": [
+            "../bower_components/modernizr/modernizr.js",
+            "../bower_components/jquery/dist/jquery.js",
+            "../bower_components/fastclick/lib/fastclick.js",
+            "../bower_components/foundation/js/foundation.js",
+            "../bower_components/slick.js/slick/slick.js",
+            "js/app.js"
+        ]
     }
 }
