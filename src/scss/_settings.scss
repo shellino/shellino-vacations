@@ -4,6 +4,10 @@
 
 //
 
+// Importing default variables
+$font-family-sans-serif: "Lato", sans-serif;
+@import "../../bower_components/foundation/scss/foundation/components/_global.scss";
+
 // Table of Contents
 // Foundation Settings
 //
@@ -90,7 +94,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to define default font stacks
 // $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Lato", sans-serif;
 
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
@@ -1384,10 +1388,12 @@ $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, 
 
 // Background color for the top bar
 // $topbar-bg-color: $oil;
+$topbar-bg-color: rgba(0, 0, 0, 0.1);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: rem-calc(45);
+$topbar-height: rem-calc(80);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1400,11 +1406,20 @@ $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, 
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
+
 // $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(16);
+
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
+// $topbar-link-bg: $topbar-bg;
+
 // $topbar-link-bg-hover: $oil;
+$topbar-link-bg-hover:  rgba(0, 0, 0, 0.2);
+
 // $topbar-link-bg-color-hover: $charcoal;
+$topbar-link-bg-color-hover: $topbar-link-bg-hover;
+
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -1417,10 +1432,17 @@ $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, 
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
+$topbar-dropdown-bg: transparent;
+
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+
 // $topbar-dropdown-link-bg: $oil;
+$topbar-dropdown-link-bg: $topbar-link-bg-color-hover;
+
 // $topbar-dropdown-link-bg-hover: $oil;
+$topbar-dropdown-link-bg-hover: $topbar-link-bg-color-hover;
+
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1448,6 +1470,12 @@ $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, 
 // $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: $medium-up;
 
+//$topbar-breakpoint: #{upper-bound($medium-range)};
+//$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
+$topbar-media-query: $large-up;
+
+
+
 // Top-bar input styles
 // $topbar-input-height: rem-calc(28);
 
@@ -1458,7 +1486,7 @@ $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, 
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
-// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li// 
+// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
 
 // 36. Visibility Classes
 // - - - - - - - - - - - - - - - - - - - - - - - - -

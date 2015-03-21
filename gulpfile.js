@@ -151,6 +151,7 @@ function sassPipeline(files) {
         .pipe(buildMode === "prod" ? minifyCSS() : gutil.noop())
         .pipe(sourcemaps.write(".", { addComment: false }))
         .pipe(appendSourcemap(".css"))
+        .pipe(renamePipeline())
         .pipe(gulp.dest(paths.dest));
 };
 
@@ -165,10 +166,11 @@ function jsPipeline(files) {
         .pipe(appendSourcemap, ".js")
     }
 
-    stream.pipe(gulp.dest(paths.dest));
+    stream.pipe(renamePipeline())
+        .pipe(gulp.dest(paths.dest));
 
     return stream;
-};
+}
 
 gulp.task("copy", function () {
     return gulp.src([filters.fonts, filters.images], { base: paths.src, cwd: paths.src })
@@ -224,7 +226,7 @@ gulp.task("resource", function (done) {
 gulp.task("watcher", function (done) {
 
     gulp.watch([paths.src + filters.scss], function (event) {
-        sassPipeline([event.path]);
+        sassPipeline([event.path, "./scss/main.scss"]);
         gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
     });
 
@@ -253,14 +255,14 @@ gulp.task("watcher", function (done) {
 
     done();
 
-    function getRelativePath(event) {
-        return path.relative(process.cwd() + "/" + paths.src, event.path);
+    function getRelativePath(modifiedPath) {
+        return path.relative(process.cwd() + "/" + paths.src, modifiedPath);
     }
 });
 
 gulp.task("common", ["copy", "html", "sass", "js", "jsbundle", "resource"]);
 
-gulp.task("dev", ["common", "watch"], function (done) {
+gulp.task("dev", ["common", "watcher"], function (done) {
     gutil.log(colors.bold.yellow("Watchers Established. You can now start coding."));
     done();
 });

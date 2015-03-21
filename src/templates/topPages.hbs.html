@@ -10,6 +10,9 @@
 
         <title>Shellino vacations</title>
 
+        <link href='//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,100,100italic,900italic' rel='stylesheet' type='text/css' />
+
+        <link rel="stylesheet" type="text/css" href="/scss/main.css" />
         <link rel="stylesheet" type="text/css" href="/scss/topPages.css" />
 
         <!-- Custom CSS files on page -->
@@ -25,25 +28,27 @@
 
     <body>
 
-        <div>
+        <div class="off-canvas-wrap master-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap master-canvas-inner-wrap">
 
-            <header>
-                <nav class="top-bar" data-topbar role="navigation"> <ul class="title-area"> <li class="name"> <h1><a href="#">My Site</a></h1> </li> <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --> <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> </ul> <section class="top-bar-section"> <!-- Right Nav Section --> <ul class="right"> <li class="active"><a href="#">Right Button Active</a></li> <li class="has-dropdown"> <a href="#">Right Button Dropdown</a> <ul class="dropdown"> <li><a href="#">First link in dropdown</a></li> <li class="active"><a href="#">Active link in dropdown</a></li> </ul> </li> </ul> <!-- Left Nav Section --> <ul class="left"> <li><a href="#">Left Nav Button</a></li> </ul> </section> </nav>
-            </header>
+                {{> indexHeader}}
+                {{{ contents }}}
 
+                <!-- close the off-canvas menu -->
+                <a class="exit-off-canvas"></a>
+
+            </div>
         </div>
 
-        {{{ contents }}}
+        <script type="text/javascript" src="/js/bundle.js"></script>
+        <script type="text/javascript" src="/js/topPages.js"></script>
 
-        <!-- Common JS bundle go here -->
-
-        <!--bundle.js-->
         {{#if js}}
-            {{#each js}}
-                <script type="text/javascript" src="{{this}}"></script>
-            {{else}}
-                <script type="text/javascript" src="{{js}}"></script>
-            {{/each}}
+        {{#each js}}
+        <script type="text/javascript" src="{{this}}"></script>
+        {{else}}
+        <script type="text/javascript" src="{{js}}"></script>
+        {{/each}}
         {{/if}}
 
 

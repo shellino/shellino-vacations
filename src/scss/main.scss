@@ -2,14 +2,18 @@
 @import "../../bower_components/foundation/scss/normalize.scss";
 
 // Importing foundation for sites (F4S)
-@import "settings";
-@import "foundation";
+@import "_settings.scss";
 
-@import "extension";
+// Importing overridden variables
+@import "_variables.scss";
+
+// Importing foundation components
+@import "_foundation.scss";
+
+// Custom extensions on top of foundation
+@import "_extension.scss";
 
 //@import "../../bower_components/foundation-icon-fonts/_foundation-icons.scss";
 
 @import "../../bower_components/slick.js/slick/slick.scss";
-
-$slick-font-path: "./" !default;
 @import "../../bower_components/slick.js/slick/slick-theme.scss";
