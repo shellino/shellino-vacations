@@ -1,11 +1,11 @@
 ﻿// Importing normalize CSS
 @import "../../bower_components/foundation/scss/normalize.scss";
 
-// Importing foundation for sites (F4S)
-@import "_settings.scss";
-
 // Importing overridden variables
 @import "_variables.scss";
+
+// Importing foundation for sites (F4S)
+@import "_settings.scss";
 
 // Importing foundation components
 @import "_foundation.scss";

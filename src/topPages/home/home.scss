@@ -1,0 +1,99 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/_foundation_media_queries.scss";
+
+.three-question-container {
+    min-height: 550px;
+    background-image: url(/img/home/backpack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+
+    padding: 2rem 0 0 0;
+    position: relative;
+
+    .three-question-title {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        background-color: $white-trans-4;
+        color: $greyish-blue;
+    }
+
+    .question-box {
+        line-height: 5rem;
+        font-size: 1.6875rem;
+        color: $greyish-blue;
+
+        min-height: 120px;
+        padding: 0.5rem 1rem;
+        margin-top: 6rem;
+
+        background-image: url(/img/commons/folded-paper.png);
+        background-repeat: no-repeat;
+        background-size: 120% 120px;
+        background-position: center left;
+    }
+
+    .question-option-panel {
+        background-color: $greyish-blue-trans-1;
+        color: $white;
+
+        font-size: 1.3125rem;
+        padding: 2rem;
+
+        > ol > li > a {
+            color: $white;
+            letter-spacing: 1px;
+            word-spacing: 0.25rem;
+        }
+
+    }
+
+    @media #{$medium-up} {
+        padding: 0;
+
+        .three-question-title {
+            max-width: 320px;
+            margin-left: 2rem;
+        }
+
+        .question-box {
+            background-size: contain;
+            max-width: 60%;
+            padding-left: 2rem;
+
+            position: relative;
+            z-index: 1;
+        }
+
+        .question-option-panel {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 7%;
+            min-width: 240px;
+            max-width: 300px;
+            width: 30%;
+            z-index: 0;
+        }
+
+        .additional-info {
+            color: $white;
+
+            margin-top: 2rem;
+            padding-left: 2rem;
+
+            > a.text-bold {
+                color: $white;
+            }
+        }
+    }
+
+    @media #{$large-up} {
+        .question-option-panel {
+            right: 10%;
+            min-width: 270px;
+        }
+
+    }
+
+}

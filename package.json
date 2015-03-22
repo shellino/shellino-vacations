@@ -34,7 +34,8 @@
     "props": {
         "resources": {
             "../bower_components/foundation-icon-fonts/*.{eot,svg,ttf,woff}": "scss/",
-            "../bower_components/slick.js/slick/fonts/*.{eot,svg,ttf,woff}": "scss/"
+            "../bower_components/slick.js/slick/fonts/*.{eot,svg,ttf,woff}": "scss/",
+            "../bower_components/slick.js/slick/ajax-loader.gif": "./"
         },
         "jsBundle": [
             "../bower_components/modernizr/modernizr.js",

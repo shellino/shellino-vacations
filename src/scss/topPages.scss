@@ -1,16 +1,14 @@
 @import "../scss/_foundation_media_queries.scss";
+@import "../scss/_variables.scss";
 
-.master-canvas-wrap {
-    height: 100%;
+$min-header-height: 480px;
+$normal-header-height: 540px;
+$max-header-height: 600px;
+$navigation-bar-bk-color: rgba(0, 0, 0, 0.1);
+$wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
 
-    min-height: 480px;
-    max-height: 600px;
-
-    position: relative;
-}
-
+.master-canvas-wrap,
 .master-canvas-inner-wrap {
-    height: 100%;
     position: relative;
 }
 
@@ -25,8 +23,17 @@
 }
 
 #page-header {
-    height: 100%;
     position: relative;
+
+    height: $min-header-height;
+
+    @media #{$medium-up} {
+        height: $normal-header-height;
+    }
+
+    @media #{$large-up} {
+        height: $max-header-height;
+    }
 }
 
 .top-bar-container {
@@ -34,11 +41,11 @@
 }
 
 .top-bar .name {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $navigation-bar-bk-color;
 }
 
 .wall-dark-layer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $wall-darkness-bk-color;
 }
 
 .wall-dark-layer,
@@ -48,23 +55,58 @@
     width: 100%;
     left: 0;
     top: 0;
+    z-index: -1;
 }
 
 .wall-background {
-    background-size: cover;
-    background-position: center center;
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-.wall-background-index-1 {
+.wall-background-index-0 {
     background-image: url("/img/walls/kanchanjanga-from-darjeeling-1600x1000.jpg");
 }
 
-.wall-background-index-2 {
+.wall-background-index-1 {
     background-image: url("/img/walls/lord-shankar-at-namchi-1600x1000.jpg");
 }
 
-.wall-background-index-3 {
+.wall-background-index-2 {
     background-image: url("/img/walls/agra-fort-india-1600x1000.jpg");
+}
+
+.wall-carousel {
+    .slick-list,
+    .slick-track {
+        height: 100%;
+    }
+}
+
+.tag-line-container {
+
+    letter-spacing: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    width: 100%;
+
+    .tag-line {
+        color: $white;
+        font-size: 3rem;
+    }
+
+    .tag-line-sub {
+        color: $white;
+        font-size: 1.3125rem;
+    }
+}
+
+@media #{$medium-up} {
+    .tag-line-container {
+        top: 55%;
+    }
 }
