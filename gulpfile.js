@@ -31,6 +31,9 @@ var merge = require("merge-stream");
 var through2 = require("through2");
 var lazypipe = require("lazypipe");
 
+// SVG and sprite related modules
+var svgSprite = require("gulp-svg-sprite");
+
 // Templating related modules
 var frontMatter = require("gulp-front-matter");
 var handlebars = require("handlebars");
@@ -50,6 +53,7 @@ var paths = (function () {
         src: src,
         dest: "./dist/",
         js: "./js/",
+        icons: src + "/img/svg-icons/",
         templates: src + "templates/",
         partials: src + "templates/partials/",
         resources: props.resources,
@@ -64,6 +68,7 @@ var filters = (function () {
         all: "**/*.*",
         js: "**/*.js",
         md: "**/*.md",
+        svg: "**/*.svg",
         scss: "**/*.scss",
         html: "**/*.html",
         mdhtml: "**/*.{md,html}",
@@ -177,6 +182,21 @@ gulp.task("copy", function () {
         .pipe(gulp.dest(paths.dest));
 });
 
+gulp.task("svg-sprite", function () {
+    var config = {
+        mode: {
+            symbol: {
+                dest: ".",
+                example: true
+            }
+        }
+    };
+
+    return gulp.src([filters.svg], { base: paths.icons, cwd: paths.icons })
+        .pipe(svgSprite(config))
+        .pipe(gulp.dest(paths.dest));
+});
+
 gulp.task("html", function () {
     return htmlPipeline([filters.mdhtml, "!" + filters.templates]);
 });
@@ -260,7 +280,7 @@ gulp.task("watcher", function (done) {
     }
 });
 
-gulp.task("common", ["copy", "html", "sass", "js", "jsbundle", "resource"]);
+gulp.task("common", ["copy", "svg-sprite", "html", "sass", "js", "jsbundle", "resource"]);
 
 gulp.task("dev", ["common", "watcher"], function (done) {
     gutil.log(colors.bold.yellow("Watchers Established. You can now start coding."));

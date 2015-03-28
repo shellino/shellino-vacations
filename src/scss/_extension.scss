@@ -95,12 +95,17 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         overflow: hidden;
         height: 320px;
+
     }
 
     .cover-item-image {
+        max-width: none;
+        object-fit: cover;
+        object-position: center center;
 
         &.wide {
-            min-height: 100%;
+            height: 100%;
+            width: 100%;
         }
 
         &.tall {

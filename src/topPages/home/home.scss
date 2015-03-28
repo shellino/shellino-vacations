@@ -97,3 +97,39 @@
     }
 
 }
+
+.shellino-stories {}
+
+.shellino-story {
+    text-align: center;
+}
+
+.story-container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.story-title {
+    text-transform: uppercase;
+    color: $greyish-blue;
+    font-size: 1.125rem;
+}
+
+.story-image {
+    max-height: 320px;
+}
+
+@media #{$medium-up} {
+    .shellino-story {
+        text-align: left;
+    }
+
+    .story-container {
+        max-width: none;
+    }
+
+}
+
+.sic-body {
+    font-size: 1.3125rem;
+}
