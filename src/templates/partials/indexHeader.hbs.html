@@ -12,7 +12,7 @@
             <ul class="title-area">
                 <li class="name">
                     <h1>
-                        <a href="#">
+                        <a href="/">
                             <img id="site-logo" src="/img/logo/white-logo.png" alt="Shellino Vacations" />
                         </a>
                     </h1>
@@ -27,7 +27,7 @@
             <ul class="title-area">
                 <li class="name">
                     <h1>
-                        <a href="#">
+                        <a href="/">
                             <img id="site-logo" src="/img/logo/white-logo.png" alt="Shellino Vacations" />
                         </a>
                     </h1>
@@ -47,16 +47,20 @@
                     <li><a href="#">India</a></li>
                     <li><a href="#">Guide</a></li>
                     <li><a href="#">Stories</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
 
                 <!-- Right Nav Section -->
                 <ul class="right">
-                    <li class="has-dropdown">
-                        <a href="#">+91 8888882415</a>
-                        <ul class="dropdown">
-                            <li><a href="#">info@shellinovacations.com</a></li>
-                        </ul>
+                    <li>
+                        <a class="two-row-menu" href="#">
+                            <svg class="header-icon icon-telephone" viewBox="0 0 1 0.95"><use xlink:href="/svg/sprite.symbol.svg#icon-telephone"></use></svg>
+                            <span>+91 8888882415</span>
+                        </a>
+                        <a class="two-row-menu" href="#">
+                            <svg class="header-icon icon-close-email" viewBox="0 0 1 0.95"><use xlink:href="/svg/sprite.symbol.svg#icon-close"></use></svg>
+                            <span>info@shellinovacations.com</span>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -64,8 +68,8 @@
     </div>
 
     <div class="tag-line-container text-center">
-        <h2 class="tag-line">Find your vacation story</h2>
-        <p class="tag-line-sub">You tell a story. We make it happen.</p>
+        <h2 class="tag-line">{{tagLine}}</h2>
+        <p class="tag-line-sub">{{subLine}}</p>
     </div>
 
 </header>

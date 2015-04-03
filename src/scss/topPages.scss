@@ -24,7 +24,6 @@ $wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
 
 #page-header {
     position: relative;
-
     height: $min-header-height;
 
     @media #{$medium-up} {
@@ -42,6 +41,25 @@ $wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
 
 .top-bar .name {
     background-color: $navigation-bar-bk-color;
+}
+
+.two-row-menu {
+    line-height: 2.5rem !important;
+}
+
+.header-icon {
+    width: 20px;
+    fill: transparent;
+    stroke: $white;
+    vertical-align: middle;
+}
+
+.header-icon.icon-telephone {
+    stroke-width: 2.4px;
+}
+
+.header-icon.icon-close-email {
+    stroke-width: 0.5px;
 }
 
 .wall-dark-layer {
@@ -86,8 +104,11 @@ $wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
     }
 }
 
-.tag-line-container {
+.content-panel {
+    padding: 0 1rem;
+}
 
+.tag-line-container {
     letter-spacing: 1px;
     position: absolute;
     z-index: 1;
@@ -108,5 +129,59 @@ $wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
 @media #{$medium-up} {
     .tag-line-container {
         top: 55%;
+    }
+}
+
+#page-footer {
+    padding: 5% 0 1.5% 0;
+    background-color: $blue;
+    color: $white;
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    h2, a {
+        color: inherit;
+    }
+
+    .address-block,
+    .logo-block {
+        margin-top: 20px;
+    }
+}
+
+.footer-icons {
+    stroke: white;
+    fill: none;
+    float: left;
+    display: block;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.icon-facebook {
+    stroke-width: 5px;
+}
+
+.icon-twitter {
+    stroke-width: 25px;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    display: block;
+    max-width: 180px;
+}
+
+@media #{$large-up} {
+    #page-footer {
+        padding-top: 50px;
+
+        .address-block,
+        .logo-block {
+            margin-top: 0;
+        }
     }
 }

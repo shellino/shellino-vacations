@@ -133,3 +133,67 @@
 .sic-body {
     font-size: 1.3125rem;
 }
+
+.sic-tile {
+    background-color: $off-white-1;
+    border: 1px solid $off-white-2;
+    padding: 0.5rem;
+    margin: 10px 0;
+}
+
+.sic-tile-body {
+    margin-left: 27%;
+}
+
+.sic-icons {
+    width: 25%;
+    fill: transparent;
+    stroke: $blue;
+    stroke-width: 5px;
+    display: block;
+    float: left;
+}
+
+.sic-icons.icon-blog {
+    stroke-width: 1px;
+}
+
+.sic-icons.icon-service {
+    stroke-width: 0.4px;
+}
+
+.sic-icons.icon-history {
+    stroke-width: 0.5px;
+}
+
+.sic-tile-title {
+    font-size: 1.125rem;
+    text-decoration: underline;
+
+    > a {
+        color: $greyish-text;
+    }
+}
+
+@media #{$medium-up} {
+
+    .sic-tiles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sic-tile {
+        width: 32%;
+    }
+
+    .sic-tile:nth-of-type(3n+2) {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+}
+
+.why-shellino-body {
+    font-size: 1.5rem;
+    font-weight: 300;
+}

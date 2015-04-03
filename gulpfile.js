@@ -135,7 +135,9 @@ function htmlPipeline(files) {
                 contents: file.contents.toString(),
                 scss: yaml.scss,
                 js: yaml.js,
-                title: yaml.title
+                title: yaml.title,
+                tagLine: yaml.tagLine,
+                subLine: yaml.subLine
             });
 
             file.contents = new Buffer(templateOutput);
@@ -184,10 +186,15 @@ gulp.task("copy", function () {
 
 gulp.task("svg-sprite", function () {
     var config = {
+        shape: {
+            id: {
+                generator: "icon-%s"
+            }
+        },
         mode: {
             symbol: {
-                dest: ".",
-                example: true
+                dest: "."
+                //example: true
             }
         }
     };
@@ -383,4 +390,5 @@ function escapeRegExp(string) {
 
 function registerHandlebarPartials() {
     handlebars.registerPartial('indexHeader', fs.readFileSync(paths.partials + "indexHeader.hbs.html").toString());
+    handlebars.registerPartial('indexFooter', fs.readFileSync(paths.partials + "indexFooter.hbs.html").toString());
 }
