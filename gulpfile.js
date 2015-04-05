@@ -23,6 +23,8 @@ var gulpCheerio = require("gulp-cheerio");
 // CSS, SASS, JS related modules
 var sass = require("gulp-sass");
 var minifyCSS = require("gulp-minify-css");
+var autoprefixer = require("autoprefixer-core");
+var postCss = require("gulp-postcss");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 
@@ -41,8 +43,12 @@ var markdown = require("gulp-markdown");
 
 var pkg = require("./package.json");
 var props = pkg.props;
+var browsers = props.targetBrowsers;
 
 var buildMode = process.argv[2] || "dev";
+
+//Polyfill
+require("es6-promise").polyfill();
 
 // System wide paths
 var paths = (function () {
@@ -84,6 +90,7 @@ var templateRegistry = {},
     compiledTemplates = {};
 
 registerHandlebarPartials();
+registerHandlebarHelpers();
 
 // Clean the dist directory
 del.sync([paths.dest]);
@@ -137,7 +144,8 @@ function htmlPipeline(files) {
                 js: yaml.js,
                 title: yaml.title,
                 tagLine: yaml.tagLine,
-                subLine: yaml.subLine
+                subLine: yaml.subLine,
+                breadcrumbs: yaml.breadcrumbs
             });
 
             file.contents = new Buffer(templateOutput);
@@ -155,6 +163,7 @@ function sassPipeline(files) {
     return gulp.src(files, { base: paths.src, cwd: paths.src })
         .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(postCss([autoprefixer({ browsers: browsers })]))
         .pipe(buildMode === "prod" ? minifyCSS() : gutil.noop())
         .pipe(sourcemaps.write(".", { addComment: false }))
         .pipe(appendSourcemap(".css"))
@@ -391,4 +400,7 @@ function escapeRegExp(string) {
 function registerHandlebarPartials() {
     handlebars.registerPartial('indexHeader', fs.readFileSync(paths.partials + "indexHeader.hbs.html").toString());
     handlebars.registerPartial('indexFooter', fs.readFileSync(paths.partials + "indexFooter.hbs.html").toString());
+}
+
+function registerHandlebarHelpers() {
 }

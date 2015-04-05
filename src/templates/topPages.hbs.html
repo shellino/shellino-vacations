@@ -1,69 +1,72 @@
 ﻿<!DOCTYPE html>
-    <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-    <html class="no-js" lang="en">
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
 
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-        <!-- If you delete this meta tag World War Z will become a reality -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{title}}</title>
+    <!--IE Compatibility-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-        <!--<link href='//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,100,100italic,900italic' rel='stylesheet' type='text/css' />-->
+    <title>{{title}}</title>
 
-        <link rel="stylesheet" type="text/css" href="/scss/main.css" />
-        <link rel="stylesheet" type="text/css" href="/scss/topPages.css" />
+    <link href='//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,100,100italic,900italic' rel='stylesheet' type='text/css' />
 
-        <!-- Custom CSS files on page -->
-        {{#if scss}}
-            {{#each scss}}
-                <link rel="stylesheet" type="text/css" href="{{this}}.css" />
-            {{else}}
-                <link rel="stylesheet" type="text/css" href="{{scss}}.css" />
-            {{/each}}
-        {{/if}}
+    <link rel="stylesheet" type="text/css" href="/scss/main.css" />
+    <link rel="stylesheet" type="text/css" href="/scss/topPages.css" />
 
-    </head>
+    <!-- Custom CSS files on page -->
+    {{#if scss}}
+    {{#each scss}}
+    <link rel="stylesheet" type="text/css" href="{{this}}.css" />
+    {{else}}
+    <link rel="stylesheet" type="text/css" href="{{scss}}.css" />
+    {{/each}}
+    {{/if}}
 
-    <body>
+</head>
 
-        <div class="off-canvas-wrap master-canvas-wrap" data-offcanvas>
-            <div class="inner-wrap master-canvas-inner-wrap">
+<body>
 
-                {{> indexHeader}}
-                {{{ contents }}}
-                {{> indexFooter}}
+    <div class="off-canvas-wrap master-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap master-canvas-inner-wrap">
 
-                <aside class="right-off-canvas-menu">
-                    <ul class="off-canvas-list">
-                        <li><label>Select your choice</label></li>
-                        <li><a href="#">Shellino</a></li>
-                        <li><a href="#">India</a></li>
-                        <li><a href="#">Guide</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </aside>
+            {{> indexHeader}}
+            {{{ contents }}}
+            {{> indexFooter}}
 
-                <!-- close the off-canvas menu -->
-                <a class="exit-off-canvas"></a>
+            <aside class="right-off-canvas-menu">
+                <ul class="off-canvas-list">
+                    <li><label>Select your choice</label></li>
+                    <li><a href="#">Shellino</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </aside>
 
-            </div>
+            <!-- close the off-canvas menu -->
+            <a class="exit-off-canvas"></a>
+
         </div>
+    </div>
 
-        <script type="text/javascript" src="/js/bundle.js"></script>
-        <script type="text/javascript" src="/js/topPages.js"></script>
+    <script type="text/javascript" src="/js/bundle.js"></script>
+    <script type="text/javascript" src="/js/topPages.js"></script>
 
-        {{#if js}}
-        {{#each js}}
-        <script type="text/javascript" src="{{this}}"></script>
-        {{else}}
-        <script type="text/javascript" src="{{js}}"></script>
-        {{/each}}
-        {{/if}}
+    {{#if js}}
+    {{#each js}}
+    <script type="text/javascript" src="{{this}}"></script>
+    {{else}}
+    <script type="text/javascript" src="{{js}}"></script>
+    {{/each}}
+    {{/if}}
 
 
-    </body>
+</body>
 
 </html>

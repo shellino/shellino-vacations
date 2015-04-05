@@ -69,7 +69,20 @@
 
     <div class="tag-line-container text-center">
         <h2 class="tag-line">{{tagLine}}</h2>
+        {{#if breadcrumbs}}
+        <ul class="breadcrumbs text-center master-breadcrumb">
+            <li><a href="/">Home</a></li>
+            {{#each breadcrumbs}}
+                {{#if @last }}
+                <li>{{this.label}}</li>
+                {{else}}
+                <li><a href="{{this.url}}">{{this.label}}</a></li>
+                {{/if}}
+            {{/each}}
+        </ul>
+        {{else}}
         <p class="tag-line-sub">{{subLine}}</p>
+        {{/if}}
     </div>
 
 </header>

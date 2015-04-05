@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
     // Initialization code
-    $(document).foundation();
+    $(document).foundation({
+        abide: {
+            live_validate: false
+        }
+    });
 });

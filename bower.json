@@ -21,6 +21,7 @@
     "dependencies": {
         "foundation": "~5.5.1",
         "slick.js": "~1.4.1",
-        "foundation-icon-fonts": "zurb/foundation-icon-fonts"
+        "foundation-icon-fonts": "zurb/foundation-icon-fonts",
+        "svg4everybody": "~1.0.0"
     }
 }

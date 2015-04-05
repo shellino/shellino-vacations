@@ -6,11 +6,16 @@
     padding-top: 1rem;
 }
 
+.alert-box.success {
+    display: none;
+    margin-top: 4rem;
+}
+
 .contact-us-form-panel {
 
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.8);
     min-height: 100px;
-    margin-top: 2.5rem;
+    margin: 2.5rem 0;
     padding-bottom: 2rem;
     position: relative;
 
@@ -79,6 +84,12 @@
 .contact-us-form {
     margin-top: 4rem;
     padding: 0 1rem;
+
+    // Overriding foundation rule
+    .error label, .error label.error {
+        color: $greyish-text;
+    }
+
 }
 
 .contact-info-panel {
@@ -94,6 +105,7 @@
 
 .contact-us-input {
     font-weight: 400;
+    transition-property: border-color, box-shadow !important;
 }
 
 .submit-button {

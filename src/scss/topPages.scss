@@ -45,6 +45,7 @@ $wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
 
 .two-row-menu {
     line-height: 2.5rem !important;
+    height: 2.5rem !important;
 }
 
 .header-icon {
@@ -106,6 +107,13 @@ $wall-darkness-bk-color: rgba(0, 0, 0, 0.2);
 
 .content-panel {
     padding: 0 1rem;
+}
+
+.master-breadcrumb {
+    li {
+        display: inline;
+        float: none;
+    }
 }
 
 .tag-line-container {
