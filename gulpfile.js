@@ -164,7 +164,7 @@ function sassPipeline(files) {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(postCss([autoprefixer({ browsers: browsers })]))
-        .pipe(buildMode === "prod" ? minifyCSS() : gutil.noop())
+        .pipe(buildMode === "release" ? minifyCSS() : gutil.noop())
         .pipe(sourcemaps.write(".", { addComment: false }))
         .pipe(appendSourcemap(".css"))
         .pipe(renamePipeline())
@@ -175,11 +175,11 @@ function jsPipeline(files) {
 
     var stream = gulp.src(files, { base: paths.src, cwd: paths.src });
 
-    if (buildMode == "prod") {
-        stream.pipe(sourcemaps.init)
+    if (buildMode == "release") {
+        stream.pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write(".", { addComment: false }))
-        .pipe(appendSourcemap, ".js")
+        .pipe(appendSourcemap(".js"))
     }
 
     stream.pipe(renamePipeline())
