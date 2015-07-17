@@ -69,20 +69,20 @@
 
     <div class="tag-line-container text-center">
         <h2 class="tag-line">{{tagLine}}</h2>
-        {{#if breadcrumbs}}
+        {% if breadcrumbs %}
         <ul class="breadcrumbs text-center master-breadcrumb">
             <li><a href="/">Home</a></li>
-            {{#each breadcrumbs}}
-                {{#if @last }}
-                <li>{{this.label}}</li>
-                {{else}}
-                <li><a href="{{this.url}}">{{this.label}}</a></li>
-                {{/if}}
-            {{/each}}
+            {% for item in breadcrumbs %}
+                {% if loop.last %}
+                <li>{{item.label}}</li>
+                {% else %}
+                <li><a href="{{item.url}}">{{item.label}}</a></li>
+                {% endif %}
+            {% endfor %}
         </ul>
-        {{else}}
+        {% else %}
         <p class="tag-line-sub">{{subLine}}</p>
-        {{/if}}
+        {% endif %}
     </div>
 
 </header>

@@ -15,7 +15,7 @@ var through2 = require("through2");
 var cheerio = require("cheerio");
 
 // Templating related modules
-var handlebars = require("handlebars");
+var nunjucks = require("nunjucks");
 var markdown = require("gulp-markdown");
 
 // YAML related modules
@@ -49,18 +49,27 @@ function htmlPipeline(files) {
         .pipe(mdFilter.restore())
         .pipe(through2.obj(function (file, enc, cb) {
 
-            // Create handlebar context required for template compilation
+            // Create context required for template compilation
             // yamlObj is the extracted yaml frontMatter from each file
-            var hbsContext;
+            var context;
 
-            hbsContext = Object.create(dataStore);
+            context = Object.create(dataStore);
 
             Object.keys(file.frontMatter).forEach(function (key) {
-                hbsContext[key] = file.frontMatter[key];
+                context[key] = file.frontMatter[key];
             });
             delete file.frontMatter;
 
-            file.hbsContext = hbsContext;
+            // Special handling to scss and js files
+            if (context.scss && !(context.scss instanceof Array)) {
+                context.scss = [context.scss];
+            }
+
+            if (context.js && !(context.js instanceof Array)) {
+                context.js = [context.js];
+            }
+
+            file.context = context;
 
             this.push(file);
             cb();
@@ -69,15 +78,15 @@ function htmlPipeline(files) {
         .pipe(through2.obj(function (file, enc, cb) {
 
             // Manipulate tags
-            var hbsContext, filename;
+            var context, filename;
 
             //filename = file.history[0];
             filename = file.path;
-            hbsContext = file.hbsContext;
+            context = file.context;
 
-            if (!!hbsContext.blog && hbsContext.blog.tags instanceof Array) {
+            if (!!context.blog && context.blog.tags instanceof Array) {
                 // Get actual tag object for each tag
-                hbsContext.blog.tags = tagManager.updateTags(hbsContext.blog.tags, filename);
+                context.blog.tags = tagManager.updateTags(context.blog.tags, filename);
             }
 
             tagStreamQueue.push(file);
@@ -95,11 +104,11 @@ function htmlPipeline(files) {
         }))
         .pipe(through2.obj(function (file, enc, cb) {
             // Manipulate blog
-            var hbsContext, filename, blogObj;
+            var context, filename, blogObj;
 
             filename = file.path;
-            hbsContext = file.hbsContext;
-            blogObj = hbsContext.blog;
+            context = file.context;
+            blogObj = context.blog;
 
             if (blogObj) {
                 blogManager.updateBlogs(blogObj, filename, file);
@@ -119,25 +128,24 @@ function htmlPipeline(files) {
         }))
         .pipe(through2.obj(function (file, enc, cb) {
 
-            // Compile handlebar template and produce final html file
-            var template, output, hbsContext;
+            // Compile nunjucks template and produce final html file
+            var template, output, context;
 
             // Retrive the context for file
-            hbsContext = file.hbsContext;
+            context = file.context;
 
-            // First, compile content of each html/md file as template and execute against hbsContext
-            template = handlebars.compile(file.contents.toString());
-            output = template(hbsContext);
+            // First, compile content of each html/md file as template and execute against context
+            output = nunjucks.renderString(file.contents.toString(), context);
 
             // Set the contents of context to output of first compilation
-            hbsContext.contents = output;
+            context.contents = output;
 
             // Second, compile master template
-            template = fs.readFileSync(paths.templates + hbsContext.template + ".hbs").toString();
-            template = handlebars.compile(template);
+            //template = fs.readFileSync(paths.templates + context.template + ".nunjucks").toString();
+            //template = handlebars.compile(template);
 
             // Now execute master template against second compilation
-            output = template(hbsContext);
+            output = nunjucks.render(paths.templates + context.template + ".nunjucks", context);
 
             // Set the contents of file to ouput of second compilation
             file.contents = new Buffer(output);

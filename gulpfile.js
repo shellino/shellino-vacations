@@ -78,7 +78,9 @@ require("./gulp/gulp-copy.js")(paths, filters);
 var taskDataStore = require("./gulp/gulp-data-store.js")(paths, filters, config, dataStore);
 
 // Handlebar utilities
-var taskHandlebar = require("./gulp/gulp-handlebar.js")(paths, filters, config, dataStore);
+//var taskHandlebar = require("./gulp/gulp-handlebar.js")(paths, filters, config, dataStore);
+
+require("./gulp/gulp-nunjucks.js")(paths, filters, config, dataStore);
 
 // Gulp task - html
 var taskHtml = require("./gulp/gulp-html.js")(paths, filters, config, dataStore);
@@ -87,7 +89,7 @@ var taskHtml = require("./gulp/gulp-html.js")(paths, filters, config, dataStore)
 var taskJs = require("./gulp/gulp-js.js")(paths, filters, config, dataStore);
 
 // Gulp task - paginate
-var taskJs = require("./gulp/gulp-collection.js")(paths, filters, config, dataStore);
+require("./gulp/gulp-collection.js")(paths, filters, config, dataStore);
 
 // Gulp task - sass
 var taskSass = require("./gulp/gulp-sass.js")(paths, filters, config);
@@ -122,9 +124,6 @@ gulp.task("watcher", function (done) {
     gulp.watch("js/app.js", { cwd: paths.src }, ["jsbundle"]);
 
     gulp.watch(filters.templates, { cwd: paths.templates }, function (event) {
-        if (event.path.indexOf("partials")) {
-            taskHandlebar.registerPartials();
-        }
 
         runSequence("html", function () {
             gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
@@ -137,7 +136,3 @@ gulp.task("watcher", function (done) {
         return path.relative(process.cwd() + "/" + paths.src, modifiedPath);
     }
 });
-
-taskHandlebar.registerPartials();
-taskHandlebar.registerHelpers();
-

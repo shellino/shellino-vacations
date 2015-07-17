@@ -16,6 +16,7 @@ gulp.task("dev", ["common", "watcher"], function (done) {
 
 gulp.task("release", ["release-copy", "common"], function (done) {
     gutil.log(colors.bold.yellow("Product build is ready."));
+    done();
 });
 
 gulp.task("default", ["release"], function (done) {

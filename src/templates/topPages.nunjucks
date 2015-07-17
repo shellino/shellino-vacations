@@ -1,0 +1,13 @@
+﻿{% extends "./master.nunjucks" %}
+
+{% block links %}
+<link rel="stylesheet" type="text/css" href="/scss/topPages.css" />
+{% endblock %}
+
+{% block body %}
+{{ contents | safe }}
+{% endblock  %}
+
+{% block jsBottom %}
+<script type="text/javascript" src="/js/topPages.js"></script>
+{% endblock  %}

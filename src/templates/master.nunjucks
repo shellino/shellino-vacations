@@ -16,16 +16,13 @@
     <link href='//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,100,100italic,900italic' rel='stylesheet' type='text/css' />
 
     <link rel="stylesheet" type="text/css" href="/scss/main.css" />
-    <link rel="stylesheet" type="text/css" href="/scss/topPages.css" />
+    {% block links %}
+    {% endblock  %}
 
     <!-- Custom CSS files on page -->
-    {{#if scss}}
-    {{#each scss}}
-    <link rel="stylesheet" type="text/css" href="{{this}}.css" />
-    {{else}}
-    <link rel="stylesheet" type="text/css" href="{{scss}}.css" />
-    {{/each}}
-    {{/if}}
+    {% for file in scss %}
+    <link rel="stylesheet" type="text/css" href="{{file}}.css" />
+    {% endfor %}
 
 </head>
 
@@ -34,9 +31,13 @@
     <div class="off-canvas-wrap master-canvas-wrap" data-offcanvas>
         <div class="inner-wrap master-canvas-inner-wrap">
 
-            {{> indexHeader}}
-            {{{ contents }}}
-            {{> indexFooter}}
+            {% include "./partials/indexHeader.nunjucks" %}
+
+            {% block body %}
+            {{ contents | safe }}
+            {% endblock  %}
+
+            {% include "./partials/indexFooter.nunjucks" %}
 
             <aside class="right-off-canvas-menu">
                 <ul class="off-canvas-list">
@@ -55,17 +56,15 @@
         </div>
     </div>
 
+    <!-- Common JS bundle go here - bundle.js -->
     <script type="text/javascript" src="/js/bundle.js"></script>
-    <script type="text/javascript" src="/js/topPages.js"></script>
 
-    {{#if js}}
-    {{#each js}}
-    <script type="text/javascript" src="{{this}}"></script>
-    {{else}}
-    <script type="text/javascript" src="{{js}}"></script>
-    {{/each}}
-    {{/if}}
+    {% block jsBottom %}
+    {% endblock  %}
 
+    {% for file in js %}
+    <script type="text/javascript" src="{{file}}"></script>
+    {% endfor %}
 
 </body>
 

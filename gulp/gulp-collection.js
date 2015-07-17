@@ -109,44 +109,6 @@ function paginationPipeline(files) {
 
             cb();
         }))
-        /*.pipe(through2.obj(function (file, enc, cb) {
-            // This part of the pipeline generates actual HTML files
-
-            var paginator, context, currentPage;
-            var template, output, listBeginning;
-            var base, newFile;
-
-            paginator = file.paginator;
-            context = paginator.context;
-
-            for (currentPage = 0; currentPage < paginator.pagesCount; currentPage++) {
-
-                listBeginning = currentPage * paginator.pageCount;
-                context[paginator.contextName] = dataStore[paginator.listToPaginate].slice(listBeginning, listBeginning + paginator.pageCount);
-
-                template = handlebars.compile(file.contents.toString());
-                output = template(context);
-
-                template = fs.readFileSync(paths.templates + context.template + ".hbs").toString();
-                template = handlebars.compile(template);
-
-                context.contents = output;
-                output = template(context);
-
-                base = path.join(file.path, '..');
-
-                newFile = new File({
-                    base: file.base,
-                    path: path.join(base, "/" + (currentPage + 1) + "/index.html"),
-                    contents: new Buffer(output)
-                });
-
-                this.push(newFile);
-            }
-
-            cb();
-
-        }))*/
         .pipe(gulp.dest(paths.dest));
 }
 
