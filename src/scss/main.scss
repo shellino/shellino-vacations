@@ -1,6 +1,8 @@
 ﻿// Importing normalize CSS
 @import "../../bower_components/foundation/scss/normalize.scss";
 
+@import "../fonts/aller.scss";
+
 // Importing overridden variables
 @import "_variables.scss";
 
@@ -11,12 +13,12 @@
 @import "_foundation.scss";
 
 // Custom extensions on top of foundation
-@import "_extension.scss";
+@import "_base.scss";
 
 // Animations
 @import "_animations.scss";
 
 //@import "../../bower_components/foundation-icon-fonts/_foundation-icons.scss";
 
-@import "../../bower_components/slick.js/slick/slick.scss";
-@import "../../bower_components/slick.js/slick/slick-theme.scss";
+//@import "../../bower_components/slick.js/slick/slick.scss";
+//@import "../../bower_components/slick.js/slick/slick-theme.scss";

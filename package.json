@@ -53,6 +53,7 @@
             "../bower_components/slick.js/slick/slick.js",
             "../bower_components/svg4everybody/svg4everybody.js",
             "js/app.js"
-        ]
+        ],
+        "iconPrefix": "icon"
     }
 }

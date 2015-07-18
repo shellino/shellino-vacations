@@ -1,24 +1,17 @@
 ﻿// Slick carousel variables
 $slick-font-path: "./";
 
-$white: #FFFFFF;
-$white-trans-1: rgba(255, 255, 255, 0.25);
-$white-trans-2: rgba(255, 255, 255, 0.4);
-$white-trans-3: rgba(255, 255, 255, 0.6);
-$white-trans-4: rgba(255, 255, 255, 0.8);
 
-$off-white-1: #F0F0F0;
-$off-white-2: #CECEBF;
+// Palette colors
+$color-big-stone: #344046;
+$color-fiord: #4C5963;
 
-$greyish-blue: #344046;
-$greyish-blue-trans-1: rgba(52, 64, 70, 0.3);
-$greyish-blue-trans-2: rgba(52, 64, 70, 0.5);
-$greyish-blue-trans-3: rgba(52, 64, 70, 0.6);
-$greyish-blue-trans-4: rgba(52, 64, 70, 0.8);
-$greyish-text: #4C5963;
+$color-white: #FFFFFF;
+$color-white-smoke: #F2F2F2;
 
-$blue: #006692;
-$red: #D80000;
+// Color aliases
+$color-heading: $color-big-stone;
+$color-body-text: $color-fiord;
 
-$body-font-color: $greyish-text;
-$font-family-sans-serif: "Lato", sans-serif;
+// Master font
+$font-family-sans-serif: "Aller", sans-serif;

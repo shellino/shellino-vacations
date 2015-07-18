@@ -1,7 +1,9 @@
 ﻿{% extends "./master.nunjucks" %}
 
+{% import "./imports/icons.nunjucks" as icons %}
+
 {% block links %}
-<link rel="stylesheet" type="text/css" href="/scss/topPages.css" />
+<link rel="stylesheet" type="text/css" href="/templates/topPages.css" />
 {% endblock %}
 
 {% block body %}

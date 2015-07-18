@@ -9,19 +9,21 @@ var fs = require("fs");
 var config;
 var paths;
 var filters;
+var buildMode;
 
 var exported = {};
-
-nunjucks.configure({
-    autoescape: true,
-    watch: false
-});
 
 module.exports = function (_paths, _filters, _config) {
     paths = _paths;
     filters = _filters;
     config = _config;
 
+    buildMode = config.buildMode;
+
+    nunjucks.configure({
+        autoescape: true,
+        watch: buildMode === "dev"
+    });
 
     return exported;
 };

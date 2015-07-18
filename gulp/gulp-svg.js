@@ -11,10 +11,12 @@ var paths;
 var filters;
 
 gulp.task("svg-sprite", function () {
-    var config = {
+    var spriteConfig = {
         shape: {
             id: {
-                generator: "icon-%s"
+                separator: "-",
+                whitespace: "-",
+                generator: config.pkg.props.iconPrefix + "-%s"
             }
         },
         mode: {
@@ -26,7 +28,7 @@ gulp.task("svg-sprite", function () {
     };
 
     return gulp.src([filters.svg], { base: paths.icons, cwd: paths.icons })
-        .pipe(svgSprite(config))
+        .pipe(svgSprite(spriteConfig))
         .pipe(gulp.dest(paths.dest));
 });
 

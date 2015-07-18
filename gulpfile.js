@@ -61,7 +61,7 @@ var filters = (function () {
         mdhtml: "**/*.{md,html}",
         fonts: "**/*.{eot,svg,ttf,woff,woff2}",
         images: "**/*.{png,jpg,jpeg,gif}",
-        templates: "**/*.hbs",
+        templates: "**/*.nunjucks",
         pagination: "**/*.collection",
         yaml: "**/*.{yaml,yml}"
     };

@@ -1,0 +1,71 @@
+@import "../scss/_foundation_media_queries.scss";
+@import "../scss/_variables.scss";
+
+$max-page-width: 1440;
+$header-size: 5;
+
+body {
+    background-color: $color-white-smoke;
+    color: $color-body-text;
+}
+
+#page-header {
+    max-width: $max-page-width + px;
+    margin: auto;
+
+    .contact-info-panel {
+        margin-bottom: 1rem;
+    }
+
+    .contact-info-label {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1rem;
+    }
+
+    .site-logo {
+        max-height: 22vw;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .site-title {
+        border-left: 1px dashed;
+        display: inline-block;
+        font-size: 12vw;
+        font-weight: 900;
+        line-height: 1;
+        margin: 0 0 0 1rem;
+        padding: 0 0 0 0.5rem;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    @media #{$medium-up} {
+
+        .site-logo {
+            max-height: $header-size * 2 + rem;
+        }
+
+        .site-title {
+            font-size: $header-size + rem;
+        }
+    }
+
+    @media #{$large-up} {
+        .contact-info-panel {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .top-bar {
+        margin-top: 1rem;
+        border-top: 1px dashed;
+    }
+}
+
+.header-border {
+    border-bottom: 1px dashed;
+}
+
