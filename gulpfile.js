@@ -105,7 +105,7 @@ require("./gulp/gulp-run.js");
 
 gulp.task("watcher", function (done) {
 
-    gulp.watch([paths.src + filters.scss], function (event) {
+    gulp.watch([filters.scss], { cwd: paths.src }, function (event) {
         taskSass.pipeline([event.path, "./scss/main.scss"]);
         gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
     });

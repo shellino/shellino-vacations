@@ -22,7 +22,7 @@ module.exports = function (_paths, _filters, _config) {
 
     nunjucks.configure({
         autoescape: true,
-        watch: buildMode === "dev"
+        watch: false && buildMode === "dev"
     });
 
     return exported;

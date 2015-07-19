@@ -9,9 +9,12 @@ body {
     color: $color-body-text;
 }
 
-#page-header {
+.max-width-panel {
     max-width: $max-page-width + px;
     margin: auto;
+}
+
+#page-header {
 
     .contact-info-panel {
         margin-bottom: 1rem;

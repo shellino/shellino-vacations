@@ -1,6 +1,6 @@
 {% import "./../imports/icons.nunjucks" as icons %}
 
-<header id="page-header">
+<header id="page-header" class="max-width-panel">
 
     <div class="text-right contact-info-panel">
         <div class="inline-block">
