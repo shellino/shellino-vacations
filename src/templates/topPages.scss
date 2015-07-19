@@ -72,3 +72,13 @@ body {
     border-bottom: 1px dashed;
 }
 
+#page-footer {
+    background-color: #E0E0E0;
+
+    .copyright-notice {
+        padding: 1rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        text-transform: uppercase;
+    }
+}

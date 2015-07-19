@@ -145,7 +145,7 @@ function htmlPipeline(files) {
             //template = handlebars.compile(template);
 
             // Now execute master template against second compilation
-            output = nunjucks.render(paths.templates + context.template + ".nunjucks", context);
+            output = nunjucks.render(context.template + ".nunjucks", context);
 
             // Set the contents of file to ouput of second compilation
             file.contents = new Buffer(output);

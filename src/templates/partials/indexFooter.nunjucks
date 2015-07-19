@@ -1,2 +1,5 @@
-﻿<footer id="page-footer">
+﻿<footer id="page-footer" class="max-width-panel">
+    <div class="copyright-notice">
+        &copy; Shellino Vacations. All rights reserved.
+    </div>
 </footer>
