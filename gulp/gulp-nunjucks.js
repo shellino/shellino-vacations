@@ -20,7 +20,7 @@ module.exports = function (_paths, _filters, _config) {
 
     buildMode = config.buildMode;
 
-    nunjucks.configure("./src/templates/", {
+    nunjucks.configure(paths.templates, {
         autoescape: true,
         watch: buildMode === "dev"
     });
