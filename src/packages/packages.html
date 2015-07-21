@@ -1,3 +1,24 @@
 ﻿---
 template: topPages
+title: Shellino Packages
+tempLoop: ["splendid-kashmir", "splendid-kashmir", "splendid-kashmir", "splendid-kashmir", "splendid-kashmir", "splendid-kashmir", "splendid-kashmir"]
+scss:
+    - packages
 ---
+<section>
+    <div class="packages-list">
+    {% for item in tempLoop %}
+        <div class="packages-list-item">
+            <div class="item-padding" style="background-image: url({{packages[item].cover}})">
+
+                <div class="package-list-item-content">
+                    <h3 class="package-title">
+                        {{packages[item].title}}
+                        <small>{{packages[item].days}}</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</section>

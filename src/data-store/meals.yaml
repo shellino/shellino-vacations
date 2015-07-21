@@ -1,0 +1,27 @@
+﻿ap:
+    - breakfast
+    - lunch
+    - dinner
+
+map-day:
+    - breakfast
+    - lunch
+
+map-night:
+    - breakfast
+    - dinner
+
+indian:
+    - lunch
+    - dinner
+
+breakfast:
+    - breakfast
+
+lunch:
+    - lunch
+
+dinner:
+    - dinner
+
+european: []

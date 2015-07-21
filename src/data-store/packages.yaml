@@ -1,0 +1,37 @@
+﻿splendid-kashmir:
+    title: Splendid Kashmir
+    categoy:
+        - group
+    country: India
+    state: Jammu & Kashmir
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days: 6 nights / 7 days
+    stays:
+        -   location: Srinagar (House Boat)
+            days: 2
+        -   location: Pahalgam
+            days: 2
+        -   location: Srinagar
+            days: 2
+    itinerary:
+        -   title:  Srinagar
+            details: Welcome to Srinagar the summer capital of Indian State Jammu and Kashmir as well as the largest city in the Kashmir region. We have a short "Introductory" session before dinner.
+            meals: dinner
+        -   title:  Srinagar - Sonmarg - Srinagar
+            details: Today we explore Sonmarg "Meadow of Gold".
+            meals: ap
+        -   title: Srinagar - Pahalgam
+            details: Today we proceed to Pahalgam En route we visit Cricket bat factory, Avantipur ruin and also we pass-by the Pampore Saffron fields.
+            meals: ap
+        -   title:  Pahalgam - Chandanwari - Pahalgam
+            details: Today we explore Chandanwari to enjoy the magnificent view of Lidder valley. We also visit Aru Valley - a fascinating Valley around 15 km from Pahalgam. Once again you can photograph yourself in Kashmiri outfits at various photo studios of Pahalgam.
+            meals: ap
+        -   title: Pahalgam - Srinagar
+            details: Today we proceed to Srinagar to visit Shankaracharya Temple, Island of Char Chinar where you can take your photograph yourself in Kashmiri outfits and we enjoy Shikara ride in Dal Lake. Later explore Nishat Bagh- "The garden of pleasure" and Shalimar Bagh- "Abode of Love".
+            meals: ap
+        -   title: Srinagar - Gulmarg - Srinagar
+            details: Welcome to Gulmarg, a snow capital of Kashmir which is also known as "Meadow of Flowers". En-route we view apple orchards. On arrival at Gulmarg we visit Khilanmarg by the longest Cable Car which takes us to the Affarwat snow point. we also view the picturesque golf course. Later we proceed to Srinagar en route we visit Carpet outlet.
+            meals: ap
+        -   title: Departure from Srinagar
+            details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media... And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
