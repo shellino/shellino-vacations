@@ -5,7 +5,7 @@
     country: India
     state: Jammu & Kashmir
     cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
-    days: 6 nights / 7 days
+    days:  7 days / 6 nights
     stays:
         -   location: Srinagar (House Boat)
             days: 2
@@ -21,13 +21,13 @@
             details: Today we explore Sonmarg "Meadow of Gold".
             meals: ap
         -   title: Srinagar - Pahalgam
-            details: Today we proceed to Pahalgam En route we visit Cricket bat factory, Avantipur ruin and also we pass-by the Pampore Saffron fields.
+            details: Today we proceed to Pahalgam en-route we visit Cricket bat factory, Avantipur ruin and also we pass-by the Pampore Saffron fields.
             meals: ap
         -   title:  Pahalgam - Chandanwari - Pahalgam
             details: Today we explore Chandanwari to enjoy the magnificent view of Lidder valley. We also visit Aru Valley - a fascinating Valley around 15 km from Pahalgam. Once again you can photograph yourself in Kashmiri outfits at various photo studios of Pahalgam.
             meals: ap
         -   title: Pahalgam - Srinagar
-            details: Today we proceed to Srinagar to visit Shankaracharya Temple, Island of Char Chinar where you can take your photograph yourself in Kashmiri outfits and we enjoy Shikara ride in Dal Lake. Later explore Nishat Bagh- "The garden of pleasure" and Shalimar Bagh- "Abode of Love".
+            details: Today we proceed to Srinagar to visit Shankaracharya temple, Island of Char Chinar where you can take your photograph yourself in Kashmiri outfits and we enjoy Shikara ride in Dal Lake. Later explore Nishat Bagh- "The garden of pleasure" and Shalimar Bagh- "Abode of Love".
             meals: ap
         -   title: Srinagar - Gulmarg - Srinagar
             details: Welcome to Gulmarg, a snow capital of Kashmir which is also known as "Meadow of Flowers". En-route we view apple orchards. On arrival at Gulmarg we visit Khilanmarg by the longest Cable Car which takes us to the Affarwat snow point. we also view the picturesque golf course. Later we proceed to Srinagar en route we visit Carpet outlet.
@@ -35,3 +35,564 @@
         -   title: Departure from Srinagar
             details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media... And meet again on one more memorable tour. See you all..!! Tour concludes.
             meals: breakfast
+
+sizzling-manali:
+    title: Sizzling Manali
+    categoy:
+        - group
+    country: India
+    state: Himachal Pradesh, Chandigarh
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  6 days / 5 nights
+    stays:
+        -   location: Chandigarh
+            days: 2
+        -   location: Manali
+            days: 3
+    itinerary:
+        -   title:  Chandigarh
+            details: Welcome to Chandigarh. We have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: Chandigarh - Manali
+            details: Today we proceed to Manali by enjoying a scenic drive through Pandoh Dam and Kullu Valley. En route we visit Kullu Shawl Factory where you can buy woollen products.
+            meals: ap
+        -   title: Manali - Rohtang Snow Point - Manali
+            details: "Today we enjoy spectacular drive towards Rohtang snow point. Free time to play and enjoy in the snow. Please Note: Rohtang pass is 51 kms away from Manali. This Pass is not accessible for almost 8 months in a year as it is covered by snow. We generally visit the snow point on Rohtang road, which has been permitted by the Border Security Force. Entertain yourself through spectacular Himachali folk dance."
+            meals: ap
+        -   title: Manali - Solang Valley - Manali
+            details: Today we explore the ancient temples like Vashista Kund and Hadimba Mandir. Then we proceed to Solang Valley – A splendid valley between Solang village which offers the view of glaciers and snowcapped mountains. Later we enjoy Ropeway ride, Enjoy the activities like Horse riding, Skiing, Ice skating, Paragliding, mountain bike, snow scooter, Zorbing at your own. Free time for shopping in the evening.
+            meals: ap
+        -   title: Manali - Chandigarh
+            details: Today we proceed to Chandigarh - the capital of Punjab and Haryana. En route we visit Vaishnomata Mandir at Kullu. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Chandigarh - Departure to Hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media..Tour concludes.
+            meals: breakfast
+
+heavenly-himachal:
+    title: Heavenly Himachal
+    categoy:
+        - group
+    country: India
+    state: Himachal Pradesh, Chandigarh
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  8 days / 7 nights
+    stays:
+        -   location: Chandigarh
+            days: 2
+        -   location: Shimla
+            days: 2
+        -   location: Manali
+            days: 3
+    itinerary:
+        -   title:  Chandigarh
+            details: Welcome to Chandigarh. We have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: Chandigarh - Shimla
+            details: Today we visit Rose Garden, Sukhana Lake, Rock Garden, and Pinjore Garden. Later we proceed to Shimla.
+            meals: ap
+        -   title: Shimla
+            details: Today we explore the city of Shimla. We visit Kufri – Winter Sports Capital, Indira Bungalow and Himalayan Zoo (subject to operations). Later we leave for famous mall road, Scandal Point and Shimla Church.
+            meals: ap
+        -   title: Shimla - Manali
+            details: Today we proceed to Manali enjoying a scenic drive through Pandoh Dam and Kullu Valley. En route we visit Kullu Shawl Factory where you can buy woollen products.
+            meals: ap
+        -   title: Manali - Rohtang Snow Point - Manali
+            details: "Today we enjoy spectacular drive towards Rohtang snow point. Free time to play and enjoy in the snow. Please Note: Rohtang pass is 51 kms away from Manali. This pass is not accessible for almost 8 months in a year as it is covered by snow. We generally visit the snow point on Rohtang road, which has been permitted by the Border Security Force. Entertain yourself through spectacular Himachali folk dance."
+            meals: ap
+        -   title: Manali - Solang Valley - Manali
+            details: Today we explore the ancient temples like Vashista Kund and Hadimba Mandir. Then we proceed to Solang Valley – A splendid valley between Solang village which offers the view of glaciers and snowcapped mountains. Later we enjoy Ropeway ride, enjoy the activities like Horse riding, skiing, Ice skating, paragliding, mountain bike, snow scooter, zorbing at your own. Free time for shopping in the evening.
+            meals: ap
+        -   title: Manali -Chandigarh
+            details: Today we proceed to Chandigarh - the capital of Punjab and Haryana. En – route we visit Vaishnomata Mandir at Kullu. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Chandigarh - Departure to hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media and meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+amritsar-dharamshala-dalhousie-vaishnodevi:
+    title: Amritsar Dharamshala Dalhousie Vaishnodevi
+    categoy:
+        - group
+    country: India
+    state: Himachal Pradesh, Chandigarh
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  9 days / 8 nights
+    stays:
+        -   location: Amritsar
+            days: 2
+        -   location: Dharamshala
+            days: 2
+        -   location: Dalhousie
+            days: 2
+        -   location: Katra
+            days: 2
+    itinerary:
+        -   title:  Amritsar
+            details: Welcome to Amritsar home to the Harmandir Sahib, the spiritual and cultural centre for the Sikh religion. Free time for relaxation in evening. Today we have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: Amritsar
+            details: Today we explore the city of Amritsar. We visit Golden temple, Jallianwala bagh, Durgaiana temple and Wagha border. Free time for shopping in the evening.
+            meals: ap
+        -   title: Amritsar - Dharamshala
+            details: Welcome to Dharamshala, formerly known as Bhagsu one of the spiritual dwelling in Himachal Pradesh. On arrival we visit Bhagsunag Temple and Dalai Lama Monastery. Later we visit the Dal lake – known for its scenic beauty. Enjoyshopping at Macleodganj Bazaar.
+            meals: ap
+        -   title: Dharamshala
+            details: Today we explore the city of Dharamshala. We visit Jwalaji Temple later we explore Kangra Fort and Tapovan.
+            meals: ap
+        -   title: Dharamshala - Dalhousie
+            details: Welcome to Dalhousie, located on the western edge of the Dhauladhar mountain range of the Himalayas. It is surrounded by snow-capped peaks. The Dalhousie Town was named after Lord Dalhousie who was the British Governor-General in India. We visit Panchpula and Satdhara Sparkling Springs in the evening.
+            meals: ap
+        -   title: Dalhousie - Khajjiar - Chamba - Dalhousie
+            details: Today explore the city of Dalhousie. We proceed to Chamba. Later we visit Khajjiar popularly known as “Mini Switzerland” of India , where you can also enjoy at your own various sports activities like Zorbing. We visit the Chaugan, Laxmi Narayan Temple and Chamunda Devi Temple at Chamba.
+            meals: ap
+        -   title: Dalhousie - Katra - Vaishnodevi
+            details: Welcome to Katra, the base point of vaishnodevi . Later proceed to Vaishnodevi Temple, a total trek of 28 km.
+            meals: ap
+        -   title: Vaishnodevi - Katra
+            details: Today we arrive from Vaishnodevi. Day free for relaxation or leisure activities.
+            meals: ap
+        -   title: Katra - Departure to hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media and calls…. And meet again on one more memorable tour. See you all !!Tour concludes.
+            meals: breakfast
+
+nainital-mussoorie-haridwar-corbett:
+    title: Nainital Mussoorie Haridwar Corbett
+    categoy:
+        - group
+    country: India
+    state: Uttarakhand, Haryana
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  9 days / 8 nights
+    stays:
+        -   location: Haridwar
+            days: 1
+        -   location: Mussoorie
+            days: 2
+        -   location: Nainital
+            days: 2
+        -   location: Corbett
+            days: 2
+        -   location: Delhi
+            days: 1
+    itinerary:
+        -   title:  Haridwar
+            details: Welcome to the Haridwar. Today we visit Gangaghat and attend spiritual Ganga arti in the evening / next day morning.
+            meals: dinner
+        -   title: Haridwar - Rishikesh - Mussoorie
+            details: Today we visit Prati badri kedarnath temple, Lakshman Mandir, Lakshman Zhulla, Baba Kali Kamliwala Ashram and Geeta Bhavan at Rishikesh. Later we proceed to Mussoorie via Dehrudun.
+            meals: ap
+        -   title: Mussoorie
+            details: "Today we explore the city of Mussoorie. We visit Kempty Falls in the morning, Company Bagh - which belongs to the Happy Valley area. Later we enjoy Rope way ride, Gunhill point and Kulri market. You can photograph yourself in Pahadi outfit at Gunhill point in Mussoorie. Note: please carry a swim suit while visiting Kempty falls."
+            meals: ap
+        -   title: Mussoorie - Nainital
+            details: Today we proceed to Nainital – The Lake district of India.
+            meals: ap
+        -   title: Nainital
+            details: Today we visit Snow view point by Cable car, Hanumangarhi temple, Chidyaghar zoo. We have free time for shopping in the evening.
+            meals: ap
+        -   title: Nainital - Corbett Park
+            details: Today we enjoy boating at Naini Lake, and visit to Nainadevi Temple, Later we proceed to Corbett Park. We also visit Corbett Museum at Kaladungi. Free time for relaxation in the evening.
+            meals: ap
+        -   title: Corbett Park
+            details: "Today we enjoy Jeep safari adventure of wildlife viewing in the region of ' Man eaters of Kumaon'. Visit Corbett summer Museum. In the evening we enjoy a nature walk and live Guitar performance followed by funfilled get together with your travel companions. Note: Corbett Park is closed from 15th June to 15th November. During this period we take a jeep ride around the jungle, in the outer zone of Corbett Park."
+            meals: ap
+        -   title: Corbett Park - Delhi
+            details: Today we proceed towards Delhi. On arrival we visit Kingdom of dreams, the ultimate entertainment destination, which brings to you a blend of India's culture, heritage, art, crafts, cuisine and performing arts.
+            meals: ap
+        -   title: Delhi - Departure to hometown
+            details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media…. And meet again on one more memorable tour. See you all..!! Tour concludes
+            meals: breakfast
+
+rajasthan-marwad:
+    title: Rajasthan Marwad
+    categoy:
+        - group
+    country: India
+    state: Rajasthan
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  8 days / 7 nights
+    stays:
+        -   location: Jaipur
+            days: 1
+        -   location: Bikaner
+            days: 2
+        -   location: Jaisalmer
+            days: 2
+        -   location: Jodhpur
+            days: 2
+    itinerary:
+        -   title:  Jaipur
+            details: Welcome to Jaipur. Today we visit Birla temple. We have a short "Introductory' session before dinner.
+            meals: dinner
+        -   title: Jaipur - Mandawa - Bikaner
+            details: Today we visit Mandawa well known as the 'open art gallery' because all the havelis have lavishly painted walls. Later we visit Mandawa fort, rooms in the palace are decorated with paintings of Lord Krishna, various carvings and amazing mirror work. Later we proceed to Bikaner.
+            meals: ap
+        -   title: Bikaner
+            details: Today we visit Deshnok Rat temple of Karni Mata, Junagarh Fort which includes Anup Mahal, Gaj Mandir, Sheesh Mahal and Prachina Museum. We view Lalgarh Palace and we visit Sadual Museum. Later we Asia's biggest Camel Research Farm to watch different Camel breeds and baby camels on arrival at Bikaner.
+            meals: ap
+        -   title: Bikaner - Jaisalmer
+            details: Welcome to Jaisalmer, later we enjoy boating in Gadisar Lake. In the evening we enjoy the Puppet Show.
+            meals: ap
+        -   title: Jaisalmer
+            details: Today we explore the city of Jaisalmer. We visit Golden Fort and Jain Mandir in the morning. Later we visit Patwan ki Haweli and museum and Nathmalaji ki Haweli.Experience the joyful Camel ride, folk dance and magnificent sunset in famous Sam Sand Dunes with dinner.
+            meals: ap
+        -   title: Jaisalmer - Jodhpur
+            details: Welcome to Jodhpur, the city is known as the “Sun City” . Free time for shopping in the evening.
+            meals: ap
+        -   title: Jodhpur
+            details: Today we explore the city of Jodhpur. We visit Ummaid Bhavan Palace museum built up by Maharaja Umaid Singh in 20th century. Later we visit Mehrangarh Fortwhich was built in 20th Century includes Moti Mahal, Phool Mahal, Sheesh Mahal, Silah Khana, Daulat Khana and Rang Mahal. Later we visit Jaswant Thada a royal cenotaph built in white marble.
+            meals: ap
+        -   title: Jodhpur - Departure to hometown
+            details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media…. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+madhya-pradesh-memories:
+    title: Madhya Pradesh Memories
+    categoy:
+        - group
+    country: India
+    state: Madhya Pradesh
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  4 days / 3 nights
+    stays:
+        -   location: Kanha
+            days: 1
+        -   location: Panchmarhi
+            days: 1
+    itinerary:
+        -   title: Jabalpur - Kanha
+            details: Guest will meet at Jabalpur & will proceed towards Beda ghat. Today we visit the famous marble Rocks & Water fall at Bedaghat. Later we will depart towards Kanha National park after Lunch.Overnight stay will be at Kanha.
+            meals: ap
+        -   title: Kanha - Panchmarhi
+            etails: In the morning, we will visit the world famous Kanha National park. Afternoon spend leisure time at hotel on your own. After dinner departure towards Panchmarhi, whole night journey.
+            meals: ap
+        -   title: Panchmarhi
+            details: Today we explore panchmarhi a famous hill station in ranges of satpuda & will visit famous Dhupgarh, chauragarh, Panarpani & Pandav caves.
+            meals: ap
+        -   title: Panchmarhi - Departure to hometown
+            details: Today we explore Panchmarhi with silver fall & water fall. After Lunch we will proceed for return journey.
+            meals: ap
+
+chittodgadh-haldighat:
+    title: Chittodgadh Haldighat
+    categoy:
+        - group
+    country: India
+    state: Rajasthan
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  5 days / 4 nights
+    stays:
+        -   location: Nathdwara
+            days: 1
+        -   location: Udaipur Pushkar
+            days: 1
+        -   location: Jaipur
+            days: 1
+    itinerary:
+        -   title: Chittorgarh - Nathdwara
+            details: Guests will meet at Chittorgarh. Today we will do sightseeing of famous Chittorgarh. In the evening we will depart towards Nathdwara.
+            meals: ap
+        -   title: Nathdwara - Udaipur
+            details: Today we visit famous Nathdwara. Later we will proceed towards Haldighati & Udaipur sightseeing. Overnight stay will be at Udaipur.
+            meals: ap
+        -   title: Udaipur - Mount Abu
+            details: Today we visit the famous Mount Abu, a hill station & we will visit the famous Nakki Lake, Bramhakumari museum, we will move for Pushkar, whole night journey.
+            meals: ap
+        -   title: Pushkar - Ajmer- Jaipur
+            details: Today we visit Pushkar, Ajmer & will visit the famous Bramha Sarovar & khwaja sahib chisti Dargah. We will halt in Jaipur which is 60 km away from Ajmer.
+            meals: ap
+        -   title: Jaipur
+            details: Today we will visit Jaipur city, famously known as Pink city & will visit Ram-Niwas garden & Museum, city palace & Ajmer fort.
+            meals: brakfast
+
+sikkim-darjeeling-gangtok-lachung:
+    title: Sikkim Darjeeling Gangtok Lachung
+    categoy:
+        - group
+    country: India
+    state: Sikkim
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  9 days / 8 nights
+    stays:
+        -   location: Gangtok
+            days: 4
+        -   location: Lachung
+            days: 2
+        -   location: Darjeeling
+            days: 2
+    itinerary:
+        -   title: Bagdogra - Gangtok
+            details: Welcome to New Jalpaigudi station and proceed to Gangtok. We have a short 'Introductory' session before dinner. Welcome to Gangtok.
+            meals: dinner
+        -   title: Gangtok
+            details: Today we explore the city of Gangtok . We visit Ranka Monastery, Banjhakri waterfall, Rope Way Ride, Tibetology and Dordul Chorten Stupa. Later we visit exhibition show, Hanuman Tok, Ganesh Tok, Tashi View Point. Enjoy local folk dance in the evening.
+            meals: ap
+        -   title: Gangtok - Lachung
+            details: Today we proceed to Lachung. En-route view various waterfalls and enjoy natural beauty.
+            meals: ap
+        -   title: Lachung
+            details: "Today we visit zero point at Yumthang valley, Paradise for nature lovers with a fascinating blend of flora and fauna and breathtaking scenic beauty. Note: Zero Point is under BSF and visit is subject to permission."
+            meals: ap
+        -   title: Lachung – Gangtok
+            details: Today we proceed to Gangtok.
+            meals: ap
+        -   title: Gangtok- Tsomgo Lake- Gangtok
+            details: Today we visit Tsomgo lake and Baba Harbhajan Singh Mandir. (In case of Tsomgo lake not accessible we will visit Kanchanjunga Park)
+            meals: ap
+        -   title: Gangtok - Darjeeling
+            details: Today we proceed to Darjeeling. we arrive in Darjeeling in the evening.
+            meals: ap
+        -   title: Darjeeling
+            details: Early morning we visit Tiger Hill to enjoy sunrise on the Kanchangunga Ranges, Battasey loop, Himalayan Mountaineering Institute (HMI) followed by Mountaineering Documentary Show (subject to operation), Zoological Park, Tea Gardens and Tensingh Rock.
+            meals: ap
+        -   title: Departure from Darjeeling
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media and meet again on one more memorable tour. See you all.!! Tour concludes.
+            meals: breakfast
+
+nepal:
+    title: Nepal
+    categoy:
+        - group
+    country: India
+    state: Uttar Padesh-India/Nava-Nepal/Tamuwan-Nepal
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  6 days / 5 nights
+    stays:
+        -   location: Lumbini
+            days: 1
+        -   location: Kathmandu
+            days: 2
+        -   location: Pokhara
+            days: 2
+    itinerary:
+        -   title: Gorakhpur – Lumbini
+            details: Guest will meet at Gorakhpur Railway station and will proceed toward Lumbini by bus.
+            meals: dinner
+        -   title: Lumbini - Kathmandu
+            details: Today we visit Kathmandu, Nepals largest urban agglomeration, enroute we will see the famous Kathmandu valleys.
+            meals: ap
+        -   title: Kathmandu
+            details: Today we visit famous Taleju Bhawani temple & Garden of dreams.
+            meals: ap
+        -   title: Kathmandu - Pokhara
+            details: Today will move towards Pokhara, enroute we will visit the famous Manokamanadevi temple. Overnight stay will be at Pokhara.
+            meals: ap
+        -   title: Pokhara
+            details: Today we explore the city Pokhara, we visit  Mahendra Gufa & famous Gupteshwar mahadev, Phewa Lake.
+            meals: ap
+        -   title: Pokhara - Gorakpur
+            details: Today we will move for return journey towards Gorakhpur. Tour ends at Gorakhpur railway station with good memories. Please be in touch through Social Media.
+            meals: breakfast
+
+gujarat-mount Abu:
+    title: Gujarat - Mount Abu
+    categoy:
+        - group
+    country: India
+    state: Gujarat
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  3 days / 2 nights
+    stays:
+        -   location: Dakor
+            days: 1
+        -   location: Ambaji
+            days: 1
+    itinerary:
+        -   title: Sardar Sarovar - Pavagarh
+            details: Guest will meet at Sardar sarovar and we will visit the famous Sardar sarovar dam, later we will move to Pavagadh to visit the Pavagadh Bhadrakali temple by ropeway.
+            meals: ap
+        -   title: Pawagarh - Dakor - GandhiNagar - Ambaji
+            details: Today we will visit the famous Ranchoddas Mandir at Dakor & we will visit Akshardham & we will later depart for Ambaji.Overnight stay will be at Ambaji.
+            meals: ap
+        -   title: Ambaji - Mount Abu
+            details: Today we will visit to famous Amba Mata Devi & we will depart to famous Mount Abu hill station & visit Nakki Lake, Omshanti Bhawan. Tour concludes.
+            meals: ap
+
+genuine-goa:
+    title: Genuine Goa
+    categoy:
+        - group
+    country: India
+    state: Goa
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  4 days / 3 nights
+    stays:
+        -   location: Goa
+        -   days: 3
+    itinerary:
+        -   title: Goa
+            details: Welcome to Goa the coolest place in India. Evening free for relaxation. Today we have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: North Goa
+            details: Welcome to North Goa which include Panjim, the capital of Goa. Today we explore Famous churches of old Goa which reflect the richness of Greco- Roman architectural style. We Visit Dona Paula, Baga Beach, Calangute Beach, and Fort Aguada overlooking the beach. Later We enjoy a boat cruise and admire the sunset views.
+            meals: ap
+        -   title: South Goa
+            details: Welcome to South Goa. Today we visit Shri Mangesh Temple in Madgaon, Shri Shanta Durga Temple dedicated to Goddess of peace, Shanteri. In the evening enjoy get together with your travel companions.
+            meals: ap
+        -   title: Departure from Goa
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media and meet again on one more memorable tour. See you all.!! Tour concludes.
+            meals: breakfast
+
+amazing-andhra:
+    title: Amazing Andhra
+    categoy:
+        - group
+    country: India
+    state: Andhra Pradesh
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  3 days / 2 nights
+    stays:
+        -   location: Hydrabad
+        -   days: 2
+    itinerary:
+        -   title: Hyderabad
+            details: Guest will meet at Hyderabad railway station.Today we will explore the city Hyderabad & will visit Birla mandir, Hussain sagar dam, Salarjang Museum, Golkanda Fort, Nehru udyan & Snow world.
+            meals: ap
+        -   title: Hyderabad
+            details: Today we will visit the famous Ramoji film city, a picture perfect location where all most you can capture lifetime memories with the scenic spots.Overnight stay at Hyderabad.
+            meals: ap
+        -   title: Hydrabad
+            details: Tour ends at Hyderabad railway station with sweet memories.
+            meals: breakfast
+
+vishakhapatnam:
+    title: Vishakhapatnam
+    categoy:
+        - group
+    country: India
+    state: Andhra Pradesh
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  3 days / 2 nights
+    stays:
+        -   location: Vishakhapatnam
+        -   days: 3
+        -   location: Araku Valley
+        -   days: 1
+    itinerary:
+        -   title: Vishakhapatnam
+            details: Welcome to Vishakhaptnam. Today we will have a 'Introductory' session with our guests. In the evening we will visit Ramkrishna Beach and Submarine Museum.
+            meals: indian
+        -   title: Vishakhapatnam - Araku Valley
+            details: Today we will move towards Araku Valley, a Prominent hill station with Tribal majority. Enroute we will visit Borra Caves.In the evening we will visit the Coffee Factory. Today we will enjoy the local tribal Dance.
+            meals: ap
+        -   title: Araku Valley
+            details: Today we will visit the Araku Tribal Museum and Padmapuram Gardens. We will proceed towards Vishakhapatnam post lunch. Enroute we will see the Anathgiri Coffee Plantations. Overnight in Vizag.
+            meals: ap
+        -   title: Vishakhapatnam
+            details: Today we will visit Lawsons Bay, Kailash Giri, Rushikonda Beach, VUDA Park. Eveniong spent at your lesuire.
+            meals: ap
+        -   title: Vizag - Departure to hometown
+            details: After breakfast we will move for return journey.Tour concludes
+            meals: brakfast
+
+
+karnataka-jewels:
+    title: Karnataka Jewels
+    categoy:
+        - group
+    country: India
+    state: Karnataka, Tamilnadu
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  6 days / 5 nights
+    stays:
+        -   location: Mysore
+            days: 2
+        -   location: Ooty
+            days: 3
+    itinerary:
+        -   title: Bangalore - Mysore
+            details: Guests will meet at Bangalore railway station and will proceed directly towards Mysore. Welcome to Mysore. Today we will visit the famous Brindavan Garden in the evening and will watch the laser show.Overnight Stay at Mysore.
+            meals: dinner
+        -   title: Mysore
+            etails: Today we will visit the places like Mysore Palace, Botanical Garden, Chamundi Hills, and St. Philomena’s Church. Evening spent at your leisure in local market.
+            meals: ap
+        -   title: Mysore – Ooty
+            details: Today in the morning we will proceed towards ooty. Enjoy the breathtaking sceneries of Bandipur and Mudumalai National Park in the Nilgiri Hills. In the evening we will visit the Ooty Lake and Local Market.
+            meals: ap
+        -   title: Ooty – Coonoor – Ooty
+            details: Today we will go to Coonoor famous for its natural beauty. We will visit , Dolphin Nose, and Lamb’s Rock.
+            meals: ap
+        -   title: Ooty
+            details: Today we will visit the local sightseeing as Shooting Point, Pykara Lake and Botanical Garden. Evening spent at your leisure.
+            meals: ap
+        -   title: Ooty- Bangalore
+            details: Today we will start our return journey to Bangalore. Tour ends with happy memories.
+            meals: map-day
+
+dazzling-kerala:
+    title: Dazzling Kerala
+    categoy:
+        - group
+    country: India
+    state: Kerala
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  8 days / 7 nights
+    stays:
+        -   location: Trivandrum
+            days: 3
+        -   location: Periyar
+            days: 1
+        -   location: Munnar
+            days: 2
+        -   location: Cochin
+            days: 1
+    itinerary:
+        -   title: Trivandrum
+            details: Welcome to Trivandrum also referred by Mahatma Gandhi as 'Evergreen city of India'.
+            meals: dinner
+        -   title: Trivandrum - Kanyakumari - Trivandrum
+            details: Today we proceed to Kanyakumari, Enjoy a ferry ride to Swami Vivekanand Rock Memorial. Here we visit the meditation hall and the smarak, Kanyakumari Mandir,Tri Samudra Milan (Triveni Sangam), Gandhi Mandapam and Kanyakumari Wax Museum.
+            meals: ap
+        -   title: Trivandrum
+            details: Today enjoy the city tour of Trivandrum. We Visit Padmanabh Swami Temple, Raja Ravi Varma Art Gallery and Napier Museum (subject to operation). Free time in the evening to have fun at Kovalam beach.
+            meals: ap
+        -   title: Trivandrum - Backwater Ride - Periyar (Thekkady)
+            details: Today we proceed to Munnar via Nedumkamdan. En- route we visit Periyar Wildlife Sanctuary by boat in Periyar Lake. Later we enjoy shopping at Kumily spice village.
+            meals: ap
+        -   title: Munnar
+            details: Today we enjoy speed boat ride at Mattupetty Dam near Sunmoon Valley. View Tea Garden, You can also buy a flavoured tea at Tata Tea Outlet. Later visit Echo Point and Eravikulam (Rajamalai) National Park.
+            meals: ap
+        -   title: Munnar - Cochin
+            details: Today we take a Harbor Cruise Ride to see the Chinese Fishing Nets followed by visit to Jewish Synagogue, Dutch Palace and St. Francis Church at Fort Kochi. Enjoy gettogether with your travel companions in the evening.
+            meals: ap
+        -   title: Cochin- Departure to hometown
+            details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: brakfast
+
+crown-of-islands-andaman:
+    title: Crown of Islands - Andaman
+    categoy:
+        - group
+    country: India
+    state: Andaman & Nichobar Island
+    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    days:  7 days / 6 nights
+    stays:
+        -   location: Port Blair
+            days: 4
+        -   location: Havelock
+            days: 2
+    itinerary:
+        -   title: Port Blair
+            details: Welcome to Port Blair, the capital of Andaman. Today we visit Anthropological Museum and Fisheries Museum .
+            meals: dinner
+        -   title: Port Blair
+            details: Today we explore the beauty of Ross Island followed by the visit to Chatham Saw Mill - one of the largest mills in Asia, Cottage Industries Emporium and Forest Museum that offers an insight into forest activities through scale models and displays decorative pieces made of famous woods like Padauk, Marble, Peauma, Gurjan, Satin Wood, etc and Cellular Museum and Cellular Jail, which stood mute witness to the torture meted out to the freedom fighters. History awakens as we visit 'Veer Sawarkar' Smarak and see the light and sound show in the evening.
+            meals: ap
+        -   title: Port Blair - Havelock
+            details: Welcome to Havelock by M V Makruzz cruise / Costal Cruise. Later we visit Radhanagar Beach - rated as Asia's best beach by the Times magazine. The island is known as "one of the jewels of the Andaman".
+            meals: ap
+        -   title: Havelock
+            details: Today we explore Havelock . We visit Elephant Beach one of the unique beaches located in Havelock Island. The coral in this beach is simply the best on the island. Enjoy snorkelling at Elephant beach.
+            meals: ap
+        -   title: Havelock - Neil Island - Port Blair
+            details: "Today we explore Neil Island, (Subject to Operation) the beautiful island with lush green forest and sandy beach. Enjoy Glass bottom boat ride. Later we proceed to port Blair by M V Makruzz cruise / Costal Cruise. Note: (In case of Neil Island not accessible we will visit Chidiya Tapu)"
+            meals: ap
+        -   title: Port Blair - Jolly Buoy Island - Port Blair
+            details: Today we visit Jolly Buoy Island. You can enjoy various water sports activities on your own and swimming in the crytal clear blue water. Explore the Coral formations by the glass bottom boat ride. Free time for leisure activities in the evening. Enjoy gettogether with your travel companions in the evening.
+            meals: ap
+        -   title: Port Blair - Departure to hometown
+            details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all !! Tour Concludes
+            meals: brakfast
+
