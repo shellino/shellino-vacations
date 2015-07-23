@@ -12,7 +12,7 @@ var path = require("path");
 var through2 = require("through2");
 
 // Templating related modules
-var handlebars = require("handlebars");
+var nunjucks = require("nunjucks");
 
 // YAML related modules
 var frontMatter = require("gulp-front-matter");
@@ -56,8 +56,7 @@ function paginationPipeline(files) {
         .pipe(through2.obj(function (file, enc, cb) {
             // This part of pipeline executes collectionCallback specified and gets pages to generate
 
-            var context, collection, collecationCallback, pages;
-            var collectionCallback;
+            var context, collection, pages, collectionCallback;
 
             context = file.collectionContext;
             collection = context.collection;
@@ -86,20 +85,20 @@ function paginationPipeline(files) {
 
                 context = page.context;
 
-                template = handlebars.compile(page.contents ? page.contents : file.contents.toString());
-                output = template(context);
+                // First, compile content of each html/md file as template and execute against context
+                output = nunjucks.renderString(file.contents.toString(), context);
+
+                // Set the contents of context to output of first compilation
                 context.contents = output;
 
-                template = fs.readFileSync(paths.templates + (page.template ? page.template : context.template) + ".hbs").toString();
-                template = handlebars.compile(template);
-
-                output = template(context);
+                // Now execute master template against second compilation
+                output = nunjucks.render(path.normalize(process.cwd() + "\\" + paths.templates + context.template + ".nunjucks"), context);
 
                 base = path.join(file.path, '..');
 
                 newFile = new File({
                     base: file.base,
-                    path: path.join(base, "/" + (index + 1) + "/index.html"),
+                    path: path.normalize(path.join(base, "\\" + (page.urlPattern) + "\\index.html")),
                     contents: new Buffer(output)
                 });
 

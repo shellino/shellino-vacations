@@ -30,8 +30,29 @@ function generateBlogCollection(context, dataStore, collectionSourceFile) {
     return pages;
 }
 
+function generatePackagesPages(context, dataStore, collectionSrouceFile) {
+    var collection, pages, page;
+
+    collection = context.collection;
+    pages = [];
+
+    Object.keys(dataStore.packages).forEach(function (packageKey) {
+
+        page = {
+            context: Object.create(context),
+            urlPattern: packageKey
+        };
+
+        pages.push(page);
+    });
+
+    // To return - content, template, context, somesort of URL pattern
+    return pages;
+}
+
 var exported = {
-    generateBlogCollection: generateBlogCollection
+    generateBlogCollection: generateBlogCollection,
+    generatePackagesPages: generatePackagesPages
 };
 
 module.exports = exported;

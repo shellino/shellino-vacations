@@ -1,0 +1,8 @@
+﻿---
+title: Pagination
+template: topPages
+collection:
+    pageSize: 1
+    generator: generatePackagesPages
+---
+<h1>Killer Zone</h1>
