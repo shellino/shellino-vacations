@@ -1,8 +1,51 @@
 ﻿---
 title: Pagination
 template: topPages
+scss:
+    - /packages/packages-item
 collection:
     pageSize: 1
     generator: generatePackagesPages
 ---
-<h1>Killer Zone</h1>
+{% import "./../templates/imports/icons.nunjucks" as icons %}
+
+<div class="package-wall" style="background-image: url({{currentPackage.cover}})">
+    <div class="package-wall-content">
+        <div>{{currentPackage.title}}</div>
+        <div class="package-tagline">{{currentPackage.tagline}}</div>
+    </div>
+</div>
+
+<div class="max-width-panel quick-info-panel">
+    <h2 class="package-title panel-heading">{{currentPackage.title}}</h2>
+    <div>
+        <div class="inline-block quick-info-item">
+            {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
+            <span class="inline-block">{{currentPackage.duration}}</span>
+        </div>
+        <div class="inline-block quick-info-item">
+            {{icons.lineaIcon("icon-linea-basic-compass", "icon-big")}}
+            <span class="inline-block">{{currentPackage.states}}</span>
+        </div>
+    </div>
+
+    <h3 class="panel-heading">Night stays</h3>
+    <div>
+        {% for stay in currentPackage.stays %}
+        <!--<div class="inline-block stay-item">{{stay.days}} nights at {{stay.location}}</div>-->
+        <div class="inline-block stay-item">{{stay.location}} - {{stay.days}} nights</div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="itinerary-panel max-width-panel">
+    <h3 class="panel-heading">Detailed Itinerary</h3>
+    <div class="itinerary-content">
+        {% for itinerary in currentPackage.itinerary %}
+        <h4 class="day-heading">
+            <small>Day {{loop.index}}:</small> <span>{{itinerary.title}}</span>
+        </h4>
+        <p>{{itinerary.details}}</p>
+        {% endfor %}
+    </div>
+</div>

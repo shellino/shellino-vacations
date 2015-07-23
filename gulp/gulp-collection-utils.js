@@ -43,6 +43,9 @@ function generatePackagesPages(context, dataStore, collectionSrouceFile) {
             urlPattern: packageKey
         };
 
+        page.context.currentPackageKey = packageKey;
+        page.context.currentPackage = dataStore.packages[packageKey];
+
         pages.push(page);
     });
 

@@ -39,7 +39,7 @@ var paths = (function () {
         src: src,
         dest: "./dist/",
         js: "./js/",
-        icons: src + "/img/svg-icons/",
+        icons: "./vendor/svg-icons/",
         templates: src + "templates/",
         partials: src + "templates/partials/",
         resources: props.resources,
@@ -126,6 +126,20 @@ gulp.task("watcher", function (done) {
     gulp.watch(filters.templates, { cwd: paths.templates }, function (event) {
 
         runSequence("html", function () {
+            gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
+        });
+    });
+
+    gulp.watch(filters.pagination, { cwd: paths.src }, function (event) {
+
+        runSequence("collections", function () {
+            gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
+        });
+    });
+
+    gulp.watch(filters.yaml, { cwd: paths.src }, function (event) {
+
+        runSequence("data-store", function () {
             gutil.log("Modified:", colors.yellow(getRelativePath(event.path)));
         });
     });
