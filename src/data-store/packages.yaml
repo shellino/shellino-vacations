@@ -39,6 +39,7 @@
 
 sizzling-manali:
     title: Sizzling Manali
+    tagline: Simply unforgettable.
     categoy:
         - group
     country: India
@@ -72,6 +73,8 @@ sizzling-manali:
 
 heavenly-himachal:
     title: Heavenly Himachal
+    tagline: Magic of snow.
+    isFeatured: true
     categoy:
         - group
     country: India
@@ -113,6 +116,7 @@ heavenly-himachal:
 
 amritsar-dharamshala-dalhousie-vaishnodevi:
     title: Amritsar Dharamshala Dalhousie Vaishnodevi
+    tagline: Experience Hindu, Sikh and Buddha diversity.
     categoy:
         - group
     country: India
@@ -159,6 +163,7 @@ amritsar-dharamshala-dalhousie-vaishnodevi:
 
 nainital-mussoorie-haridwar-corbett:
     title: Nainital Mussoorie Haridwar Corbett
+    tagline: Reflection of Himalaya and shadows of Devdaar.
     categoy:
         - group
     country: India
@@ -207,6 +212,7 @@ nainital-mussoorie-haridwar-corbett:
 
 rajasthan-marwad:
     title: Rajasthan Marwad
+    tagline: Padharo Mhare Des.
     categoy:
         - group
     country: India
@@ -250,6 +256,8 @@ rajasthan-marwad:
 
 madhya-pradesh-memories:
     title: Madhya Pradesh Memories
+    tagline: The Heart of Incredible India.
+    isFeatured: true
     categoy:
         - group
     country: India
@@ -277,6 +285,7 @@ madhya-pradesh-memories:
 
 chittodgadh-haldighat:
     title: Chittodgadh Haldighat
+    tagline: Land of Rajput Royals.
     categoy:
         - group
     country: India
@@ -307,8 +316,9 @@ chittodgadh-haldighat:
             details: Today we will visit Jaipur city, famously known as Pink city & will visit Ram-Niwas garden & Museum, city palace & Ajmer fort.
             meals: brakfast
 
-sikkim-darjeeling-gangtok-lachung:
-    title: Sikkim Darjeeling Gangtok Lachung
+sikkim-darjeeling:
+    title: Sikkim Darjeeling
+    tagline: Peace of mankind.
     categoy:
         - group
     country: India
@@ -352,7 +362,8 @@ sikkim-darjeeling-gangtok-lachung:
             meals: breakfast
 
 nepal:
-    title: Nepal
+    title: Mystique Nepal
+    tagline: In the womb of Himalayas.
     categoy:
         - group
     country: India
@@ -386,8 +397,9 @@ nepal:
             details: Today we will move for return journey towards Gorakhpur. Tour ends at Gorakhpur railway station with good memories. Please be in touch through Social Media.
             meals: breakfast
 
-gujarat-mount Abu:
+gujarat-mount-abu:
     title: Gujarat - Mount Abu
+    tagline: Enery, vibracy & great white desert.
     categoy:
         - group
     country: India
@@ -412,6 +424,7 @@ gujarat-mount Abu:
 
 genuine-goa:
     title: Genuine Goa
+    tagline: Sandy Las Vegas of the East.
     categoy:
         - group
     country: India
@@ -437,6 +450,7 @@ genuine-goa:
 
 amazing-andhra:
     title: Amazing Andhra
+    tagline: Biryani and what else you desire.
     categoy:
         - group
     country: India
@@ -459,6 +473,7 @@ amazing-andhra:
 
 vishakhapatnam:
     title: Vishakhapatnam
+    tagline: Great city of Kalinga, Vengi & Pallava.
     categoy:
         - group
     country: India
@@ -490,6 +505,8 @@ vishakhapatnam:
 
 karnataka-jewels:
     title: Karnataka Jewels
+    tagline: Sunset at Hampi.
+    isFeatured: true
     categoy:
         - group
     country: India
@@ -523,6 +540,7 @@ karnataka-jewels:
 
 dazzling-kerala:
     title: Dazzling Kerala
+    tagline: God's own country.
     categoy:
         - group
     country: India
@@ -563,6 +581,7 @@ dazzling-kerala:
 
 crown-of-islands-andaman:
     title: Crown of Islands - Andaman
+    tagline: Let's dive into the beauty.
     categoy:
         - group
     country: India
@@ -596,4 +615,3 @@ crown-of-islands-andaman:
         -   title: Port Blair - Departure to hometown
             details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all !! Tour Concludes
             meals: brakfast
-

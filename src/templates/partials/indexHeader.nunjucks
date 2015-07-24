@@ -34,7 +34,7 @@
                 <li><a href="/packages">Plan your holiday</a></li>
                 <li><a href="#">Travel wiki</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="/contact">Contact us</a></li>
             </ul>
         </section>
     </nav>

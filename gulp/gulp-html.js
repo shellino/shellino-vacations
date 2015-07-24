@@ -146,6 +146,7 @@ function htmlPipeline(files) {
 
             // Now execute master template against second compilation
             output = nunjucks.render(path.normalize(process.cwd() + "\\" + paths.templates + context.template + ".nunjucks"), context);
+            output = output.replace(/\uFEFF/g, "");
             //template = fs.readFileSync(paths.templates + context.template + ".nunjucks").toString();
             //output = nunjucks.renderString(template, context);
 

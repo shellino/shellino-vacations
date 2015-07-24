@@ -20,22 +20,23 @@ subLine: You tell a story. We make it happen.
         <h2 class="panel-heading">Featured packages</h2>
 
         <ul class="featured-packages-list clearfix">
+            {% set tileSize = "large" %}
+            {% for packageKey, package in packages %}
 
-            <li class="featured-list-item large" style="background-image:url('/img/home/sikkim-gangtok-monastery.jpg')">
-                <h3 class="featured-heading">Sikkim and Darjeeling</h3>
-            </li>
+                {% if package.isFeatured %}
+                <li class="featured-list-item {{tileSize}}" style="background-image:url('{{package.cover}}')">
+                    <a href="/packages/{{packageKey}}/" class="item-padding">
+                        <h3 class="featured-heading">{{package.title}}</h3>
+                    </a>
+                </li>
+                {% set tileSize = "small" %}
+                {% endif %}
 
-            <li class="featured-list-item small" style="background-image:url('/img/home/india-gate-at-night-delhi.jpg')">
-                <h3 class="featured-heading">Delhi and Agra</h3>
-            </li>
-
-            <li class="featured-list-item small show-for-large-up" style="background-image:url('/img/home/backpack.jpg')">
-                <h3 class="featured-heading">Uttarakhand</h3>
-            </li>
+            {% endfor %}
 
         </ul>
 
-        <a class="explore-link" href="#">Explore all packages &raquo;</a>
+        <a class="explore-link" href="/packages/">Explore all packages &raquo;</a>
 
     </div>
 
