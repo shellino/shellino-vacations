@@ -30,11 +30,8 @@ gulp.task("resource", function (done) {
     if (resources.length > 0) {
         resources.forEach(function (resource) {
 
-            var stream = gulp.src(resource, { cwd: paths.src })
-                            .pipe(rename(function (path) {
-                                path.dirname = "";
-                            }))
-                            .pipe(gulp.dest(paths.dest + paths.resources[resource]));
+            var stream = gulp.src(resource, { cwd: paths.src, base: "." })
+                .pipe(gulp.dest(paths.dest + paths.resources[resource]));
 
             streams.add(stream);
         });

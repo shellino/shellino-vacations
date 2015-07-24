@@ -38,8 +38,7 @@
     },
     "props": {
         "resources": {
-            "../bower_components/slick.js/slick/fonts/*.{eot,svg,ttf,woff}": "scss/",
-            "../bower_components/slick.js/slick/ajax-loader.gif": "./"
+            "../img/**/*.{png,jpg,jpeg,gif}": "./"
         },
         "targetBrowsers": [
             "last 2 version"
