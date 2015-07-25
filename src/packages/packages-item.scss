@@ -15,6 +15,8 @@
 
     display: flex;
     justify-content: center;
+    align-items: stretch;
+
 
     &:before {
         content: "";
@@ -37,12 +39,17 @@
     position: relative;
     z-index: 1;
 
+    /* IE hack - cannot work without explicit height */
+    min-height: 320px;
+    min-height: 30vh;
+
     text-shadow: 0 0 24px rgba(0, 0, 0, 0.8);
     padding: 0 2%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .package-tagline {
