@@ -24,7 +24,7 @@ subLine: You tell a story. We make it happen.
             {% for packageKey, package in packages %}
 
                 {% if package.isFeatured %}
-                <li class="featured-list-item {{tileSize}}" style="background-image:url('{{package.cover}}')">
+                <li class="featured-list-item {{tileSize}}" style="background-image:url('/img/packages/{{package.coverSmall}}')">
                     <a href="/packages/{{packageKey}}/" class="item-padding">
                         <h3 class="featured-heading">{{package.title}}</h3>
                     </a>

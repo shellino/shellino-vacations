@@ -5,7 +5,8 @@
         - group
     country: India
     states: Jammu & Kashmir
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: kanchanjanga-from-darjeeling-1600x1000.jpg
+    coverSmall: kanchanjanga-from-darjeeling-600x375.jpg
     duration: 7 days / 6 nights
     stays:
         -   location: Srinagar (House Boat)
@@ -44,7 +45,8 @@ sizzling-manali:
         - group
     country: India
     states: Himachal Pradesh, Chandigarh
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: manali-1600x100.jpg
+    coverSmall: manali-600x375.jpg
     duration:  6 days / 5 nights
     stays:
         -   location: Chandigarh
@@ -79,7 +81,8 @@ heavenly-himachal:
         - group
     country: India
     states: Himachal Pradesh, Chandigarh
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: himachal-1600x1000.jpg
+    coverSmall: himachal-600x375.jpg
     duration:  8 days / 7 nights
     stays:
         -   location: Chandigarh
@@ -121,7 +124,8 @@ amritsar-dharamshala-dalhousie-vaishnodevi:
         - group
     country: India
     states: Himachal Pradesh, Chandigarh
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: dalhousi-1600x900.jpg
+    coverSmall: dalhousi-600x338.jpg
     duration:  9 days / 8 nights
     stays:
         -   location: Amritsar
@@ -168,7 +172,8 @@ nainital-mussoorie-haridwar-corbett:
         - group
     country: India
     states: Uttarakhand, Haryana
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: nainital-1600x1000.jpg
+    coverSmall: nainital-600x375.jpg
     duration:  9 days / 8 nights
     stays:
         -   location: Haridwar
@@ -217,7 +222,8 @@ rajasthan-marwad:
         - group
     country: India
     states: Rajasthan
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: jaisalmer-1600x1000.jpg
+    coverSmall: jaisalmer-600x375.jpg
     duration:  8 days / 7 nights
     stays:
         -   location: Jaipur
@@ -262,7 +268,8 @@ madhya-pradesh-memories:
         - group
     country: India
     states: Madhya Pradesh
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: khajuraho-mp-1600x900.jpg
+    coverSmall: khajuraho-mp-600x338.jpg
     duration:  4 days / 3 nights
     stays:
         -   location: Kanha
@@ -274,7 +281,7 @@ madhya-pradesh-memories:
             details: Guest will meet at Jabalpur & will proceed towards Beda ghat. Today we visit the famous marble Rocks & Water fall at Bedaghat. Later we will depart towards Kanha National park after Lunch.Overnight stay will be at Kanha.
             meals: ap
         -   title: Kanha - Panchmarhi
-            etails: In the morning, we will visit the world famous Kanha National park. Afternoon spend leisure time at hotel on your own. After dinner departure towards Panchmarhi, whole night journey.
+            details: In the morning, we will visit the world famous Kanha National park. Afternoon spend leisure time at hotel on your own. After dinner departure towards Panchmarhi, whole night journey.
             meals: ap
         -   title: Panchmarhi
             details: Today we explore panchmarhi a famous hill station in ranges of satpuda & will visit famous Dhupgarh, chauragarh, Panarpani & Pandav caves.
@@ -290,7 +297,8 @@ chittodgadh-haldighat:
         - group
     country: India
     states: Rajasthan
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: padmini-palace-1600x1000.jpg
+    coverSmall: padmini-palace-600x375.jpg
     duration:  5 days / 4 nights
     stays:
         -   location: Nathdwara
@@ -323,7 +331,8 @@ sikkim-darjeeling:
         - group
     country: India
     states: Sikkim
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: lord-shankar-at-namchi-1600x1000.jpg
+    coverSmall: lord-shankar-at-namchi-600x375.jpg
     duration:  9 days / 8 nights
     stays:
         -   location: Gangtok
@@ -368,7 +377,8 @@ nepal:
         - group
     country: India
     states: Uttar Padesh-India/Nava-Nepal/Tamuwan-Nepal
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: durbar-square-nepal-1600x900.jpg
+    coverSmall: durbar-square-nepal-600x388.jpg
     duration:  6 days / 5 nights
     stays:
         -   location: Lumbini
@@ -404,7 +414,8 @@ gujarat-mount-abu:
         - group
     country: India
     states: Gujarat
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: gujrat-1600x900.jpg
+    coverSmall: gujrat-600x338.jpg
     duration:  3 days / 2 nights
     stays:
         -   location: Dakor
@@ -429,7 +440,8 @@ genuine-goa:
         - group
     country: India
     states: Goa
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: sunburn-goa-1600x900.jpg
+    coverSmall: sunburn-goa-600x338.jpg
     duration:  4 days / 3 nights
     stays:
         -   location: Goa
@@ -455,7 +467,8 @@ amazing-andhra:
         - group
     country: India
     states: Andhra Pradesh
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: golkonda-fort-andhra-1600x1000.jpg
+    coverSmall: golkonda-fort-andhra-600x375.jpg
     duration:  3 days / 2 nights
     stays:
         -   location: Hydrabad
@@ -478,7 +491,8 @@ vishakhapatnam:
         - group
     country: India
     states: Andhra Pradesh
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: kambalakonda-santuary-vishakhapatnam-1600x1000.jpg
+    coverSmall: kambalakonda-santuary-vishakhapatnam-600x375.jpg
     duration:  3 days / 2 nights
     stays:
         -   location: Vishakhapatnam
@@ -511,7 +525,8 @@ karnataka-jewels:
         - group
     country: India
     states: Karnataka, Tamilnadu
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: mysore-palace-1600x900.jpg
+    coverSmall: mysore-palace-600x338.jpg
     duration:  6 days / 5 nights
     stays:
         -   location: Mysore
@@ -545,7 +560,8 @@ dazzling-kerala:
         - group
     country: India
     states: Kerala
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: kerala-houseboat-1600x1000.jpg
+    coverSmall: kerala-houseboat-600x338.jpg
     duration:  8 days / 7 nights
     stays:
         -   location: Trivandrum
@@ -586,7 +602,8 @@ crown-of-islands-andaman:
         - group
     country: India
     states: Andaman & Nichobar Island
-    cover: /img/walls/ladakh-near-photoskar-village-grazing-yaks-1600x1000.jpg
+    cover: andaman-1600x900.jpg
+    coverSmall: andaman-600x338.jpg
     duration:  7 days / 6 nights
     stays:
         -   location: Port Blair

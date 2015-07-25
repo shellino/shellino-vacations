@@ -11,5 +11,5 @@
 {% endblock  %}
 
 {% block jsBottom %}
-<script type="text/javascript" src="/js/topPages.js"></script>
+<!--<script type="text/javascript" src="/js/topPages.js"></script>-->
 {% endblock  %}

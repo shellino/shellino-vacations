@@ -8,7 +8,7 @@ scss:
     <div class="packages-list">
     {% for packageKey, package in packages %}
         <div class="packages-list-item">
-            <a href="/packages/{{packageKey}}/" class="item-padding" style="background-image: url({{package.cover}})">
+            <a href="/packages/{{packageKey}}/" class="item-padding" style="background-image: url('/img/packages/{{package.coverSmall}}')">
 
                 <div class="package-list-item-content">
                     <h3 class="package-title">{{package.title}}</h3>

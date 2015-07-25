@@ -1,5 +1,5 @@
 ﻿---
-title: Pagination
+title: Packages
 template: topPages
 scss:
     - /packages/packages-item
@@ -9,8 +9,8 @@ collection:
 ---
 {% import "./../templates/imports/icons.nunjucks" as icons %}
 
-<div class="package-wall" style="background-image: url({{currentPackage.cover}})">
-    <div class="package-wall-content">
+<div class="package-wall" style="background-image: url('/img/packages/{{currentPackage.cover}}')">
+    <div class="package-wall-content text-center">
         <div>{{currentPackage.title}}</div>
         <div class="package-tagline">{{currentPackage.tagline}}</div>
     </div>
