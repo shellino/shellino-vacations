@@ -38,7 +38,10 @@
     },
     "props": {
         "resources": {
-            "../img/**/*.{png,jpg,jpeg,gif}": "./"
+            "../vendor/img/**/*.{png,jpg,jpeg,gif}": {
+                "base": "vendor/",
+                "dest": "."
+            }
         },
         "targetBrowsers": [
             "last 2 version"
