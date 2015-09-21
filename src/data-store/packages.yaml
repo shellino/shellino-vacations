@@ -632,3 +632,1002 @@ crown-of-islands-andaman:
         -   title: Port Blair - Departure to hometown
             details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all !! Tour Concludes
             meals: brakfast
+
+the-best-of-ladakh:
+    title: The Best of Ladakh
+    categoy:
+        - Adventure
+    country: India
+    state: Jammu & Kashmir
+    cover:
+    coverSmall:
+    days : 8 days / 7 nights
+    stays:
+        -   location: Leh
+            days: 5
+        -   location: Turtuk
+            days: 1
+        -   location: Pangong Lake
+            days: 1
+    itinerary:
+        -   title: Leh
+            details: Arrive Leh. Transfer to the hotel for some rest followed by an evening visit to the Shanti Stupa, Leh palace and the Leh bazaar. Overnight in Leh.
+            meals: dinner
+        -   title: Leh - Lamayuru
+            details: Travel the glorious route from Leh to Lamayuru and back. Visit the Lamayuru, Alchi, Likir and Ridzong monasteries and spend time photographing the unique land formations here. This part of Ladakh is known as Moonland. Visit the confluence of the Indus and Zanskar rivers on the way back. Overnight in Leh.
+            meals: ap
+        -   title: Leh - Nubra Valley - Leh
+            details: Travel to the picturesque Nubra valley. Made famous as a high-altitude desert, Nubra valley houses some of Ladakh`s best treasures. We go via the Khardung La pass on the way, the world`s highest motorable road. Explore the Diskit monastery and spend time on a camel safari at Hundar ( a desert at 10000 ft above sea level ). By evening, we will reach Turtuk, the last village in Ladakh ( and India ) and one of the 3 Balti villages left in India. This is an extraordinary cultural experience which coupled with the enchanting mountain views would leave you spellbound. Overnight in Turtuk.
+            meals: ap
+        -   title: Leh - Turtuk - Leh
+            details: Spend the morning exploring Turtuk`s apricot fields, old Balti houses and interacting with the locals. Still pretty much untouched by tourism, this is one of the most authentic Ladakhi experiences. We trace our way back to Leh to reach in time for a sumptuous hot dinner.
+            meals: ap
+        -   title: Leh - Pangong
+            details: It is Pangong day at last! A stunningly beautiful high-altitude lake nestled amidst the Ladakhi mountains, Pangong is a sight to behold. It is especially enchanting during sunset and sunrise, when the suns slanting rays paint a glorious picture on the shimmering waters. We camp right on the banks of the lake in our tented huts and spend an enthralling ( and cold! ) night. Overnight at the lake.
+            meals: ap
+        -   title: Pangong - Leh
+            details: After a swim in the lake, a small hike up the mountains in search of old Buddhist remains and a hot breakfast, we visit the famed Hemis and Thiksey monasteries. Hemis is the largest monastery in the whole of Ladakh and is situated right on the edge of the Hemis National Park. We might just be able to see some rare trans-Himalayan animals and birds, like the Chukar partridge, Snow cock, Bharal, Pika, Marmot and even the Snow Leopard! We will reach Leh by evening and spend some quality time exploring the old streets of the Ladakhi capital. Overnight in Leh.
+            meals: ap
+        -   title: Leh - Stok - Leh
+            details: We drive to Stok, some 15 kms from Leh to see the wonderful Stok palace. Later, we go on a short hike to the Stok Gorge to give you a taste of what trekking is like in Ladakh. This is one of the best day hikes in Ladakh, offering some excellent views and a real workout for your legs! Back to Leh by evening for some last minute shopping. Overnight in Leh.
+            meals: ap
+        -   title: Leh
+            details: You will be transferred to the Airport for return journey. Tour ends.
+            meals: breakfast
+
+ladakh-bullet-expedition:
+    title: Ladakh Bullet Expedition
+    categoy:
+        - Adventure
+    country: India
+    state: Jammu & Kashmir
+    cover:
+    coverSmall:
+    days : 10 days / 9 nights
+    stays:
+        -   location: Leh
+            days: 5
+        -   location: Hunder
+            days: 1
+        -   location: Pangong Lake
+            days: 1
+        -   location: Sarchu
+            days: 1
+        -   location: Manali
+            days: 1
+    itinerary:
+        -   title: Leh
+            details: Fly into Leh. Rest and acclimatize. Excited, nervous and ecstatic, you will fly over the magnificient Himalayan mountains and reach Leh. Today, we will take it easy and rest at the hotel. In the evening, we will go for a short stroll in the Leh market, do some shopping and just take in the amazing vibe of this beautiful mountain town. Overnight in Leh.
+            meals: dinner
+        -   title: Leh
+            details: "Exploring Leh. Getting ready for the ultimate adventure. Riding distance: 40-50 kms. Being properly acclimatized is of paramount importance in the high mountains. Keeping this in mind, we will not go on a long ride today but instead check out the local attractions in Leh. The mysterious Leh palace, a few ancient monasteries and the ethereal Shanti Stupa are all monuments of spectacular brilliance. We will ride to all these Buddhist masterpieces, eat some delectable Ladakhi food and just have a gala time in Leh town. Over dinner, we will discuss the strategy and plan of action for the upcoming adventure. Overnight in Leh."
+            meals: ap
+        -   title: Leh
+            details: "Exploring the monastic trail and the moonland. Riding distance: 250 kms. Our first major ride of the expedition! We rev our way towards the breathtaking Lamayuru monastery, one of Ladakh's finest! On our way to Lamayuru we drive past ancient Buddhist relics, gargantuan mountains and deep valleys and along the fabled waters of the Indus. With muchdeserved stops at Alchi, Likir and the Sangam (confluence of the Zanskar and Indus), we ride to our heart's fill! Just before the Lamayuru monastery is a place called the 'moonland', and, if you hear closely, you will find such utter peace and tranquil that you have never experienced before! (The moonland is so named because of it striking resemblance to the moon's surface). Overnight in Leh."
+            meals: ap
+        -   title: Leh - Hundar
+            details: "Up the Khardungla and into the pretty Nubra. Riding distance: 110 kms. It is time to ride up the world's highest motorable road (for civilian traffic)! This is every rider's ultimate dream! Standing tall and proud atop the pass and drinking a contented cup of tea is one of the greatest pleasures in life! Beyond the imposing Khardungla pass and towards the north is this region of astounding beauty called the Nubra valley. Embraced by the Nubra and Shyok rivers and home to the high-altitude desert, this is a place which leaves many a traveler in fits of joy! In the evening, as the orange sun sets against the stark Ladakhi mountains, we will go on a camel ride on 79 the double-humped Bactrian camels at the Hundar desert! At night, the cold and crisp wind blowing over from the desolate north would make the campfire even more enjoyable! Overnight in Hundar."
+            meals: ap
+        -   title: Hundar - Leh
+            details: "Tales of Maitreya and the magic of the Nubra. Riding distance: 110 kms. After a thrilling and adventurous day 4, we rest our tired bodies a bit more. After a leisurely breakfast in the lap of the mighty mountains of Diskit, we move towards the grand monastery there. The tall and imposing statue of the Maitreya Buddha at the monastery, overlooking the entire valley, is a sight to behold! After exploring the magnificent monastery, we say goodbye to the Nubra valley and prepare to climb the Khardungla once more! In the evening, as Leh gets ready to plunge into another pleasant night, we stroll through the market and take in its happygo- lucky vibe! The interested ones can ride up to the Shanti Stupa and wonder at the number of stars that can be seen from earth (we might even see a band of the MilkyWay galaxy)! Overnight in Leh."
+            meals: ap
+        -   title: Leh - Pangong
+            details: "The glory of the Pangong. Riding distance: 160 kms. Immortalized by Bollywood, adorned by Nature, the Pangong is Ladakh's gift to us! On our agenda today is riding up the breathtakingly beautiful Chang la pass, which is a true test of good riding, unbridled passion and ultimate love for the outdoors! The occasional snow and gravel on top of the Chang la might make it an even more adventurous ride! On the other side of the Changla are the beautiful Changthang meadows beyond which, like a glistening jewel, is the Pangong! We will have a sumptuous hot lunch at our campsite located on the lake's banks, take in the beauty of the Pangong and go for a leisurely ride along the water! The sight of the evening sun setting against those differently hued mountains would bowl you over! Sometimes at night, the water shines in the starlight as if it is molten silver! Overnight in Pangong"
+            meals: ap
+        -   title: Pahalgam - Katra - Vaishnodevi
+            details: Welcome to Katra, the base point of Vaishnodevi. Today we start the trek of Vaishnodevi Temple (a total trek of 28 kms).
+            meals: ap
+        -   title: Vaishnodevi - Katra
+            details: Today we arrive from Vaishnodevi. We have free Day for relaxation or leisure activities. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Katra - Departure from Jammu
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media, calls…. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+valley-of-flowers:
+    title: Valley of Flowers
+    categoy:
+        - Adventure
+    country: India
+    state: Uttarakhand
+    cover:
+    coverSmall:
+    days : 7 days / 6 nights
+    stays:
+        -   location: Haridwar
+            days: 1
+        -   location: Govindghat
+            days: 1
+        -   location: Ghangaria/Auli
+            days: 4
+    itinerary:
+        -   title: Delhi - Haridwar
+            details: Reach Delhi and thereafter proceed towards Haridwar. Spend the evening at leisure. Over dinner, we would be having an introduction and discussing the course of action over the next week.
+            meals: indian
+        -   title: Haridwar - Auli
+            details: The great journey begins. Travel the glorious route from Haridwar to Joshimath. Overnight at the picturesque Auli / Govindghat.
+            meals: ap
+        -   title: Ghangaria
+            details: Today, we climb till Ghangaria, which is the base for our future forays. This trek is an excellent photographic opportunity, with some breathtaking scenery to offer! Overnight in Ghangaria.
+            meals: ap
+        -   title: Valley of Flowers
+            details: Today is the D-day! Spend an entire day in the fabled Valley of Flowers. Flowers, glaciers, mountains, meadows and your camera!
+            meals: ap
+        -   title: Hemkund Sahib
+            details: Trek the enchanting route to Hemkund Sahib. This is a superb place for making some glorious images of the highmountains, devout Sikhs and the elusive Brahmakamal.
+            meals: ap
+        -   title: Govind Ghat
+            details: We visit the valley once more! ( There is an option of descending the mountain and visiting Badrinath instead ). Overnight in Govindghat / Auli.
+            meals: ap
+        -   title: Haridwar - Delhi
+            details: Today, we retrace our steps back to Haridwar and later board the overnight train to Delhi. Tour Concludes.
+            meals: ap
+romantic-manali:
+    title: Romantic Manali
+    categoy:
+        - honeymoon
+    country: India
+    state: Himachal Pradesh
+    cover:
+    coverSmall:
+    days : 6 days / 5 nights
+    stays:
+        -   location: Chandigarh
+            days: 2
+        -   location: Manali
+            days: 3
+    itinerary:
+        -   title: Chandigarh
+            details: Welcome to Chandigarh. We have a short Meet n Greet session before dinner.
+            meals: dinner
+        -   title: Chandigarh - Manali
+            details: Today we proceed to manali by enjoying a scenic drive through Pandoh Dam and Kullu Valley. En route we visit Kullu Shawl Factory where you can buy woollen products.
+            meals: ap
+        -   title: Manali - Rohtang Snow Point - Manali
+            details: "Today we enjoy spectacular drive towards Rohtang snow point. Free time to play and enjoy in the snow. Please Note: Rohtang pass is 51 kms away from Manali. This Pass is not accessible for almost 8 months in a year as it is covered by snow. We generally visit the snow point on Rohtang road, which has been permitted by the Border Security Force. Entertain yourself through spectacular Himachali folk dance."
+            meals: ap
+        -   title:  Manali - Solang Valley - Manali
+            details: Today we explore the ancient temples like Vashista Kund and Hadimba Mandir. Then, we proceed to Solang Valley – A splendid valley between Solang village which offers the view of glaciers and snowcapped mountains. Later we enjoy Ropeway ride, Enjoy the activities like Horse riding, Skiing, Ice skating, Paragliding, mountain bike, snow scooter, Zorbing at your own. Free time for shopping in the evening.
+            meals: ap
+        -   title: Manali - Chandigarh
+            details: Today we proceed to Chandigarh - the capital of Punjab and Haryana. En – route we visit Vaishnomata Mandir at Kullu. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Chandigarh – Departure to hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through social media. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+honeymoon-special-shimla-manali:
+    title: Honeymoon Special Shimla Manali
+    categoy:
+        - honeymoon
+    country: India
+    state: Himachal Pradesh, Chandigarh
+    cover:
+    coverSmall:
+    days : 8 days / 7 nights
+    stays:
+        -   location: Chandigarh
+            days: 2
+        -   location: Shimla
+            days: 2
+        -   location: Manali
+            days: 3
+    itinerary:
+        -   title: Chandigarh
+            details: Welcome to Chandigarh. We have a short "Introductory" session before dinner.
+            meals: dinner
+        -   title: Chandigarh - Shimla
+            details: Today we visit Rose Garden, Sukhana Lake, Rock Garden, and Pinjore Garden. Later we proceed to Shimla.
+            meals: ap
+        -   title: Shimla
+            details: Today we explore the city of Shimla. We visit Kufri– Winter Sports Capital, Indira Bungalow and Himalayan Zoo (subject to operations). Later we leave for famous Mall road, Scandal Point and Shimla Church.
+            meals: ap
+        -   title:  Shimla - Manali
+            details: Today we proceed to Manali enjoying a scenic drive through Pandoh Dam and Kullu Valley. En route we visit Kullu Shawl Factory where you can buy woollen products.
+            meals: ap
+        -   title: Manali - Rohtang Snow Point - Manali
+            details: "Today we enjoy spectacular drive towards Rohtang snow point. Free time to play and enjoy in the snow. Please Note: Rohtang pass is 51 kms away from Manali. This Pass is not accessible for almost 8 months in a year as it is covered by snow. We generally visit the snow point on Rohtang road, which has been permitted by the Border Security Force. Entertain yourself through spectacular Himachali folk dance."
+            meals: ap
+        -   title: Manali - Solang Valley - Manali
+            details: Today we explore the ancient temples like Vashista Kund and Hadimba Mandir. Then we proceed to Solang Valley – A splendid valley between Solang village which offers the view of glaciers and snow-capped mountains. Later we enjoy Ropeway ride, enjoy the activities like Horse riding, Skiing, Ice skating, Paragliding, mountain bike, snow scooter, Zorbing at your own. Free time for shopping in the evening.
+            meals: ap
+        -   title: Manali - Chandigarh
+            details: Today we proceed to Chandigarh - the capital of Punjab and Haryana. En – route we visit Vaishnomata Mandir at Kullu. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Chandigarh - Departure to hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+honeymoon-special-ooty-kodai:
+    title: Honeymoon Special Ooty Kodai
+    categoy:
+        - honeymoon
+    country: India
+    state: Tamil Nadu
+    cover:
+    coverSmall:
+    days : 7 days / 6 nights
+    stays:
+        -   location: Kodaikanal
+            days: 3
+        -   location: Ooty
+            days: 3
+    itinerary:
+        -   title: Coimbatore - Kodaikanal
+            details: Welcome to Coimbatore. Today we have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: Kodaikanal
+            details: Today we explore Kodaikanal . Visit the Kurinji Temple, Coaker's Walk, Pillar Rocks and Moier Point.
+            meals: ap
+        -   title: Kodaikanal
+            details: Today we enjoy boat ride in Kodai lake followed by visit to Byrant Park and Green valley view point.
+            meals: ap
+        -   title:  Kodaikanal - Ooty
+            details: Today we proceed to Ooty. Queen of the Blue Mountains.
+            meals: ap
+        -   title: Ooty
+            details: Today we visit Government Botanical Gardens, Doddabetta Peak and enjoy boat ride in Ooty Lake.
+            meals: ap
+        -   title: Ooty - Coonoor - Ooty
+            details: Today we proceed to Coonoor - The second largest hill station in the Nilgiris. We visit Sim's Park, A natural garden and Dolphin's nose and an enormous rock formation.
+            meals: ap
+        -   title: Ooty - Coimbatore - Departure to hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+honeymoon-special-kerala:
+    title: Honeymoon Special Kerala
+    categoy:
+        - honeymoon
+    country: India
+    state: Kerala
+    cover:
+    coverSmall:
+    days : 7 days / 6 nights
+    stays:
+        -   location: Munnar
+            days: 2
+        -   location: Periyar
+            days: 2
+        -   location: Cochin
+            days: 2
+    itinerary:
+        -   title: Cochin - Munnar
+            details: Welcome to Cochin & proceed towards Munnar. Today we have short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: Munnar
+            details: Today we enjoy speed boat ride at Mattupetty Dam. View Tea Garden, visit Echo Point and Eravikulam (Rajamalai) National Park.
+            meals: ap
+        -   title: Munnar - Periyar (Thekkady)
+            details: Welcome to Periyar. Enjoy the traditional Kairali show in the evening.
+            meals: ap
+        -   title:  Periyar (Thekkady)
+            details: Today we visit Periyar Wildlife Sanctuary by boat in Periyar Lake. Free time for shopping at Kumily Spice Village.
+            meals: ap
+        -   title: Periyar (Thekkady) - Cochin
+            details: Welcome to Cochin. En-route enjoy the famous Kerala Backwaters ride from Alleppey to Nedumudi. Later we enjoy live Kathakali dance performance.
+            meals: ap
+        -   title: Cochin
+            details: Today we visit St. Francis Church, Jewish Synagogue and Dutch Palace. We Take a Harbour Cruise Ride to see the Chinese Fishing Nets. We have free time for shopping in the evening . Also enjoy get-together with your travel companions.
+            meals: ap
+        -   title: Departure from Cochin
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all !! Tour concludes.
+            meals: breakfast
+
+kailash-manasarovar-yatra:
+    title: Kailash Manasarovar Yatra
+    categoy:
+        - pilgrimage
+    country: India
+    state: Nepal, Tibet
+    cover:
+    coverSmall:
+    days : 13 days / 12 nights
+    stays:
+        -   location: Kathmandu
+            days: 3
+        -   location: Nyalamu
+            days: 3
+        -   location: Saga
+            days: 2
+        -   location: Mansarovar
+            days: 1
+        -   location: Darchen
+            days: 1
+        -   location: Dira Puk
+            days: 1
+        -   location: Zutul Puk
+            days: 1
+    itinerary:
+        -   title: Kathmandu
+            details: Arrive at Kathmandu. Proceed to hotel. Later briefing on Kailash Manasarovar Yatra and completing formalities with final preparations. Overnight stay at Hotel.
+            meals: dinner
+        -   title: Kathmandu
+            details: Vist the famous Hindu Pashupatinath Temple, on the banks of the holy Bagmati river and Bodhnath Temple. Free time for shopping.
+            meals: ap
+        -   title: Kathmandu - Nyalamu
+            details: Departure to Nyalamu - 3750 mts. A scenic drive to Tibet. Overnight stay at guest house.
+            meals: ap
+        -   title: Nyalamu
+            details: Full day free for weather acclimat-ization. Overnight stay at guest house.
+            meals: ap
+        -   title: Nyalamu - Saga
+            details: Departure to Saga - 4850 mts, enroute we cross the Brahmaputra River. Arrive at Saga and Overnight stay at guest house.
+            meals: ap
+        -   title: Saga - Manasarovar
+            details: Drive through wild country to Lake Manasarovar - 4560 mts. Drive along the beautiful bluffs of lake Manas to Chiu Gompa, spectacularly situated on northwest shores of the lake. Overnight stay at guest house.
+            meals: ap
+        -   title: Manasarovar - Darchen
+            details: Morning free time for Pooja and Parikrama. Arrive at Darchen (4560 mts) and overnight stay at guest house.
+            meals: ap
+        -   title: Darchen - Tarboche - Dira Puk
+            details: Drive to Tarboche 8 kms this is starting point of Kailash Parikrama. We start treking 14 kms to Dira Puk, enroute view the Lha Chu river west face of Mount Kailash. Camping in tent.
+            meals: ap
+        -   title: Dira Puk - Dolmala Pass - Zutual Puk
+            details: Today we continue Parikrama of 22 kms. Enroute Dolmala Pass - 5650 mts and then to Zuthual Puk - 4770mts. Camping in tent.
+            meals: ap
+        -   title: Zutual Puk - Darchen - Saga
+            details: Today we continue Parikrama of 14kms to Darchen. On arrival drive to Paryang - 4560 mts. Today we will complete our Parikrama. Overnight stay at guest house.
+            meals: ap
+        -   title: Saga - Nyalamu
+            details: Drive from Paryang to Nyalamu. Arrive at Nyalamu. Overnight stay at guest house.
+            meals: ap
+        -   title: Nyalamu - Kathmandu
+            details: Proceed to Kathmandu. We drive to the Friendship Bridge at Zhangmu which spans the Bhote Kosi River and marks the Chinese - Nepalese border. Arrive at Kathmandu.
+            meals: ap
+        -   title: Kathmandu
+            details: Day free for shopping. Enjoy get-together with your travel companions in the evening and proceed for return journey.. Tour Concludes..
+            meals: ap
+
+kashmir-amarnath-vaishnodevi:
+    title: Kashmir Amarnath Vaishnodevi
+    categoy:
+        - pilgrimage
+    country: India
+    state: Jammu & Kashmir
+    cover:
+    coverSmall:
+    days : 9 days / 8 nights
+    stays:
+        -   location: Srinagar (House Boat)
+            days: 2
+        -   location: Srinagar (Hotel)
+            days: 2
+        -   location: Sonmarg
+            days:
+        -   location: Baltal
+            days: 2
+        -   location: Amarnath | Gulmarg | katra
+            days: 2
+
+    itinerary:
+        -   title: Srinagar
+            details: Arrive at Srinagar, report to coach and proceed to the house boat.
+            meals: dinner
+        -   title: Srinagar - Gulmarg - Srinagar
+            details: Visit Gulmarg - the "Ski slopes of Kashmir", also known as "Meadow of Flowers". Enjoy longest cable car ride from Gulmarg to Affarwat (Khilanmarg) snow point.
+            meals: ap
+        -   title: Srinagar - Sonamarg - Baltal
+            details: Proceed to Baltal. En-route visit Sonamarg known as 'Meadow of Gold' on the valley of River Jhelum . View magnificent picturesque mountain ranges. Arrive at Baltal in the evening.
+            meals: ap
+        -   title: Baltal - Amarnath - Baltal
+            details: Visit Amarnath - a Holy Abode of Lord Shiva. Each year this yatra attracts thousands of pilgrims.
+            meals: ap
+        -   title: Baltal - Srinagar
+            details: Proceed to Srinagar. On arrival free time for relaxation and shopping.
+            meals: ap
+        -   title: Srinagar
+            details: Visit Shankaracharya hills and holy temple of Lord Shiva located on top of a hill. Enjoy Dal lake Shikara ride. Visit Charchinar Island, Shalimar Bagh -'Abode of Love' and Nishad Bagh - 'The garden of pleasure'.
+            meals: ap
+        -   title: Srinagar - Katra
+            details: Proceed to Katra. In the evening arrive at Katra - the base point for Vaishnodevi.
+            meals: ap
+        -   title: Katra - Vaishnodevi
+            details: Early morning proceed for Vaishno Devi mandir one of the holiest hindu temples dedicated to shakti.
+            meals: ap
+        -   title: Katra - Jammu
+            details: Proceed to Jammu. Board the train/flight for your hometown. Tour Concludes.
+            meals: breakfast
+
+jagannath-puri-kolkata-gangasagar:
+    title: Jagannath Puri Kolkata Gangasagar
+    categoy:
+        -pilgrimage
+    country: India
+    state: West Bengal, Orissa.
+    cover:
+    coverSmall:
+    days : 8 days / 7 nights
+    stays:
+        -   location: Kolkata( Gangasagar | Shantiniketan )
+            days: 4
+        -   location: Bhubaneshwar
+            days: 2
+        -   location: Puri
+            days: 1
+    itinerary:
+        -   title: Kolkata
+            details: Arrive in Kolkata, report to the coach and proceed to hotel.
+            meals: indian
+
+        -   title: Kolkata - Gangasagar - Kolkata
+            details: Visit Gangasagar where the Ganaga flows into the Bay of Bengal and largest number of devotees gather in the Ganga Sagar mela & visit Kapil Muni temple.
+            meals: ap
+        -   title: Kolkata
+            details: Visit jain temple, Belurmath, Dakshineshwar Kali Temple, Victoria Memorial and pass by Howrah Bridge - The bridge is a famous symbol of Kolkata. City orientation includes Dalhousie Square, Fort Williams, Secretariat Building and Old Court House Street.
+            meals: ap
+        -   title: Kolkata - Shantiniketan - Kolkata
+            details: Visit Shantiniketan - Dehali, Prayer hall, Shantiniketan griha & Bichitra.
+            meals: ap
+        -   title: Kolkata - Bhubaneshwar
+            details: Departure to Bhubaneshwar by train ( Guest have to book Kolkata to Bhubaneshwar train on their own). Arrive at Bhubaneshwar. Enjoy shopping in the evening.
+            meals: ap
+        -   title: Bhubaneshwar - Puri
+            details: Proceed to Puri. Visit Lord Jagannath Temple dedicated to Lord Vishnu and Gundecha Temple - Aunt of Lord Jagannath. Evening free to stroll around Puri beach and shopping.
+            meals: ap
+        -   title: Puri - Konark - Bhubaneshwar
+            details: Proceed to Bhubaneshwar. En-route enjoy shopping at Pipli and visit Dhauli - it is presumed to be the area where Kalinga War was fought. See the famous Shanti Stupa and inscription carved by King Ashoka. En-route visit Konark Sun Temple - a World Heritage Site.
+            meals: ap
+        -   title: Bhubaneshwar - Mumbai
+            details: Visit ancient temples like Raja Rani Temple, Lingaraj Temple - 54mts high temple dedicated to Lord Tribhuvaneshwara, Mukteshwar temple often referred as the "Gem of Orissa Architecture". Board the train to your hometown. Tour Concludes.
+            meals: map-day
+
+traditional-chardham-yatra:
+    title: Traditional Chardham Yatra
+    categoy:
+        - pilgrimage
+    country: India
+    state: Tamil Nadu, Orrisa, Uttarakhand, Gujarat
+    cover:
+    coverSmall:
+    days : 16 days / 15 nights
+    stays:
+        -   location: Rameshwaram
+            days: 1
+        -   location: Madurai
+            days: 1
+        -   location: Chennai
+            days: 1
+        -   location: Puri
+            days: 1
+        -   location: Bhubaneshwar
+            days: 1
+        -   location: Haridwar
+            days: 2
+        -   location: Delhi
+            days: 1
+        -   location: Kirtinagar
+            days: 1
+        -   location: Badrinath
+            days: 2
+        -   location: Rudraprayag
+            days: 1
+        -   location: Ahmedabad
+            days: 1
+        -   location: Dwarka
+            days: 2
+    itinerary:
+        -   title: Madurai - Rameshwaram
+            details: On arrival to Madurai transfer to Rameshwaram . Visit the temple. Overnight stay at hotel in Rameshwaram.
+            meals: dinner
+        -   title: Rameshwaram - Madurai
+            details: Take early morning Sphatik darshan. After lunch depart to Madurai. After reaching Madurai , visit the famous Meenakshi temple - Madurai's claim to fame for its meticulous colorful carvings on the Gopurams ( towers). Overnight stay at Madurai.
+            meals: ap
+        -   title: Madurai - Chennai
+            details: Transfer to airport to take flight to Chennai. Overnight stay at Chennai.
+            meals: ap
+        -   title: Chennai - Bhubaneshwar - Puri
+            details: Take flight from chennai to bhubaneshwar. On arrival transfer to hotel at Puri. Enroute visit to Puri - Konark temple. Relax time at Puri beach. Overnight stay at Puri.
+            meals: ap
+        -   title: Puri - Bhubaneshwar
+            details: Board flight to Delhi. On arrival depart to Haridwar. Later arrival at Haridwar. Overnight stay hotel in Haridwar.
+            meals: ap
+        -   title: Bhubaneshwar - Delhi - Haridwar
+            details: Board flight to Delhi. On arrival depart to Haridwar. Later arrival at Haridwar. Overnight stay hotel in Haridwar.
+            meals: ap
+        -   title: Haridwar - Rudraprayag
+            details: Proceed to Rudraprayag by non a\c mini coach . Arrive at Rudraprayag in the evening . Overnight stay at hotel.
+            meals: ap
+        -   title: Rudraprayag - Badrinath
+            details: Proceed to Badrinath by mini non a\c coach, en-route view the 3 Sangams of holy rivers - Vishnuprayag - Alaknanda and Dhauliganga, Nandaprayag- Alaknanda and Mandakini, Karnaprayag - Alaknanda and Pinderganga. Arrive at Badrinath in the evening. Overnight stay at Badrinath.
+            meals: ap
+        -   title: Badrinath
+            details: Visit Badrinath Temple, Mana village, Saraswati river, Vyas Gumpha, Ganesh Gumpha, Bhim Bridge & Pandava's Swargarohan Margdarshan. Take a holy dip in Tapt Kund fed by the hot sulphurous springs. Overnight stay at Badrinath.
+            meals: ap
+        -   title: Badrinath - Kirtinagar
+            details: Proceed to Kirtinagar. Arrive at Kirtinagar in the evening. Overnight stay at Kirtinagar.
+            meals: ap
+        -   title: Kirtinagar - Haridwar
+            details: Proceed to Haridwar . In the evening, Har ki Pawadi and attend Ganga arati. Overnight stay at Haridwar.
+            meals: ap
+        -   title: Haridwar - Delhi
+            details: Proceed to Delhi from Haridwar. Overnight stay at Delhi.
+            meals: ap
+        -   title: Delhi - Ahmedabad
+            details: Leave for airport take flight to Ahmedabad. In the evening visit Akshardham temple. Overnight stay at Ahmedabad.
+            meals: ap
+        -   title: Ahmedabad - Dwarka
+            details: Proceed to Dwarka . Arrive at Dwarka in the evening.
+            meals: ap
+        -   title: Dwarka - Bet Dwarka - Dwarka
+            details: Proceed to Bet Dwarka - residence of Lord Shri Krishna. On arrival visit Ranchodas Temple, Dwarkadheesh temple and Rukmini temple. Transfer back to Dwarka.
+            meals: ap
+        -   title: Dwarka - Jamnagar
+            details: Proceed to Jamnagar from Dwarka .Tour Concludes.
+            meals: breakfast
+
+jyotirlinga-darshan:
+    title: M.P. Jyotirlinga Darshan
+    categoy:
+        - pilgrimage
+    country: India
+    state: Madhya Pradesh
+    cover:
+    coverSmall:
+    days:  4 days / 3 nights
+    stays:
+        -   location: Indore (Omkareshwar | Mandu | Ujjain)
+            days: 3
+    itinerary:
+        -   title: Indore
+            details: Arrive at Indore station, report to coach & proceed to hotel. Enjoy city tour. Visit Central museum, Lal Bagh Palace, Annapurna Temple, Kanch Mandir, Rajwada Palace, Chattri Bagh. Evening free time for shopping.
+            meals: dinner
+        -   title: Indore - Omkareshwar - Maheshwar - Indore
+            details: After breakfast depart for Omkareshwar. Visit Omkareshwar temple - one of the 12 jyotirlingas. The shape of this sacred island is said to be like the Hindu 'OM' symbol, hence the name. Later proceed to Maheshwar, famous for the Maheshwari sarees.
+            meals: ap
+        -   title: Indore - Mandu - Indore
+            details: Proceed to Mandu. Visit Jahaj Mahal, Jama Masjid, Bajbahadur Palace & Rani Roopmati Pavillion. Return back to Indore in the evening.
+            meals: ap
+        -   title: Indore - Ujjain
+            details: Proceed to Ujjain. Visit Mahakaleshwar temple - one of the 12 Jyotirlingas. Later visit Bada Ganesh, Harrisiddhi Mata Temple, Sandipani Ashram, Chintaman Ganesh Mandir, Kaal Bhairav Temple. Tour Concludes.
+            meals: breakfast
+
+maharashtra-jyotirlinga-with-shirdi:
+    title: Maharashtra Jyotirlinga with Shirdi
+    categoy:
+        - pilgrimage
+    country: India
+    state: Maharashtra
+    cover:
+    coverSmall:
+    days:  6 days / 5 nights
+    stays:
+        -   location: Bhimashankar (Ahmednagar)
+            days: 1
+        -   location: Ambajogai
+            days: 1
+        -   location: Aurangabad (Parali Vajinath | Aundha Nagnath)
+            days: 2
+        -   location: Shirdi (Trimbakeshwar)
+            days: 1
+    itinerary:
+        -   title: Pune - Bhimashankar - Ahmednagar
+            details: Early morning proceed from Pune to Bhimashankar. Visit Bhimashankar an ancient shrine situated in the Sahyadri hills. It is one of the well known jyotirlinga amongst the 12 jyotirlingas. After Darshan proceed to Ahmednagar. Arrive at Ahmednagar in the evening.
+            meals: ap
+        -   title: Ahmednagar - Parali Vajinath - Ambajogai
+            details: Early morning proceed to Ambajogai - a heritage temple dedicated to Goddess Yogeshwari. Later visit Parali Vajinath Jyotirling temple. Arrive at Ambajogai in the evening.
+            meals: ap
+        -   title: Ambajogai - Aundha Nagnath - Aurangabad
+            details: Proceed to Aurangabad. Enroute visit Aundha Naganath Jyotirling Temple. Arrive at Aurangabad in the evening.
+            meals: ap
+        -   title: Aurangabad
+            details: Aurangabad city tour includes Grishneshwar Temple- one of the jyotirlingas, Later visit Ellora caves, Bhadra Maruti temple - the only sleeping Maruti idol in India, Pawanchakki and Bibi ka Maqbara.
+            meals: ap
+        -   title: Aurangabad - Shirdi
+            details: Proceed to Shirdi. Evening visit Sai Baba Temple.
+            meals: ap
+        -   title: Departure from Shirdi
+            details: Proceed to pune. Enroute visit trimbakeshwar - one of the 12 jyotirlingas. Tour concludes.
+            meals: map-day
+
+ashtavinayak-yatra-with-jejuri:
+    title: Ashtavinayak Yatra with Jejuri
+    categoy:
+        - pilgrimage
+    country: India
+    state: Maharashtra
+    cover:
+    coverSmall:
+    days : 3 days / 2 nights
+    stays:
+        -   location: Pune(Ozar | Lenyadri | Ranjangaon| Theur | Morgaon | Siddhatek | Jejuri | Mahad | Pali)
+            days: 3
+    itinerary:
+        -   title: Pune - Ozar - Lenyadri - Ranjangaon - Pune
+            details: Report to coach as per given reporting schedule. Proceed to Ozar (Vigneshwar) - Swayambhu (Self-generated) idol with the trunk to the left. The temple faces the east and has several idols. Also visit Lenyadri (Girijatma) the temple on the hill, which has 283 steps, the hill is full of caves. Later proceed to Ranjangaon (Mahaganapati)- The temple faces the east. The idol is portrayed, seated on a lotus, flanked by his consorts Siddhi & Riddhi. Mahaganpati is believed to have eight, ten or twelve hands.
+            meals: ap
+        -   title: Pune - Theur - Morgaon - Siddhatek - Jejuri - Pune
+            details: Early morning proceed to Jejuri via Theur (Chintamani)-The temple faces the north,Swayambhu (Self-generated) idol with the trunk to the left. Further proceed to Morgaon (Mayureshwar) -The temple faces the north, Swayambhu (Selfgenerated) idol with the serpent above the head. The temple has eight Ganesha idols in eight corners. Also visit Siddhatek (Siddhi-Vinayak) Swayambhu (Selfgenerated) idol; with the trunk to the right. The temple faces the north and has the idols of other gods like Vishnu, Shiva and Parvati. Later visit Jejuri - Khandoba temple. Evening back to Pune.
+            meals: ap
+        -   title: Pune - Mahad - Pali - Pune
+            details: Proceed to Mahad (Varad Vinayak)- Swayambhu (Self-generated) idol with the trunk of the left. Further proceed to Pali (Ballaleshwar) the temple faces the east with swayambhu (Self-generated) idol with the trunk to the right. Drive back to your home town. Tour Concludes.
+            meals: map-day
+
+hyderabad-srisailam-with-tirupati-darshan:
+    title: Hyderabad Srisailam with Nights Tirupati Darshan
+    categoy:
+        - pilgrimage
+    country: India
+    state: Andhra Pradesh
+    cover:
+    coverSmall:
+    days : 8 days / 7 nights
+    stays:
+        -   location: Hyderabad
+            days: 2
+        -   location: Srisailam
+            days: 2
+        -   location: Tirupati
+            days: 3
+    itinerary:
+        -   title: Hyderabad
+            details: Arrive at Hyderabad station, report to coach & proceed to hotel. Later visit Golconda Fort. There you enjoy light & sound show in the evening.
+            meals: dinner
+        -   title: Hyderabad
+            details: Visit Birla temple, Salarjung museum, enjoy boat ride in Hussainsagar lake, Buddha statue and laser show at Lumbini Gardens. Visit Qutub Shahi Tomb and Mecca Mosque.
+            meals: ap
+        -   title: Hyderabad - Nagarjunsagar - Srisailam
+            details: Proceed to Srisailam. Enroute visit Nagarjuna sagar Dam which is built across Krishna River. It is one of the earliest irrigation and hydro-electric projects in India. Also visit Pathala ganga, Akkamma Caves, Chechu Laksmi tribal museum Shikhara darshan & Mallela Tirtham waterfall.
+            meals: ap
+        -   title: Srisailam
+            details: Srisailam is one of the most important pilgrimage centers of Lord Shiva in India, and it is one of the twelve Jyotirlingas. Srisailam, also known as Sriparvata is situated in the Rishabgiri Hills on the banks of River Krishna in Kurnool district of Andhra Pradesh.
+            meals: ap
+        -   title: Srisailam - Tirupati
+            details: Proceed to Tirupati. Evening free time for relaxation.
+            meals: ap
+        -   title: Tirupati - Tirumala - Tirupati
+            details: Proceed to tirumala. Visit Lord Venkateshwara Temple, Padmavati Temple & Iskcon temple.
+            meals: ap
+        -   title: Tirupati - Vellore - Tirupati
+            details: Proceed to Vellore. Visit Sri Sripuram Golden Mahalakshmi Temple. Free time for shopping in the evening.
+            meals: ap
+        -   title: Departure from Tirupati / Reniguntha
+            details: Board flight / train for your hometown. Tour concludes.
+            meals: breakfast
+
+madurai-rameshwaram-kanyakumari:
+    title: Madurai-Rameshwaram-Kanyakumari
+    categoy:
+        - pilgrimage
+    country: India
+    state: Tamil Nadu
+    cover:
+    coverSmall:
+    days:  5 days / 4 nights
+    stays:
+        -   location: Kanyakumari
+            days: 2
+        -   location: Rameshwaram
+            days: 1
+        -   location: Madurai
+            days: 1
+    itinerary:
+        -   title: Kanyakumari
+            details: Arrive at Kanyakumari station, report to coach & proceed to hotel. Enjoy Sunset in the evening.
+            meals: indian
+        -   title: Kanyakumari
+            details: Today we visit Kathmandu, Nepals largest urban agglomeration, enroute we will see the famous Kathmandu valleys.
+            meals: ap
+        -   title: Kanyakumari - Tiruchendur - Rameshwaram
+            details: Proceed Rameshwaram via Tiruchendur - the seashore temple of Subrahmanyam is one of the delightful spots sanctified and venerated by every Hindu. Evening arrive at Rameshwaram.
+            meals: ap
+        -   title: Rameshwaram - Madurai
+            details: Early morning take Sphatik linga Darshan at the famous Ramanathan temple - a Master Piece in Dravidian Architecture. Later proceed to Madurai. Arrive at Madurai in the evening. Visit Meenakshi temple - Madurai's claim to fame for its meticulous colorful carvings on the Gopurams (towers), in the vivid Dravidian image of Gods, Goddess, animal and mythical figures.
+            meals: ap
+        -   title: Departure from Madurai
+            details: Board the train to for your hometown. Tour Concludes.
+            meals: breakfast
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+corbette-national-park:
+    title: Corbette National Park
+    categoy:
+        - Wildlife
+    country: India
+    state: Uttarakhand
+    cover:
+    coverSmall:
+    days : 5 days / 4 nights
+    stays:
+        -   location: Ramnagar
+            days: 2
+        -   location: Dhikala
+            days: 2
+    itinerary:
+        -   title: Delhi - Ramnagar
+            details: Arrival at Delhi and departure for Ramnagar post lunch. Overnight at Ramnagar.
+            meals: indian
+        -   title: Ramnagar
+            details: Today, we take 2 safaris in the magnificent Bijrani zone, famous for the female tiger called 'Charamma' who is regularly seen along with her 4 cubs.
+            meals: ap
+        -   title: Ramnagar- Dhikala
+            details: After breakfast, we leave for Dhikala, one of the most popular areas of the Park. Here we have morning and evening safaris into the famed grasslands (chaurs) of Corbett. Dhikala offers an uninterrupted panoramic view of the valley. We set out in search of the tiger that is often spotted in the open grasslands. Overnight at Dhikala.
+            meals: ap
+        -   title: Dhikala
+            details: Today, we have two more safaris into the forest. Four safaris old, we are now familiar with the alternating chaurs and dense forests interrupted by the Ramganga and its tributaries. On our trails, we witness the rich avifauna of the region and go scouring for Cinereous Vultures, Himalayan Griffon Vultures, Tawny Fish Owls, Great Slaty Woodpeckers, redbilled leiothrix and many other birds. Overnight at Dhikala.
+            meals: ap
+        -   title: Dhikala - Delhi
+            details: Today we have our final safaris in Dhikala. Post dinner, we leave for Ramnagar, from where we leave for Delhi. Tour Concludes.
+            meals: ap
+
+ranthambhore-national-park:
+    title: Ranthambhore National Park
+    categoy:
+        - Wildlife
+    country: India
+    state: Rajasthan
+    cover:
+    coverSmall:
+    days : 4 days / 3 nights
+    stays:
+        -   location: Sawai Madhopur
+            days: 3
+    itinerary:
+        -   title: Sawai Madhopur
+            details: Reach Sawai Madhopur and check-in at the resort. A delicious breakfast would be awaiting you here, following which you get leisure time. Over lunch we will discuss our plan of action over the next few days. A brief session on the various photographic opportunities in the jungle would be conducted by our experts. In the evening we visit the majestic Ranthambore Fort! Overnight at the resort.
+            meals: ap
+        -   title: Ranthambore
+            details: Today, we enter into the park for a morning safari ride. Get your cameras in action! In the evening, we will go for yet another safari in the magical Ranthambhore landscape. Our guides and experts would search for the tiger, the elusive leopard and other birds and mammals found in this iconic jungle. We return to the resort by late evening for a relaxed group session!
+            meals: ap
+        -   title: Ranthambore
+            details: Today, we take 2 safari rides in the forest. We search for the creatures who eluded us on the previous day! Enjoy a campfire at night!
+            meals: ap
+        -   title: Ranthambore
+            details: Our last safari ride into the forest! Explore the great wilderness for one last time before bidding adieu to the jungle! After lunch we head for return Journey. Tour Concludes.
+            meals: ap
+
+kanha-national-park:
+    title: Kanha National Park
+    categoy:
+        -Wildlife
+    country: India
+    state: Madhya Pradesh
+    cover:
+    coverSmall:
+    days : 4 days / 3 nights
+    stays:
+        -   location: Kanha
+            days: 3
+    itinerary:
+        -   title: Jabalpur - Kanha
+            details: We have breakfast on our arrival in Jabalpur in the morning and thereafter leave for Kanha. Having a sumptuous lunch on the way at the Pench forest, we reach Kanha by evening. Orientation session and introduction to be followed by dinner.
+            meals: ap
+        -   title: Kanha
+            details: We would be going on 4 safaris in these 2 days. These safaris would cover different zones and hence a different topography. Kanha is replete with meadows, grasslands, thick forests, bushes and hills. We would be covering all these in our safaris today. Hopefully, you should have seen a tiger by now!
+            meals: ap
+        -   title: Kanha - Jabalpur
+            details: We make our way for one last time in the forest and try and spot all the species we did not get a glimpse of till now. After a heavy brunch we leave for Jabalpur for return journey. Tour Concludes.
+            meals: map-day
+
+bandhavgarh-national-park:
+    title: Bandhavgarh National Park
+    categoy:
+        - Wildlife
+    country: India
+    state: Madhya Pradesh
+    cover:
+    coverSmall:
+    days : 4 days / 3 nights
+    stays:
+        -   location: Bandhavgarh
+            days: 3
+    itinerary:
+        -   title: Jabalpur- Bandhavgarh
+            details: On our arrival in Jabalpur we will move towards Bandhavgarh. After lunch we will have a orientation session, we proceed for our first jungle safari. In the evening, after an eventful safari ride, we return back to the resort for a group discussion.
+            meals: ap
+        -   title: Bandhavgarh
+            details: We have morning and evening safari rides in the forest. We go out in search of some of Bandhavgarh`s most iconic animals, whose tales are steeped in Indian wildlife history. After a busy, rewarding day out in the jungle we gather for a group discussion session before having a sumptuous dinner.
+            meals: ap
+        -   title: Bandhavgarh
+            details: Two more safaris into the forest! Four safaris old, the great Indian-safari experience will start unfolding before you! Overnight at the resort.
+            meals: ap
+        -   title: Bandhavgarh - Jabalpur
+            details: After a morning birdwatching session in the timeless Bandhavgarh woods, we have a heavy breakfast and then make our way towards the picturesque Bhedaghat. We visit the Dhuandhar waterfalls and go for a boat ride through the gorge created by the calm waters of the Narmada. The winter mist adds a touch of mystique to the various-hued marble rocks! Thereon we proceed towards Jabalpur for return journey. Tour Concludes.
+            meals: ap
+
+amboli-wildlife-sanctuary:
+    title: Amboli Wildlife Sanctuary
+    categoy:
+        - Wildlife
+    country: India
+    state: Maharashtra
+    cover:
+    coverSmall:
+    days:  3 days / 2 nights
+    stays:
+        -   location: Amboli
+            days: 2
+    itinerary:
+        -   title: Pune - Amboli
+            details: Welcome to Pune from where we Proceed towards Amboli. We reach Amboli by lunch-time and over lunch, we discuss the course of action over the next few days. In the evening we leave for our first nature trail! Lots of colourful insects and butterflies, snakes lurk in the dense bushes of Amboli. Post-dinner, we would be going for a short walking trail in search of the Malabar Gliding Frog.
+            meals: indian
+        -   title: Amboli
+            details: We spend an entire day in the wild! We would be visiting the dense forest patches of Parikshit point which are famous for their sightings of the Malabar Pit Viper and other beauties from the herp world. In the evening, after a refreshing walk through the forest paths, we visit the glorious Kavlesaad waterfalls and its environs! After a sumptuous dinner, we once again go for a short night trail to explore the magnificent night life of Amboli!
+            meals: ap
+        -   title: Amboli - Pune
+            details: This would be our last foray into the jungle of Amboli. Jewel bugs, vine snakes, Malabar Whistling Thrushes are some of Amboli's more famous denizens! The walking trail would be followed by lunch. Post lunch we will move towards Pune for returrn journey. Tour Concludes.
+            meals: map-day
+
+tadoba-national-park:
+    title: Tadoba National Park
+    categoy:
+        - Wildlife
+    country: India
+    state: Maharashtra
+    cover:
+    coverSmall:
+    days:  4 days / 3 nights
+    stays:
+        -   location: Tadoba
+            days: 3
+    itinerary:
+        -   title: Nagpur - Tadoba
+            details: Welcome to Nagpur. After a quick breakfast, we leave for Tadoba. We go for a short nature trail in the evening which would be followed by an introductory round, orientation and dinner.
+            meals: ap
+        -   title: Tadoba
+            details: We take two safaris in the forest today. Tadoba is famous for its large number of tigers, sloth bears and wild dogs. We will search for all these enigmatic animals and also concentrate on Tadoba's healthy birdlife. The sheer beauty of this iconic 'Tiger-land' would leave you enthralled. Over a hot cup of evening tea, we discuss the day's proceedings.
+            meals: ap
+        -   title: Tadoba
+            details: Another two safaris in the forest. We will be exploring the areas of Telia, Tadoba lake, Pandharpauni and others, which together, make one of the world's densest tiger areas! In the evening, we would be having lots of activities and group discussions.
+            meals: ap
+        -   title: Tadoba
+            details: Our last foray in the national park. We go on a morning safari to explore the enchanting forest one final time! We would have had a very productive time till now and be would be saying a regretful goodbye! We would be moving back to Nagpur for our return journey. Tour concludes.
+            meals: map-day
+
+nagzira-wildlife-sactuary:
+    title: Nagzira Wildlife Sactuary
+    categoy:
+        - Wildlife
+    country: India
+    state: Maharashtra
+    cover:
+    coverSmall:
+    days : 4 days / 3 nights
+    stays:
+        -   location: Nagzira
+            days: 3
+    itinerary:
+        -   title: Nagpur - Nagzira
+            details: On our arrival in Nagpur, we have a sumptuous breakfast at a south Indian restaurant before heading towards Nagzira. We check-in to the resort and following a nice lunch, start with our introductions and orientation. In the evening, as the cold sets in, we explore the surrounding jungle for birds, boars and deer! Our last group saw a sloth bear on this very evening trail!
+            meals: ap
+        -   title: Nagzira
+            details: Today morning, we set out for our first jungle safari. The magnificent jungle would soon unfold its many stories in frontof you! Be ready, be inspired! After the safari we stay in the forest and check-in to the fabled Nagzira Lake Rest house. Now, you are in the most pristine wild in the midst of absolute beauty! After lunch, we go for an evening safari and try our luck in searching for all the species that evaded us on the morning safari. At night, as alarm calls and jungle sounds start getting more prominent, we go for a short night walk. This is thrilling, believe us! Also, the night sky in Nagzira is gorgeous, we will spend some time shooting star trails and the Milky Way!
+            meals: ap
+        -   title: Nagzira
+            details: Today we go on two more safaris. If we are lucky, we would have already spotted the tiger by now, and hope to spot other elusive animals.
+            meals: ap
+        -   title: Nagzira - Nagpur
+            details: In the form of the morning safari today, we go on our last safari on the camp. This would be our final chance to live the Nagzira life, make stunning images of the morning rays permeating through the verdant greens and try and get a glimpse of those creatures dearest to us! And like all good things, we will bid goodbye to Nagzira post lunch and make our way towards Nagpur for return journey. Tour Concludes.
+            meals: map-day
+
+women's-special-heavenly-himachal:
+    title: Women's Special Heavenly Himachal
+    categoy:
+        - Women's tour
+    country: India
+    state: Himachal Pradesh, Chandigarh
+    cover:
+    coverSmall:
+    days : 8 days / 7 nights
+    stays:
+        -   location: Chandigarh
+            days: 3
+        -   location: Shimla
+            days: 2
+        -   location: Manali
+            days: 3
+    itinerary:
+        -   title: Chandigarh
+            details: Welcome to Chandigarh. We have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: Chandigarh - Shimla
+            details: Today we visit Rose Garden, Sukhana Lake, Rock Garden, and Pinjore Garden. Later we proceed to Shimla.
+            meals: ap
+        -   title: Shimla
+            details: Today we explore the city of Shimla. We visit Kufri– Winter Sports Capital, Indira Bungalow and Himalayan Zoo (subject to operations). Later we leave for famous Mall road, Scandal Point and Shimla Church.
+            meals: ap
+        -   title:  Shimla - Manali
+            details: Today we proceed to Manali enjoying a scenic drive through Pandoh Dam and Kullu Valley. En route we visit Kullu Shawl Factory where you can buy woollen products.
+            meals: ap
+        -   title: Manali - Rohtang Snow Point - Manali
+            details: "Today we enjoy spectacular drive towards Rohtang snow point. Free time to play and enjoy in the snow. Please Note: Rohtang pass is 51 kms away from Manali. This pass is not accessible for almost 8 months in a year as it is covered by snow. We generally visit the snow point on Rohtang road, which has been permitted by the Border Security Force. Entertain yourself through spectacular Himachali folk dance."
+            meals: map-night
+        -   title: Manali - Solang Valley - Manali
+            details: Today we explore the ancient temples like Vashista Kund and Hadimba Mandir. Then we proceed to Solang Valley – A splendid valley between Solang village which offers the view of glaciers and snowcapped mountains. Later we enjoy Ropeway ride, Enjoy the activities like Horse riding, Skiing, Ice skating, Paragliding, mountain bike, snow scooter, Zorbing at your own. Free time for shopping in the evening.
+            meals: ap
+        -   title: Manali - Chandigarh
+            details: Today we proceed to Chandigarh - the capital of Punjab and Haryana. En – route we visit Vaisnomata Mandir at Kullu. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Chandigarh - Departure to hometown
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through social media. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+women's-special-kashmir-vaishnodevi:
+    title: Women's Special Kashmir Vaishnodevi
+    categoy:
+        - Women's tour
+    country: India
+    state: Jammu & Kashmir
+    cover:
+    coverSmall:
+    days : 9 days / 8 nights
+    stays:
+        -   location: Srinagar (House Boat)
+            days: 2
+        -   location: Srinagar
+            days: 2
+        -   location: Pahalgam
+            days: 2
+        -   location: Katra
+            days: 2
+    itinerary:
+        -   title: Srinagar
+            details: Welcome to Srinagar, the Summer capital of Indian State Jammu and Kashmir as well as the largest city in the Kashmir region. Evening free for relaxation. We have a short 'Introductory' session before dinner.
+            meals: ap
+        -   title: Srinagar - Sonmarg
+            details: Today we explore Sonmarg 'Meadow of Gold'.
+            meals: ap
+        -   title: Srinagar
+            details: Today we visit Shankaracharya Temple, Island of Char Chinar where you can your photograph yourself in Kashmiri outfits and we enjoy Shikara ride in Dal Lake. Later explore Nishat Bagh-'The garden of pleasure' and Shalimar Bagh-'Abode of Love.
+            meals: ap
+        -   title:  Srinagar - Gulmarg
+            details: Welcome to Gulmarg, a snow capital of Kashmir which is also known as 'Meadow of Flowers'. En-route we view apple orchards. On arrival at Gulmarg we visit Khilanmarg by the longest Cable Car which takes us to the Affarwat snow point. We also view the picturesque golf course. Later we proceed to Srinagar en route we visit Carpet outlet.
+            meals: map-night
+        -   title: Srinagar - Pahalgam
+            details: Today we proceed to Pahalgam En route we visit Cricket bat factory, Avantipur ruin and also we pass-by the Pampore Saffron fields.
+            meals: ap
+        -   title: Pahalgam - Chandanwari - Pahalgam
+            details: Today we explore Chandanwari to enjoy the magnificent view of Lidder valley. We also visit Aru Valley - a fascinating valley around 15 km from Pahalgam. Once again you can photograph yourself in Kashmiri outfits at various photo studios of Pahalgam.
+            meals: ap
+        -   title: Pahalgam - Katra - Vaishnodevi
+            details: Welcome to Katra, the base point of Vaishnodevi. Today we start the trek of Vaishnodevi Temple (a total trek of 28 kms).
+            meals: ap
+        -   title: Vaishnodevi - Katra
+            details: Today we arrive from Vaishnodevi. We have free Day for relaxation or leisure activities. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title: Katra - Departure from Jammu
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media, calls…. And meet again on one more memorable tour. See you all..!! Tour concludes.
+            meals: breakfast
+
+Women's-special-genuine-goa:
+    title: Women's Special Genuine Goa
+    categoy:
+        - Women's tour
+    country: India
+    state: Goa
+    cover:
+    coverSmall:
+    days : 4 days / 3 nights
+    stays:
+        -   location: Goa
+            days: 3
+    itinerary:
+        -   title: Goa
+            details: Welcome to Goa the coolest place in India. Evening free for relaxation. Today we have a short 'Introductory' session before dinner.
+            meals: dinner
+        -   title: North Goa
+            details: Welcome to North Goa which include Panji, the capital of Goa. Today we explore famous churches of old Goa which reflect the richness of Greco-Roman architectural style. We visit Dona Paula, Baga Beach, Calangute Beach and fort Aguada overlooking the beach. Later we leave for Mapusa Bazaar the oldest weekly fair on the Konkan Coast (Subject to Operartion). We also enjoy a boat cruise and admire the sunset views.
+            meals: ap
+        -   title: South Goa
+            details: Welcome to South Goa. Today we visit Shri Mangesh Temple in Madgaon, Shri Shanta Durga Temple dedicated to Goddess of peace, Shanteri. Later we leave to visit Colva beach the oldest, largest and the most spectacular of South Goa beaches. Enjoy get together with your travel companions in the evening.
+            meals: ap
+        -   title:  Departure from Goa
+            details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all..!! Tour concludes
+            meals: breakfast
