@@ -583,7 +583,7 @@ dazzling-kerala:
             details: Today enjoy the city tour of Trivandrum. We Visit Padmanabh Swami Temple, Raja Ravi Varma Art Gallery and Napier Museum (subject to operation). Free time in the evening to have fun at Kovalam beach.
             meals: ap
         -   title: Trivandrum - Backwater Ride - Periyar (Thekkady)
-            details: Today we proceed to Munnar via Nedumkamdan. En- route we visit Periyar Wildlife Sanctuary by boat in Periyar Lake. Later we enjoy shopping at Kumily spice village.
+            details: Today we proceed to Munnar via Nedumkamdan. En- route we visit Periyar wildlife Sanctuary by boat in Periyar Lake. Later we enjoy shopping at Kumily spice village.
             meals: ap
         -   title: Munnar
             details: Today we enjoy speed boat ride at Mattupetty Dam near Sunmoon Valley. View Tea Garden, You can also buy a flavoured tea at Tata Tea Outlet. Later visit Echo Point and Eravikulam (Rajamalai) National Park.
@@ -633,15 +633,15 @@ crown-of-islands-andaman:
             details: Its time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media. And meet again on one more memorable tour. See you all !! Tour Concludes
             meals: brakfast
 
-the-best-of-ladakh:
-    title: The Best of Ladakh
+best-of-ladakh:
+    title: Best of Ladakh
     categoy:
-        - Adventure
+        - adventure
     country: India
-    state: Jammu & Kashmir
-    cover:
-    coverSmall:
-    days : 8 days / 7 nights
+    states: Jammu & Kashmir
+    cover: best-of-ladakh-1600x900.jpg
+    coverSmall: best-of-ladakh-600x338.jpg
+    duration: 8 days / 7 nights
     stays:
         -   location: Leh
             days: 5
@@ -678,12 +678,12 @@ the-best-of-ladakh:
 ladakh-bullet-expedition:
     title: Ladakh Bullet Expedition
     categoy:
-        - Adventure
+        - adventure
     country: India
-    state: Jammu & Kashmir
-    cover:
-    coverSmall:
-    days : 10 days / 9 nights
+    states: Jammu & Kashmir
+    cover: ladakh-bullet-1024x576.jpg
+    coverSmall: ladakh-bullet-600x338.jpg
+    duration: 10 days / 9 nights
     stays:
         -   location: Leh
             days: 5
@@ -727,12 +727,12 @@ ladakh-bullet-expedition:
 valley-of-flowers:
     title: Valley of Flowers
     categoy:
-        - Adventure
+        - adventure
     country: India
-    state: Uttarakhand
-    cover:
-    coverSmall:
-    days : 7 days / 6 nights
+    states: Uttarakhand
+    cover: valley-of-flowers-1600x900.jpg
+    coverSmall: valley-of-flowers-600x338.jpg
+    duration: 7 days / 6 nights
     stays:
         -   location: Haridwar
             days: 1
@@ -767,10 +767,10 @@ romantic-manali:
     categoy:
         - honeymoon
     country: India
-    state: Himachal Pradesh
-    cover:
-    coverSmall:
-    days : 6 days / 5 nights
+    states: Himachal Pradesh
+    cover: romantic-manali-1600x1000.jpg
+    coverSmall: romantic-manali-600x375.jpg
+    duration: 6 days / 5 nights
     stays:
         -   location: Chandigarh
             days: 2
@@ -801,10 +801,10 @@ honeymoon-special-shimla-manali:
     categoy:
         - honeymoon
     country: India
-    state: Himachal Pradesh, Chandigarh
-    cover:
-    coverSmall:
-    days : 8 days / 7 nights
+    states: Himachal Pradesh, Chandigarh
+    cover: shimla-square-1600x1000.jpg
+    coverSmall: shimla-square-600x375.jpg
+    duration: 8 days / 7 nights
     stays:
         -   location: Chandigarh
             days: 2
@@ -843,10 +843,10 @@ honeymoon-special-ooty-kodai:
     categoy:
         - honeymoon
     country: India
-    state: Tamil Nadu
-    cover:
-    coverSmall:
-    days : 7 days / 6 nights
+    states: Tamil Nadu
+    cover: ooty-1600x1000.jpg
+    coverSmall: ooty-600x375.jpg
+    duration: 7 days / 6 nights
     stays:
         -   location: Kodaikanal
             days: 3
@@ -880,10 +880,10 @@ honeymoon-special-kerala:
     categoy:
         - honeymoon
     country: India
-    state: Kerala
-    cover:
-    coverSmall:
-    days : 7 days / 6 nights
+    states: Kerala
+    cover: kearala-beach-1600x1000.jpg
+    coverSmall: kearala-beach-600x375.jpg
+    duration: 7 days / 6 nights
     stays:
         -   location: Munnar
             days: 2
@@ -902,7 +902,7 @@ honeymoon-special-kerala:
             details: Welcome to Periyar. Enjoy the traditional Kairali show in the evening.
             meals: ap
         -   title:  Periyar (Thekkady)
-            details: Today we visit Periyar Wildlife Sanctuary by boat in Periyar Lake. Free time for shopping at Kumily Spice Village.
+            details: Today we visit Periyar wildlife Sanctuary by boat in Periyar Lake. Free time for shopping at Kumily Spice Village.
             meals: ap
         -   title: Periyar (Thekkady) - Cochin
             details: Welcome to Cochin. En-route enjoy the famous Kerala Backwaters ride from Alleppey to Nedumudi. Later we enjoy live Kathakali dance performance.
@@ -919,10 +919,10 @@ kailash-manasarovar-yatra:
     categoy:
         - pilgrimage
     country: India
-    state: Nepal, Tibet
-    cover:
-    coverSmall:
-    days : 13 days / 12 nights
+    states: Nepal, Tibet
+    cover: kailas-mansarovar-1600x900.jpg
+    coverSmall: kailas-mansarovar-600x338.jpg
+    duration: 13 days / 12 nights
     stays:
         -   location: Kathmandu
             days: 3
@@ -984,10 +984,10 @@ kashmir-amarnath-vaishnodevi:
     categoy:
         - pilgrimage
     country: India
-    state: Jammu & Kashmir
-    cover:
-    coverSmall:
-    days : 9 days / 8 nights
+    states: Jammu & Kashmir
+    cover: vaishno-devi-1600x1000.jpg
+    coverSmall: vaishno-devi-600x375.jpg
+    duration: 9 days / 8 nights
     stays:
         -   location: Srinagar (House Boat)
             days: 2
@@ -1034,10 +1034,10 @@ jagannath-puri-kolkata-gangasagar:
     categoy:
         -pilgrimage
     country: India
-    state: West Bengal, Orissa.
-    cover:
-    coverSmall:
-    days : 8 days / 7 nights
+    states: West Bengal, Orissa.
+    cover: konark-temple-1600x1000.jpg
+    coverSmall: konark-temple-600x375.jpg
+    duration: 8 days / 7 nights
     stays:
         -   location: Kolkata( Gangasagar | Shantiniketan )
             days: 4
@@ -1077,10 +1077,10 @@ traditional-chardham-yatra:
     categoy:
         - pilgrimage
     country: India
-    state: Tamil Nadu, Orrisa, Uttarakhand, Gujarat
-    cover:
-    coverSmall:
-    days : 16 days / 15 nights
+    states: Tamil Nadu, Orrisa, Uttarakhand, Gujarat
+    cover: badrinath-1600x900.jpg
+    coverSmall: badrinath-600x338.jpg
+    duration: 16 days / 15 nights
     stays:
         -   location: Rameshwaram
             days: 1
@@ -1161,10 +1161,10 @@ jyotirlinga-darshan:
     categoy:
         - pilgrimage
     country: India
-    state: Madhya Pradesh
-    cover:
-    coverSmall:
-    days:  4 days / 3 nights
+    states: Madhya Pradesh
+    cover: omkareswar-1600x900.jpg
+    coverSmall: omkareswar-600x338.jpg
+    duration:  4 days / 3 nights
     stays:
         -   location: Indore (Omkareshwar | Mandu | Ujjain)
             days: 3
@@ -1187,10 +1187,10 @@ maharashtra-jyotirlinga-with-shirdi:
     categoy:
         - pilgrimage
     country: India
-    state: Maharashtra
-    cover:
-    coverSmall:
-    days:  6 days / 5 nights
+    states: Maharashtra
+    cover: shirdi-sikkim-1600x1000.jpg
+    coverSmall: shirdi-sikkim-600x375.jpg
+    duration: 6 days / 5 nights
     stays:
         -   location: Bhimashankar (Ahmednagar)
             days: 1
@@ -1225,10 +1225,10 @@ ashtavinayak-yatra-with-jejuri:
     categoy:
         - pilgrimage
     country: India
-    state: Maharashtra
-    cover:
-    coverSmall:
-    days : 3 days / 2 nights
+    states: Maharashtra
+    cover: jejuri-temple-1600x1000.jpg
+    coverSmall: jejuri-temple-600x375.jpg
+    duration: 3 days / 2 nights
     stays:
         -   location: Pune(Ozar | Lenyadri | Ranjangaon| Theur | Morgaon | Siddhatek | Jejuri | Mahad | Pali)
             days: 3
@@ -1248,10 +1248,10 @@ hyderabad-srisailam-with-tirupati-darshan:
     categoy:
         - pilgrimage
     country: India
-    state: Andhra Pradesh
-    cover:
-    coverSmall:
-    days : 8 days / 7 nights
+    states: Andhra Pradesh
+    cover: golkonda-1600x1000.jpg
+    coverSmall: golkonda-600x375.jpg
+    duration: 8 days / 7 nights
     stays:
         -   location: Hyderabad
             days: 2
@@ -1286,14 +1286,14 @@ hyderabad-srisailam-with-tirupati-darshan:
             meals: breakfast
 
 madurai-rameshwaram-kanyakumari:
-    title: Madurai-Rameshwaram-Kanyakumari
+    title: Madurai Rameshwaram Kanyakumari
     categoy:
         - pilgrimage
     country: India
-    state: Tamil Nadu
-    cover:
-    coverSmall:
-    days:  5 days / 4 nights
+    states: Tamil Nadu
+    cover: ranthambore-national-park-1600x1000.jpg
+    coverSmall: ranthambore-national-park-600x375.jpg
+    duration:  5 days / 4 nights
     stays:
         -   location: Kanyakumari
             days: 2
@@ -1318,33 +1318,15 @@ madurai-rameshwaram-kanyakumari:
             details: Board the train to for your hometown. Tour Concludes.
             meals: breakfast
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 corbette-national-park:
     title: Corbette National Park
     categoy:
-        - Wildlife
+        - wildlife
     country: India
-    state: Uttarakhand
-    cover:
-    coverSmall:
-    days : 5 days / 4 nights
+    states: Uttarakhand
+    cover: corbette-nation-park-1600x900.jpg
+    coverSmall: corbette-nation-park-600x338.jpg
+    duration: 5 days / 4 nights
     stays:
         -   location: Ramnagar
             days: 2
@@ -1370,12 +1352,12 @@ corbette-national-park:
 ranthambhore-national-park:
     title: Ranthambhore National Park
     categoy:
-        - Wildlife
+        - wildlife
     country: India
-    state: Rajasthan
-    cover:
-    coverSmall:
-    days : 4 days / 3 nights
+    states: Rajasthan
+    cover: ranthambore-national-park-1600x1000.jpg
+    coverSmall: ranthambore-national-park-600x375.jpg
+    duration: 4 days / 3 nights
     stays:
         -   location: Sawai Madhopur
             days: 3
@@ -1396,12 +1378,12 @@ ranthambhore-national-park:
 kanha-national-park:
     title: Kanha National Park
     categoy:
-        -Wildlife
+        -wildlife
     country: India
-    state: Madhya Pradesh
-    cover:
-    coverSmall:
-    days : 4 days / 3 nights
+    states: Madhya Pradesh
+    cover: kanha-nation-park-1600x1000.jpg
+    coverSmall: kanha-nation-park-600x375.jpg
+    duration: 4 days / 3 nights
     stays:
         -   location: Kanha
             days: 3
@@ -1419,12 +1401,12 @@ kanha-national-park:
 bandhavgarh-national-park:
     title: Bandhavgarh National Park
     categoy:
-        - Wildlife
+        - wildlife
     country: India
-    state: Madhya Pradesh
-    cover:
-    coverSmall:
-    days : 4 days / 3 nights
+    states: Madhya Pradesh
+    cover: bandhavgarh-national-park-1600x1000.jpg
+    coverSmall: bandhavgarh-national-park-600x375.jpg
+    duration: 4 days / 3 nights
     stays:
         -   location: Bandhavgarh
             days: 3
@@ -1445,12 +1427,12 @@ bandhavgarh-national-park:
 amboli-wildlife-sanctuary:
     title: Amboli Wildlife Sanctuary
     categoy:
-        - Wildlife
+        - wildlife
     country: India
-    state: Maharashtra
-    cover:
-    coverSmall:
-    days:  3 days / 2 nights
+    states: Maharashtra
+    cover: amboli-1600x900.jpg
+    coverSmall: amboli-600x338.jpg
+    duration: 3 days / 2 nights
     stays:
         -   location: Amboli
             days: 2
@@ -1468,12 +1450,12 @@ amboli-wildlife-sanctuary:
 tadoba-national-park:
     title: Tadoba National Park
     categoy:
-        - Wildlife
+        - wildlife
     country: India
-    state: Maharashtra
-    cover:
-    coverSmall:
-    days:  4 days / 3 nights
+    states: Maharashtra
+    cover: tadoba-tiger-cub-1440x810.jpg
+    coverSmall: tadoba-tiger-cub-600x338.jpg
+    duration: 4 days / 3 nights
     stays:
         -   location: Tadoba
             days: 3
@@ -1492,14 +1474,14 @@ tadoba-national-park:
             meals: map-day
 
 nagzira-wildlife-sactuary:
-    title: Nagzira Wildlife Sactuary
+    title: Nagzira wildlife Sactuary
     categoy:
-        - Wildlife
+        - wildlife
     country: India
-    state: Maharashtra
-    cover:
-    coverSmall:
-    days : 4 days / 3 nights
+    states: Maharashtra
+    cover: nagzira-1600x1000.jpg
+    coverSmall: nagzira-600x375.jpg
+    duration: 4 days / 3 nights
     stays:
         -   location: Nagzira
             days: 3
@@ -1517,15 +1499,15 @@ nagzira-wildlife-sactuary:
             details: In the form of the morning safari today, we go on our last safari on the camp. This would be our final chance to live the Nagzira life, make stunning images of the morning rays permeating through the verdant greens and try and get a glimpse of those creatures dearest to us! And like all good things, we will bid goodbye to Nagzira post lunch and make our way towards Nagpur for return journey. Tour Concludes.
             meals: map-day
 
-women's-special-heavenly-himachal:
+womens-special-heavenly-himachal:
     title: Women's Special Heavenly Himachal
     categoy:
-        - Women's tour
+        - women
     country: India
-    state: Himachal Pradesh, Chandigarh
-    cover:
-    coverSmall:
-    days : 8 days / 7 nights
+    states: Himachal Pradesh, Chandigarh
+    cover: rohtang-pass-snow-1600x1000.jpg
+    coverSmall: rohtang-pass-snow-600x375.jpg
+    duration: 8 days / 7 nights
     stays:
         -   location: Chandigarh
             days: 3
@@ -1559,15 +1541,15 @@ women's-special-heavenly-himachal:
             details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through social media. And meet again on one more memorable tour. See you all..!! Tour concludes.
             meals: breakfast
 
-women's-special-kashmir-vaishnodevi:
+womens-special-kashmir-vaishnodevi:
     title: Women's Special Kashmir Vaishnodevi
     categoy:
-        - Women's tour
+        - women
     country: India
-    state: Jammu & Kashmir
-    cover:
-    coverSmall:
-    days : 9 days / 8 nights
+    states: Jammu & Kashmir
+    cover: dal-lake-1600x900.jpg
+    coverSmall: dal-lake-600x375.jpg
+    duration: 9 days / 8 nights
     stays:
         -   location: Srinagar (House Boat)
             days: 2
@@ -1606,15 +1588,15 @@ women's-special-kashmir-vaishnodevi:
             details: It is time now to say goodbye to our tour companions. Let us be in contact with each other through Social Media, calls…. And meet again on one more memorable tour. See you all..!! Tour concludes.
             meals: breakfast
 
-Women's-special-genuine-goa:
+womens-special-genuine-goa:
     title: Women's Special Genuine Goa
     categoy:
-        - Women's tour
+        - women
     country: India
-    state: Goa
-    cover:
-    coverSmall:
-    days : 4 days / 3 nights
+    states: Goa
+    cover: goa-church-1600x1000.jpg
+    coverSmall: goa-church-600x375.jpg
+    duration: 4 days / 3 nights
     stays:
         -   location: Goa
             days: 3
