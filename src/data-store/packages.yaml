@@ -635,6 +635,7 @@ crown-of-islands-andaman:
 
 best-of-ladakh:
     title: Best of Ladakh
+    tagline: Life is a Journey. Complete It.
     categoy:
         - adventure
     country: India
@@ -677,6 +678,7 @@ best-of-ladakh:
 
 ladakh-bullet-expedition:
     title: Ladakh Bullet Expedition
+    tagline: You are on the higest motorable road.
     categoy:
         - adventure
     country: India
@@ -726,6 +728,7 @@ ladakh-bullet-expedition:
 
 valley-of-flowers:
     title: Valley of Flowers
+    tagline: Mother Earth. Choice is yours.
     categoy:
         - adventure
     country: India
@@ -764,6 +767,7 @@ valley-of-flowers:
             meals: ap
 romantic-manali:
     title: Romantic Manali
+    tagline: Shadows of romantic mountains.
     categoy:
         - honeymoon
     country: India
@@ -798,6 +802,7 @@ romantic-manali:
 
 honeymoon-special-shimla-manali:
     title: Honeymoon Special Shimla Manali
+    tagline: Welcome to the paradise of India
     categoy:
         - honeymoon
     country: India
@@ -840,6 +845,7 @@ honeymoon-special-shimla-manali:
 
 honeymoon-special-ooty-kodai:
     title: Honeymoon Special Ooty Kodai
+    tagline: Gateway to Nilgiri. Aroma of Sandalwood.
     categoy:
         - honeymoon
     country: India
@@ -877,6 +883,7 @@ honeymoon-special-ooty-kodai:
 
 honeymoon-special-kerala:
     title: Honeymoon Special Kerala
+    tagline: Reach for the sand and dine on the beach.
     categoy:
         - honeymoon
     country: India
@@ -916,6 +923,7 @@ honeymoon-special-kerala:
 
 kailash-manasarovar-yatra:
     title: Kailash Manasarovar Yatra
+    tagline: Ultimate test of your fitness.
     categoy:
         - pilgrimage
     country: India
@@ -981,6 +989,7 @@ kailash-manasarovar-yatra:
 
 kashmir-amarnath-vaishnodevi:
     title: Kashmir Amarnath Vaishnodevi
+    tagline: Walk with the nature.
     categoy:
         - pilgrimage
     country: India
@@ -997,7 +1006,7 @@ kashmir-amarnath-vaishnodevi:
             days:
         -   location: Baltal
             days: 2
-        -   location: Amarnath | Gulmarg | katra
+        -   location: Amarnath | Gulmarg | Katra
             days: 2
 
     itinerary:
@@ -1031,6 +1040,7 @@ kashmir-amarnath-vaishnodevi:
 
 jagannath-puri-kolkata-gangasagar:
     title: Jagannath Puri Kolkata Gangasagar
+    tagline: City of the Ratha-Yatra
     categoy:
         -pilgrimage
     country: India
@@ -1074,6 +1084,7 @@ jagannath-puri-kolkata-gangasagar:
 
 traditional-chardham-yatra:
     title: Traditional Chardham Yatra
+    tagline: Nothing else is more divine.
     categoy:
         - pilgrimage
     country: India
@@ -1158,6 +1169,7 @@ traditional-chardham-yatra:
 
 jyotirlinga-darshan:
     title: M.P. Jyotirlinga Darshan
+    tagline: Great of temples of Shiva.
     categoy:
         - pilgrimage
     country: India
@@ -1184,6 +1196,7 @@ jyotirlinga-darshan:
 
 maharashtra-jyotirlinga-with-shirdi:
     title: Maharashtra Jyotirlinga with Shirdi
+    tagline: Shirdiwale Saibaba.
     categoy:
         - pilgrimage
     country: India
@@ -1222,6 +1235,7 @@ maharashtra-jyotirlinga-with-shirdi:
 
 ashtavinayak-yatra-with-jejuri:
     title: Ashtavinayak Yatra with Jejuri
+    tagline: Khandobachi Jejuri.
     categoy:
         - pilgrimage
     country: India
@@ -1245,6 +1259,7 @@ ashtavinayak-yatra-with-jejuri:
 
 hyderabad-srisailam-with-tirupati-darshan:
     title: Hyderabad Srisailam with Nights Tirupati Darshan
+    tagline: Aroma of Biryani. Home of lord Balaji.
     categoy:
         - pilgrimage
     country: India
@@ -1287,12 +1302,13 @@ hyderabad-srisailam-with-tirupati-darshan:
 
 madurai-rameshwaram-kanyakumari:
     title: Madurai Rameshwaram Kanyakumari
+    tagline: Three oceans. Three waters. One beach.
     categoy:
         - pilgrimage
     country: India
     states: Tamil Nadu
-    cover: ranthambore-national-park-1600x1000.jpg
-    coverSmall: ranthambore-national-park-600x375.jpg
+    cover: kanyakumari-1600x1000.jpg
+    coverSmall: kanyakumari-600x375.jpg
     duration:  5 days / 4 nights
     stays:
         -   location: Kanyakumari
@@ -1320,6 +1336,7 @@ madurai-rameshwaram-kanyakumari:
 
 corbette-national-park:
     title: Corbette National Park
+    tagline: We came. We saw. We conquered.
     categoy:
         - wildlife
     country: India
@@ -1351,6 +1368,7 @@ corbette-national-park:
 
 ranthambhore-national-park:
     title: Ranthambhore National Park
+    tagline: In the lap of Jungle.
     categoy:
         - wildlife
     country: India
@@ -1377,6 +1395,7 @@ ranthambhore-national-park:
 
 kanha-national-park:
     title: Kanha National Park
+    tagline: The lush sal, bamboo forests & giant cats.
     categoy:
         -wildlife
     country: India
@@ -1400,6 +1419,7 @@ kanha-national-park:
 
 bandhavgarh-national-park:
     title: Bandhavgarh National Park
+    tagline: Great tigers of Vidhya hills.
     categoy:
         - wildlife
     country: India
@@ -1426,6 +1446,7 @@ bandhavgarh-national-park:
 
 amboli-wildlife-sanctuary:
     title: Amboli Wildlife Sanctuary
+    tagline: Ghats, nature and camps.
     categoy:
         - wildlife
     country: India
@@ -1449,6 +1470,7 @@ amboli-wildlife-sanctuary:
 
 tadoba-national-park:
     title: Tadoba National Park
+    tagline: The jewel of Vidharba.
     categoy:
         - wildlife
     country: India
@@ -1475,6 +1497,7 @@ tadoba-national-park:
 
 nagzira-wildlife-sactuary:
     title: Nagzira wildlife Sactuary
+    tagline: A living outdoor museum to explore nature.
     categoy:
         - wildlife
     country: India
@@ -1501,6 +1524,7 @@ nagzira-wildlife-sactuary:
 
 womens-special-heavenly-himachal:
     title: Women's Special Heavenly Himachal
+    tagline: Snow that you will never forget.
     categoy:
         - women
     country: India
@@ -1543,6 +1567,7 @@ womens-special-heavenly-himachal:
 
 womens-special-kashmir-vaishnodevi:
     title: Women's Special Kashmir Vaishnodevi
+    tagline: The peace and paradise of nature.
     categoy:
         - women
     country: India
@@ -1590,6 +1615,7 @@ womens-special-kashmir-vaishnodevi:
 
 womens-special-genuine-goa:
     title: Women's Special Genuine Goa
+    tagline: Why men should have all the fun?
     categoy:
         - women
     country: India
