@@ -1,8 +1,8 @@
 {% import "./../imports/icons.nunjucks" as icons %}
 
-<header id="page-header" class="max-width-panel">
+<header id="page-header">
 
-    <div class="text-right contact-info-panel">
+    <div class="text-right contact-info-panel max-width-panel">
         <div class="inline-block">
             {{icons.lineaIcon("icon-linea-basic-smartphone")}}
             <span class="contact-info-label">+91 8888882415</span>
@@ -13,8 +13,8 @@
         </div>
     </div>
 
-    <div>
-        <a href="/">
+    <div class="logo-title-block max-width-panel">
+        <a href="/" class="inline-block">
             <img class="site-logo" src="/img/logo/logo-color.png" alt="Shellino Vacations" />
             <h1 class="site-title">Shellino <br /> Vacations</h1>
         </a>
@@ -27,11 +27,11 @@
             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
 
-        <section class="top-bar-section">
+        <section class="top-bar-section max-width-panel">
 
             <!-- Left Nav Section -->
             <ul class="left">
-                <li><a href="/packages">Plan your holiday</a></li>
+                <li><a href="/packages" class="first-menu-item">Plan your holiday</a></li>
                 <li><a href="/coming-soon">Travel wiki</a></li>
                 <li><a href="/coming-soon">Blog</a></li>
                 <li><a href="/contact">Contact us</a></li>
