@@ -1,0 +1,82 @@
+@import "_variables.scss";
+@import "_foundation_media_queries.scss";
+
+.checkbox {
+
+    $checkbox-small: 1.5rem;
+    $checkbox-medium: 2rem;
+
+    color: $color-white;
+    display: inline-block;
+    height: $checkbox-small;
+    position: relative;
+    vertical-align: middle;
+    width: $checkbox-small;
+
+    @media #{$medium-up} {
+        width: $checkbox-medium;
+        height: $checkbox-medium;
+    }
+
+    > .checkbox-input {
+        cursor: pointer;
+        height: 100%;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+    > .linea-icons {
+        border: 2px solid $color-casper;
+        color: $color-casper;
+        background-color: transparent;
+
+        border-radius: 0;
+
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    > .checkbox-input:checked {
+        + .linea-icons {
+            border-color: scale-color($color-primary-green, $lightness: -20%, $saturation: 15%);
+            color: scale-color($color-primary-green, $lightness: -20%, $saturation: 15%);
+        }
+    }
+
+    &.checkbox-blue {
+        > .checkbox-input:checked {
+            + .linea-icons {
+                border-color: scale-color($color-primary-blue, $lightness: -20%, $saturation: 15%);
+                color: scale-color($color-primary-blue, $lightness: -20%, $saturation: 15%);
+            }
+        }
+    }
+}
+
+.checkbox.checkbox-borderless {
+    > .linea-icons {
+        background-color: transparent;
+        color: $color-casper;
+        border: none;
+    }
+
+    > .checkbox-input:checked {
+        + .linea-icons {
+            background: transparent;
+            color: $color-primary-green;
+        }
+    }
+}
+
+.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+}

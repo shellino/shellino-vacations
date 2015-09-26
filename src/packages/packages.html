@@ -3,19 +3,108 @@ template: topPages
 title: Shellino Packages
 scss:
     - packages
+js:
+    - packages.js
 ---
-<section>
-    <div class="packages-list">
-    {% for packageKey, package in packages %}
-        <div class="packages-list-item">
-            <a href="/packages/{{packageKey}}/" class="item-padding" style="background-image: url('/img/packages/{{package.coverSmall}}')">
+{% from "../templates/imports/inputs.nunjucks" import checkbox as checkbox %}
+{% import "../templates/imports/icons.nunjucks" as icons %}
+<section class="packages-panel">
 
-                <div class="package-list-item-content">
-                    <h3 class="package-title">{{package.title}}</h3>
-                    <div class="package-days">{{package.duration}}</div>
-                </div>
-            </a>
+    <div class="packages-panel-content clearfix accelerate">
+
+        <div id="packages-filter-section" class="packages-filter-section">
+
+            <h4 class="filter-heading">Vacation type:</h4>
+
+            <ul class="side-nav filter-categories">
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-group", value="group")}}
+                    <label for="filter-group" class="checkbox-label">Group vacations</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-adventure", value="adventure")}}
+                    <label for="filter-adventure" class="checkbox-label">Adventure vacations</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-honeymoon", value="honeymoon")}}
+                    <label for="filter-honeymoon" class="checkbox-label">Honeymoon vacations</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-pilgrimage", value="pilgrimage")}}
+                    <label for="filter-pilgrimage" class="checkbox-label">Pilgrimage vacations</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-wildlife", value="wildlife")}}
+                    <label for="filter-wildlife" class="checkbox-label">Wildlife vacations</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-women", value="women")}}
+                    <label for="filter-women" class="checkbox-label">Women's special</label>
+                </li>
+            </ul>
+
+            <h4 class="filter-heading">Where:</h4>
+
+            <ul class="side-nav filter-categories">
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-north-india", value="north-india")}}
+                    <label for="filter-north-india" class="checkbox-label">North India</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-south-india", value="south-india")}}
+                    <label for="filter-south-india" class="checkbox-label">South India</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-east-india", value="east-india")}}
+                    <label for="filter-east-india" class="checkbox-label">East India</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-west-india", value="west-india")}}
+                    <label for="filter-west-india" class="checkbox-label">West India</label>
+                </li>
+
+                <li class="filter-item">
+                    {{checkbox(type="checkbox-blue", id="filter-north-east-india", value="north-east-india")}}
+                    <label for="filter-north-east-india" class="checkbox-label">North East India</label>
+                </li>
+            </ul>
+
         </div>
-    {% endfor %}
+
+        <div class="packages-list">
+            {% for packageKey, package in packages %}
+            <div class="packages-list-item" data-filter-categories="{{package.categories}}">
+                <a href="/packages/{{packageKey}}/" class="item-padding" style="background-image: url('/img/packages/{{package.coverSmall}}')">
+
+                    <div class="package-list-item-content">
+                        <h3 class="package-title">{{package.title}}</h3>
+                        <div class="package-days">{{package.duration}}</div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
     </div>
+
+    <div>
+        <div class="filter-panel-button-wrapper hide-button-wrapper">
+            {{icons.lineaIcon(icon="icon-linea-arrows-left-double", class="filter-panel-button hide-filter-button")}}
+        </div>
+
+        <div class="filter-panel-button-wrapper show-button-wrapper">
+            {{icons.lineaIcon(icon="icon-linea-arrows-right-double", class="filter-panel-button show-filter-button")}}
+        </div>
+    </div>
+
 </section>

@@ -135,7 +135,9 @@ function htmlPipeline(files) {
             context = file.context;
 
             // First, compile content of each html/md file as template and execute against context
-            output = nunjucks.renderString(file.contents.toString(), context);
+            output = nunjucks.renderString(file.contents.toString(), context, {
+                path: file.path
+            });
 
             // Set the contents of context to output of first compilation
             context.contents = output;

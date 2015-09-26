@@ -1,6 +1,102 @@
 ﻿@import "../scss/_variables.scss";
 @import "../scss/_foundation_media_queries.scss";
 
+.packages-panel {
+    overflow: hidden;
+
+    .packages-panel-content {
+        position: relative;
+        //left: -320px;
+        transform: translate3d(-320px, 0, 0);
+        width: calc(100% + 320px);
+        transition: all 0.6s ease-out 0s;
+    }
+
+    @media #{$medium-up} {
+        overflow: auto;
+
+        .packages-panel-content {
+            width: auto;
+            left: 0;
+        }
+    }
+}
+
+.packages-filter-section {
+    background-color: #E8E8E8;
+    border-right: 1px solid #E0E0E0;
+
+    float: left;
+    width: 320px;
+
+    padding: 0 $global-padding;
+
+    .filter-heading {
+        margin-top: 1rem;
+    }
+
+    @media #{$medium-up} {
+        background-color: transparent;
+        border-right: none;
+    }
+
+    @media only screen and (min-width: 75em) {
+        width: 290px;
+    }
+
+    @media #{$xlarge-up} {
+        width: 320px;
+    }
+}
+
+.filter-panel-button-wrapper {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 1rem;
+
+    display: none;
+
+    &.hide-button-wrapper {
+        right: 0;
+    }
+
+    &.show-button-wrapper {
+        left: 0;
+    }
+
+    @media #{$medium-up} {
+        display: none !important;
+    }
+}
+
+.filter-panel-button {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0.75rem;
+
+    background-color: $color-primary-green;
+    color: $color-white;
+
+    stroke-width: 4;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+
+    &.hide-filter-button {
+        right: 0.75rem;
+    }
+
+    &.show-filter-button {
+        left: 0.75rem;
+    }
+}
+
+
+.filter-categories {
+    padding: 0;
+}
+
+
 .packages-list {
     display: flex;
     flex-direction: row;
@@ -8,6 +104,8 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+
+    margin-left: 320px;
 
     .packages-list-item {
         width: 100%;
@@ -52,20 +150,29 @@
         font-size: 0.75rem;
     }
 
-    @media #{$medium-up} {
+    /* At 900px - custom media query range */
+    @media only screen and (min-width: 56.25em) {
 
         .packages-list-item {
             width: 50%;
         }
     }
 
-    @media #{$large-up} {
+    /* At 1200px - custom media query range */
+    @media only screen and (min-width: 75em) {
+
+        margin-left: 290px;
+
         .packages-list-item {
             width: 33.33%;
         }
     }
 
     @media #{$xlarge-up} {
+        margin-left: 320px;
+    }
+
+    @media #{$xxlarge-up} {
         .packages-list-item {
             width: 25%;
         }
