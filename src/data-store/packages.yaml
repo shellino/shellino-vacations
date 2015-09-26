@@ -3,7 +3,7 @@
     tagline: Paradise on earth.
     categories:
         - group
-        - north
+        - north-india
     country: India
     states: Jammu & Kashmir
     cover: kanchanjanga-from-darjeeling-1600x1000.jpg
@@ -44,7 +44,7 @@ sizzling-manali:
     tagline: Simply unforgettable.
     categories:
         - group
-        - north
+        - north-india
     country: India
     states: Himachal Pradesh, Chandigarh
     cover: manali-1600x100.jpg
@@ -81,7 +81,7 @@ heavenly-himachal:
     isFeatured: true
     categories:
         - group
-        - north
+        - north-india
     country: India
     states: Himachal Pradesh, Chandigarh
     cover: himachal-1600x1000.jpg
@@ -125,7 +125,7 @@ amritsar-dharamshala-dalhousie-vaishnodevi:
     tagline: Experience Hindu, Sikh and Buddha diversity.
     categories:
         - group
-        - north
+        - north-india
     country: India
     states: Himachal Pradesh, Chandigarh
     cover: dalhousi-1600x900.jpg
@@ -174,7 +174,7 @@ nainital-mussoorie-haridwar-corbett:
     tagline: Reflection of Himalaya and shadows of Devdaar.
     categories:
         - group
-        - north
+        - north-india
     country: India
     states: Uttarakhand, Haryana
     cover: nainital-1600x1000.jpg
@@ -225,7 +225,7 @@ rajasthan-marwad:
     tagline: Padharo Mhare Des.
     categories:
         - group
-        - west
+        - west-india
     country: India
     states: Rajasthan
     cover: jaisalmer-1600x1000.jpg
@@ -271,7 +271,7 @@ chittodgadh-haldighat:
     tagline: Land of Rajput Royals.
     categories:
         - group
-        - west
+        - west-india
     country: India
     states: Rajasthan
     cover: padmini-palace-1600x1000.jpg
@@ -307,7 +307,7 @@ madhya-pradesh-memories:
     isFeatured: true
     categories:
         - group
-        - west
+        - west-india
     country: India
     states: Madhya Pradesh
     cover: khajuraho-mp-1600x900.jpg
@@ -337,7 +337,7 @@ sikkim-darjeeling:
     tagline: Peace of mankind.
     categories:
         - group
-        - north-east
+        - north-east-india
     country: India
     states: Sikkim
     cover: lord-shankar-at-namchi-1600x1000.jpg
@@ -421,7 +421,7 @@ gujarat-mount-abu:
     tagline: Enery, vibracy & great white desert.
     categories:
         - group
-        - west
+        - west-india
     country: India
     states: Gujarat
     cover: gujrat-1600x900.jpg
@@ -448,7 +448,7 @@ genuine-goa:
     tagline: Sandy Las Vegas of the East.
     categories:
         - group
-        - west
+        - west-india
     country: India
     states: Goa
     cover: sunburn-goa-1600x900.jpg
@@ -476,7 +476,7 @@ amazing-andhra:
     tagline: Biryani and what else you desire.
     categories:
         - group
-        - south
+        - south-india
     country: India
     states: Andhra Pradesh
     cover: golkonda-fort-andhra-1600x1000.jpg
@@ -501,7 +501,7 @@ vishakhapatnam:
     tagline: Great city of Kalinga, Vengi & Pallava.
     categories:
         - group
-        - south
+        - south-india
     country: India
     states: Andhra Pradesh
     cover: kambalakonda-santuary-vishakhapatnam-1600x1000.jpg
@@ -536,7 +536,7 @@ karnataka-jewels:
     isFeatured: true
     categories:
         - group
-        - south
+        - south-india
     country: India
     states: Karnataka, Tamilnadu
     cover: mysore-palace-1600x900.jpg
@@ -572,7 +572,7 @@ dazzling-kerala:
     tagline: God's own country.
     categories:
         - group
-        - south
+        - south-india
     country: India
     states: Kerala
     cover: kerala-houseboat-1600x1000.jpg
@@ -653,7 +653,7 @@ best-of-ladakh:
     tagline: Life is a Journey. Complete It.
     categories:
         - adventure
-        - north
+        - north-india
     country: India
     states: Jammu & Kashmir
     cover: best-of-ladakh-1600x900.jpg
@@ -697,7 +697,7 @@ ladakh-bullet-expedition:
     tagline: You are on the higest motorable road.
     categories:
         - adventure
-        - north
+        - north-india
     country: India
     states: Jammu & Kashmir
     cover: ladakh-bullet-1024x576.jpg
@@ -748,7 +748,7 @@ valley-of-flowers:
     tagline: Mother Earth. Choice is yours.
     categories:
         - adventure
-        - north
+        - north-india
     country: India
     states: Uttarakhand
     cover: valley-of-flowers-1600x900.jpg
@@ -788,7 +788,7 @@ romantic-manali:
     tagline: Shadows of romantic mountains.
     categories:
         - honeymoon
-        - north
+        - north-india
     country: India
     states: Himachal Pradesh
     cover: romantic-manali-1600x1000.jpg
@@ -824,7 +824,7 @@ honeymoon-special-shimla-manali:
     tagline: Welcome to the Swiss of India
     categories:
         - honeymoon
-        - north
+        - north-india
     country: India
     states: Himachal Pradesh, Chandigarh
     cover: shimla-square-1600x1000.jpg
@@ -868,7 +868,7 @@ honeymoon-special-ooty-kodai:
     tagline: Gateway of Nilgiri. Aroma of Sandalwood.
     categories:
         - honeymoon
-        - south
+        - south-india
     country: India
     states: Tamil Nadu
     cover: ooty-1600x1000.jpg
@@ -907,7 +907,7 @@ honeymoon-special-kerala:
     tagline: Reach for the sand and dine on the beach.
     categories:
         - honeymoon
-        - south
+        - south-india
     country: India
     states: Kerala
     cover: kearala-beach-1600x1000.jpg
@@ -948,7 +948,7 @@ kailash-manasarovar-yatra:
     tagline: Ultimate test of your fitness.
     categories:
         - pilgrimage
-        - north
+        - north-india
     country: India
     states: Nepal, Tibet
     cover: kailas-mansarovar-1600x900.jpg
@@ -1015,7 +1015,7 @@ kashmir-amarnath-vaishnodevi:
     tagline: Walk with the nature.
     categories:
         - pilgrimage
-        - north
+        - north-india
     country: India
     states: Jammu & Kashmir
     cover: vaishno-devi-1600x1000.jpg
@@ -1067,7 +1067,7 @@ jagannath-puri-kolkata-gangasagar:
     tagline: City of the Ratha-Yatra
     categories:
         - pilgrimage
-        - east
+        - east-india
     country: India
     states: West Bengal, Orissa.
     cover: konark-temple-1600x1000.jpg
@@ -1197,7 +1197,7 @@ jyotirlinga-darshan:
     tagline: Great temples of almightly Shiva.
     categories:
         - pilgrimage
-        - north
+        - north-india
     country: India
     states: Madhya Pradesh
     cover: omkareswar-1600x900.jpg
@@ -1225,7 +1225,7 @@ maharashtra-jyotirlinga-with-shirdi:
     tagline: Shirdiwale Saibaba.
     categories:
         - pilgrimage
-        - west
+        - west-india
     country: India
     states: Maharashtra
     cover: shirdi-sikkim-1600x1000.jpg
@@ -1265,7 +1265,7 @@ ashtavinayak-yatra-with-jejuri:
     tagline: Khandobachi Jejuri.
     categories:
         - pilgrimage
-        - west
+        - west-india
     country: India
     states: Maharashtra
     cover: jejuri-temple-1600x1000.jpg
@@ -1290,7 +1290,7 @@ hyderabad-srisailam-with-tirupati-darshan:
     tagline: Aroma of Biryani. Home of lord Balaji.
     categories:
         - pilgrimage
-        - south
+        - south-india
     country: India
     states: Andhra Pradesh
     cover: golkonda-1600x1000.jpg
@@ -1334,7 +1334,7 @@ madurai-rameshwaram-kanyakumari:
     tagline: Three oceans. Three waters. One beach.
     categories:
         - pilgrimage
-        - south
+        - south-india
     country: India
     states: Tamil Nadu
     cover: kanyakumari-1600x1000.jpg
@@ -1369,7 +1369,7 @@ corbette-national-park:
     tagline: We came. We saw. We conquered.
     categories:
         - wildlife
-        - north
+        - north-india
     country: India
     states: Uttarakhand
     cover: corbette-nation-park-1600x900.jpg
@@ -1402,7 +1402,7 @@ ranthambhore-national-park:
     tagline: In the lap of Jungle.
     categories:
         - wildlife
-        - west
+        - west-india
     country: India
     states: Rajasthan
     cover: ranthambore-national-park-1600x1000.jpg
@@ -1430,7 +1430,7 @@ kanha-national-park:
     tagline: The lush sal, bamboo forests & giant cats.
     categories:
         - wildlife
-        - west
+        - west-india
     country: India
     states: Madhya Pradesh
     cover: kanha-nation-park-1600x1000.jpg
@@ -1455,7 +1455,7 @@ bandhavgarh-national-park:
     tagline: Great tigers of Vidhya hills.
     categories:
         - wildlife
-        - east
+        - east-india
     country: India
     states: Madhya Pradesh
     cover: bandhavgarh-national-park-1600x1000.jpg
@@ -1483,7 +1483,7 @@ amboli-wildlife-sanctuary:
     tagline: Ghats, nature and camps.
     categories:
         - wildlife
-        - west
+        - west-india
     country: India
     states: Maharashtra
     cover: amboli-1600x900.jpg
@@ -1508,7 +1508,7 @@ tadoba-national-park:
     tagline: The jewel of Vidharba.
     categories:
         - wildlife
-        - west
+        - west-india
     country: India
     states: Maharashtra
     cover: tadoba-tiger-cub-1440x810.jpg
@@ -1536,7 +1536,7 @@ nagzira-wildlife-sactuary:
     tagline: A living outdoor museum to explore nature.
     categories:
         - wildlife
-        - west
+        - west-india
     country: India
     states: Maharashtra
     cover: nagzira-1600x1000.jpg
@@ -1564,7 +1564,7 @@ womens-special-heavenly-himachal:
     tagline: Snow that you will never forget.
     categories:
         - women
-        - north
+        - north-india
     country: India
     states: Himachal Pradesh, Chandigarh
     cover: rohtang-pass-snow-1600x1000.jpg
@@ -1608,7 +1608,7 @@ womens-special-kashmir-vaishnodevi:
     tagline: The peace and paradise of nature.
     categories:
         - women
-        - north
+        - north-india
     country: India
     states: Jammu & Kashmir
     cover: dal-lake-1600x900.jpg
@@ -1657,7 +1657,7 @@ womens-special-genuine-goa:
     tagline: Why men should have all the fun?
     categories:
         - women
-        - west
+        - west-india
     country: India
     states: Goa
     cover: goa-church-1600x1000.jpg

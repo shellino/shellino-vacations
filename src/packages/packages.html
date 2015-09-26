@@ -19,7 +19,7 @@ js:
             <ul class="side-nav filter-categories">
 
                 <li class="filter-item">
-                    {{checkbox(type="checkbox-blue", id="filter-group", value="group")}}
+                    {{checkbox(type="checkbox-blue", id="filter-group", value="group", checked="true")}}
                     <label for="filter-group" class="checkbox-label">Group vacations</label>
                 </li>
 
@@ -81,19 +81,25 @@ js:
 
         </div>
 
-        <div class="packages-list">
-            {% for packageKey, package in packages %}
-            <div class="packages-list-item" data-filter-categories="{{package.categories}}">
-                <a href="/packages/{{packageKey}}/" class="item-padding" style="background-image: url('/img/packages/{{package.coverSmall}}')">
+        <div class="packages-list-section">
 
-                    <div class="package-list-item-content">
-                        <h3 class="package-title">{{package.title}}</h3>
-                        <div class="package-days">{{package.duration}}</div>
-                    </div>
-                </a>
+            <ul class="breadcrumbs filter-selection-status-panel"></ul>
+
+            <div class="packages-list">
+                {% for packageKey, package in packages %}
+                <div class="packages-list-item" data-filter-categories="{{package.categories}}" style="display: none">
+                    <a href="/packages/{{packageKey}}/" class="item-padding" style="background-image: url('/img/packages/{{package.coverSmall}}')">
+
+                        <div class="package-list-item-content">
+                            <h3 class="package-title">{{package.title}}</h3>
+                            <div class="package-days">{{package.duration}}</div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
+
 
     </div>
 

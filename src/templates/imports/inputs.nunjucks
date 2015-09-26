@@ -1,8 +1,8 @@
 ﻿{% import "./icons.nunjucks" as icons %}
 
-{% macro checkbox(type="", value="", id="", divClass="", inputClass="", iconClass= "") %}
+{% macro checkbox(type="", value="", id="", checked, divClass="", inputClass="", iconClass= "") %}
 <div class="checkbox {{type}} {{divClass}}">
-    <input type="checkbox" id="{{id}}" class="checkbox-input {{inputClass}}" value="{{value}}" />
+    <input type="checkbox" id="{{id}}" class="checkbox-input {{inputClass}}" value="{{value}}" {{ "checked" if checked }} />
     {{icons.lineaIcon("icon-linea-arrows-checkbox", class=iconClass)}}
 </div>
 {% endmacro %}

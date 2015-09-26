@@ -3,6 +3,7 @@
 
 $max-page-width: 1440;
 $header-size: 5;
+$footer-height: 56px;
 
 body {
     background-color: $color-white-smoke;
@@ -12,6 +13,17 @@ body {
 .max-width-panel {
     max-width: $max-page-width + px;
     margin: auto;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+
+    &:after {
+        content: "";
+        display: block;
+        height: $footer-height;
+    }
 }
 
 #page-header {
@@ -83,6 +95,11 @@ body {
 }
 
 #page-footer {
+
+    height: $footer-height;
+    overflow: hidden;
+    line-height: 1.2;
+
     background-color: #E0E0E0;
 
     .copyright-notice {
@@ -90,5 +107,9 @@ body {
         letter-spacing: 2px;
         word-spacing: 5px;
         text-transform: uppercase;
+    }
+
+    @media #{$medium-up} {
+        line-height: 1.5
     }
 }

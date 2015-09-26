@@ -48,14 +48,16 @@
 
 <body>
 
-    {% include "./partials/indexHeader.nunjucks" %}
+    <div class="page-wrapper">
+        {% include "./partials/indexHeader.nunjucks" %}
 
-    {% block body %}
-    {{ contents | safe }}
-    {% endblock  %}
+        {% block body %}
+        {{ contents | safe }}
+        {% endblock  %}
+
+    </div>
 
     {% include "./partials/indexFooter.nunjucks" %}
-
     <!-- Common JS bundle go here - bundle.js -->
     <script type="text/javascript" src="/js/bundle.js"></script>
 
