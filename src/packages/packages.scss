@@ -115,6 +115,7 @@
 
         .available-packages-status:first-child:before {
             content: "";
+            margin-left: 0.75rem;
         }
     }
     /* At 1200px - custom media query range */
