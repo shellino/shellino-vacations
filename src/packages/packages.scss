@@ -99,13 +99,18 @@
 
     .filter-selection-status-panel {
         margin: $global-margin 0.2rem 0.4rem 0.2rem;
+        padding-left: 0;
+
+        .filter-text {
+            margin-left: 0.75rem;
+        }
 
         li.current {
             line-height: 1.5;
         }
 
         .available-packages-status:before {
-            content: ">>";
+            content: "||";
         }
 
         .available-packages-status:first-child:before {

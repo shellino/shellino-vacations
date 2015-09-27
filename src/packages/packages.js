@@ -143,7 +143,7 @@
         var fragment = $(document.createDocumentFragment());
 
         if (packagesToShow.length > 0) {
-            $("<li class='current'>Filters:</li>").appendTo(fragment);
+            $("<li class='current filter-text'>Filters:</li>").appendTo(fragment);
         }
 
         appliedFilters.forEach(function (filter) {
