@@ -15,7 +15,7 @@
 
     <div class="logo-title-block max-width-panel">
         <a href="/" class="inline-block">
-            <img class="site-logo" src="/img/logo/logo-color.png" alt="Shellino Vacations" />
+            <img class="site-logo" src="/img/logo/logo-color-small.png" alt="Shellino Vacations" />
             <h1 class="site-title">Shellino <br /> Vacations</h1>
         </a>
     </div>
