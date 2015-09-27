@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var nodes, packages, filtersInfo, appliedFilters;
+    var nodes, packages, filtersInfo, appliedFilters, $window;
 
     /* Cached items */
     nodes = {
@@ -29,6 +29,8 @@
         /* Animate panel */
         nodes.packagesPanelContent.css("transform", "translate3d(0, 0, 0)");
 
+        scrollToFilterList();
+
         nodes.showFilterWrapper.css("display", "none");
         nodes.hideFilterWrapper.css("display", "block");
     });
@@ -37,6 +39,8 @@
 
         /* Animate panel */
         nodes.packagesPanelContent.css("transform", "translate3d(-320px, 0, 0)");
+
+        scrollToFilterList();
 
         nodes.hideFilterWrapper.css("display", "none");
         nodes.showFilterWrapper.css("display", "block");
@@ -66,6 +70,15 @@
 
     });
 
+    function scrollToFilterList() {
+
+        setTimeout(function () {
+            $("html, body").animate({
+                scrollTop: nodes.filterSection.offset().top
+            }, 800);
+        }, 200);
+    }
+
     function applyFilter() {
 
         var packagesToShow, categorisedFilters;
@@ -87,9 +100,6 @@
                     return packageItem.categories.indexOf(filter) > -1 ? true : false;
                 });
             });
-
-            // Return something
-            return [];
 
         }, packages);
 
@@ -149,6 +159,7 @@
 
     /* Initialize */
     function init() {
+        $window = $(window);
         appliedFilters = [];
         buildFilterInfo();
         buildUI();
