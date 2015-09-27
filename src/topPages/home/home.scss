@@ -38,12 +38,22 @@
     margin: 0 $global-margin;
 }
 
-.package-heading {
+.package-link {
     background-color: rgba(0, 0, 0, 0.5);
-    color: scale-color($color-primary-blue, $lightness: 0, $saturation: 20%);
+    padding: 0.5rem;
+    display: block;
+    color: $color-white;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.package-heading {
+    /*color: scale-color($color-primary-blue, $lightness: 0, $saturation: 20%);*/
+    color: $color-sunglow;
     font-weight: 400;
     margin: 0;
-    padding: 0.5rem;
 }
 
 .upcoming-packages {
@@ -66,7 +76,7 @@
         }
     }
 
-    /* At 1200px - custom media query range */
+    /* At 768px - custom media query range */
     @media only screen and (min-width: 48em) {
 
         .list-item {

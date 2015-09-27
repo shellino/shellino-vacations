@@ -13,10 +13,12 @@
     dates:
         -   title: Exit at Bhusaval junction
             amount: INR 23500 (tour cost) + INR 830 (service tax @3.50%) per person
+            basicAmount: 23500
             startDate: 18 Jan 2016
             endDate: 27 Jan 2017
         -   title: Exit at Tirupati
             amount: INR 21000 (tour cost) + INR 735* (service tax @3.50%) per person
+            basicAmount: 21000
             startDate: 20 Jan 2016
             endDate: 26 Jan 2016
     departure:
@@ -70,10 +72,12 @@ chandigarh-shimla-manali:
     duration: 7 days / 6 nights
     dates:
         -   title: Exit at Bhusaval junction
+            basicAmount: 23500
             amount: INR 23500 (tour cost) + INR 830 (service tax @3.50%) per person
             startDate: 18 Feb 2016
             endDate: 26 Feb 2017
         -   title: Exit at Chandigarh
+            basicAmount: 21500
             amount: INR 21000 (tour cost) + INR 735* (service tax @3.50%) per person
             startDate: 19 Feb 2016
             endDate: 25 Feb 2016
