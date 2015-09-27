@@ -5,7 +5,7 @@
     <div class="text-right contact-info-panel max-width-panel">
         <div class="inline-block">
             {{icons.lineaIcon("icon-linea-basic-smartphone")}}
-            <span class="contact-info-label">+91 8888882415</span>
+            <span class="contact-info-label">+91 9970439992</span>
         </div>
         <div class="inline-block">
             {{icons.lineaIcon("icon-linea-basic-mail")}}

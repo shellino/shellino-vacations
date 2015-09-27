@@ -4,7 +4,7 @@ template: topPages
 scss:
     - /packages/packages-item
 collection:
-    contextKey: packages
+    contextKey: upcomingPackages
     pageSize: 1
     generator: generatePackagesPages
 ---

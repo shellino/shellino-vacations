@@ -16,17 +16,31 @@ subLine: You tell a story. We make it happen.
         <div class="wall-title">Red fort, Agra, India</div>
     </div>
 
-    <div class="featured-packages max-width-panel">
-        <h2 class="panel-heading">Featured packages</h2>
+    <div class="upcoming-packages max-width-panel">
+        <h2 class="packages-panel-heading">Upcoming packages</h2>
+        <ul class="packages-list upcoming-list clearfix">
+            {% for packageKey, package in upcomingPackages %}
+            <li class="list-item two-items" style="background-image:url('/img/packages/{{package.coverSmall}}')">
+                <a href="/packages/upcoming/{{packageKey}}/" class="item-padding">
+                    <h3 class="package-heading">{{package.title}}</h3>
+                </a>
+            </li>
+            {% endfor %}
 
-        <ul class="featured-packages-list clearfix">
+        </ul>
+    </div>
+
+    <div class="featured-packages max-width-panel">
+        <h2 class="packages-panel-heading">Featured packages</h2>
+
+        <ul class="packages-list featured-list clearfix">
             {% set tileSize = "large" %}
             {% for packageKey, package in packages %}
 
                 {% if package.isFeatured %}
-                <li class="featured-list-item {{tileSize}}" style="background-image:url('/img/packages/{{package.coverSmall}}')">
+                <li class="list-item featured-list-item {{tileSize}}" style="background-image:url('/img/packages/{{package.coverSmall}}')">
                     <a href="/packages/{{packageKey}}/" class="item-padding">
-                        <h3 class="featured-heading">{{package.title}}</h3>
+                        <h3 class="package-heading">{{package.title}}</h3>
                     </a>
                 </li>
                 {% set tileSize = "small" %}

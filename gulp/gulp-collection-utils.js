@@ -36,7 +36,7 @@ function generatePackagesPages(context, dataStore, collectionSrouceFile) {
     collection = context.collection;
     pages = [];
 
-    Object.keys(dataStore.packages).forEach(function (packageKey) {
+    Object.keys(dataStore[collection.contextKey]).forEach(function (packageKey) {
 
         page = {
             context: Object.create(context),
@@ -44,9 +44,9 @@ function generatePackagesPages(context, dataStore, collectionSrouceFile) {
         };
 
         page.context.currentPackageKey = packageKey;
-        page.context.title = dataStore.packages[packageKey].title;
+        page.context.title = dataStore[collection.contextKey][packageKey].title;
 
-        page.context.currentPackage = dataStore.packages[packageKey];
+        page.context.currentPackage = dataStore[collection.contextKey][packageKey];
 
         pages.push(page);
     });

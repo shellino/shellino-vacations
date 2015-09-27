@@ -1,0 +1,114 @@
+﻿mysore-ooty-tirupati:
+    title: Mysore Ooty Tirupati
+    tagline: The Winterfell of South.
+    isUpcoming: true
+    categories:
+        - group
+        - south-india
+    country: India
+    states: Karnataka, Andhra Pradesh
+    cover: ooty-1600x1000.jpg
+    coverSmall: ooty-600x375.jpg
+    duration: 7 days / 6 nights
+    dates:
+        -   title: Exit at Bhusaval junction
+            amount: INR 23500 (tour cost) + INR 830 (service tax @3.50%) per person
+            startDate: 18 Jan 2016
+            endDate: 27 Jan 2017
+        -   title: Exit at Tirupati
+            amount: INR 21000 (tour cost) + INR 735* (service tax @3.50%) per person
+            startDate: 20 Jan 2016
+            endDate: 26 Jan 2016
+    departure:
+        - Tour will commence from Bhusawal Junction by 12782 Swarna Jayanthi Express at 2350 Hrs (Sleeper class).
+        - For Coimbatore to Tirupati we will board 22620 Bilaspur Express at 1330 Hrs (Sleeper class).
+        - For return Journey we will board 12656 Navjeevan Superfast Express at 1230 Hrs from Gudur Junction (Sleeper class).
+    stays:
+        -   location: Mysore
+            days: 2
+            hotel: Hotel Kings Kastle
+        -   location: Ooty
+            days: 2
+            hotel: West Nature Cottages
+        -   location: Tirupati
+            days: 2
+            hotel: 7 Hills Inn
+    itinerary:
+        -   title:  Mysore
+            details: Welcome to Mysore. We will have short 'Introductory' session after breakfast. Today we will visit the places like Mysore Palace, Botanical Garden and St. Philomena’s Church, evening spent at your leisure.
+            meals: ap
+        -   title:  Mysore
+            details: Today we will visit the famous Chamundi Mata Temple at Chamundi Hills. Post lunch we will move towards Shrirangpatnam village and will visit the famous Brindavan Garden in the evening and will watch the laser show.
+            meals: ap
+        -   title: Mysore - Ooty
+            details: Today in the morning we will proceed towards ooty. Enjoy the breathtaking sceneries of Bandipur and Mudumalai National Park in the Nilgiri Hills. In the evening we will visit the Ooty Lake, Botanical Garden, Shooting Point, Pykara Lake and Local Market.
+            meals: ap
+        -   title:  Ooty - Coonoor - Ooty
+            details: We will go to Coonoor famous for its natural beauty. We will visit Dodabetta Peak, Tea Factory, Dolphin Nose, and Lamb’s Rock. Evening spent at your leisure and we will enjoy Toy train journey.
+            meals: ap
+        -   title: Ooty - Coimbatore - Tirupati
+            details: After Breakfast we will proceed towards Coimbatore and board the train for Tirupati, whole day journey towards Tirupati.
+            meals: ap
+        -   title: Tirupati
+            details: We will visit the world famous Tirupati Balaji Temple and visit places like Zoological Park, Ttd Gardens.
+            meals: ap
+        -   title: Tirupati - Gudur
+            details: We will proceed for return journey towards our hometown from Gudur Junction. Tour ends with happy memories.
+            meals: breakfast
+
+chandigarh-shimla-manali:
+    title: Chandigarh Shimla Manali
+    tagline: Get cozy in the late winter of north.
+    isUpcoming: true
+    categories:
+        - group
+        - north-india
+    country: India
+    states: Punjan, Himanchal Pradesh
+    cover: rohtang-pass-snow-1600x1000.jpg
+    coverSmall: rohtang-pass-snow-600x375.jpg
+    duration: 7 days / 6 nights
+    dates:
+        -   title: Exit at Bhusaval junction
+            amount: INR 23500 (tour cost) + INR 830 (service tax @3.50%) per person
+            startDate: 18 Feb 2016
+            endDate: 26 Feb 2017
+        -   title: Exit at Chandigarh
+            amount: INR 21000 (tour cost) + INR 735* (service tax @3.50%) per person
+            startDate: 19 Feb 2016
+            endDate: 25 Feb 2016
+    departure:
+        - Tour will commence from Jalgaon Junction by 12715 Sachkhand Express at 1755 Hrs (Sleeper class).
+        - For return Journey we will board 22456 Kalka - Sai Nagar Shirdi Express at 1940 Hrs from Ambala cantt (Sleeper class).
+    stays:
+        -   location: Chandigarh
+            days: 1
+            hotel: Hotel Sun Park
+        -   location: Shimla
+            days: 2
+            hotel: Hotel Asia the Dawn
+        -   location: Manali
+            days: 3
+            hotel: Hotel Chandermukhi
+    itinerary:
+        -   title:  Chandigarh
+            details: Welcome to Chandigarh. We have a short 'Introductory' session before proceeding for Rock Garden and Sukhana Lake.
+            meals: indian
+        -   title:  Chandigarh - Shimla
+            details: We proceed to Shimla and visit Jakhoo Temple and Mall Road Church. In the evening, free time for shopping at Stone Market.
+            meals: ap
+        -   title: Shimla
+            details: We explore the city of Shimla. We visit Kufri and Chail - Winter Sports Capital, Indira Bungalow and Himalayan Zoo (subject to operations).
+            meals: ap
+        -   title:  Shimla - Manali
+            details: We proceed to Manali by enjoying a scenic drive through Pandoh Dam and Kullu Valley. En route we visit Kullu Shawl Factory where you can buy woolen products.
+            meals: ap
+        -   title: Manali - Rohtang / Manikaran - Manali
+            details: "Today we enjoy spectacular drive towards Rohtang snow point / Manikaran (if Rohtang is closed), free time to play and enjoy in the snow. Please Note: Rohtang pass is 51 kms away from Manali. This pass is not accessible for almost 8 months in a year as it is covered by snow. We generally visit the snow point on Rohtang road, which has been permitted by the Border Security Force. Entertain yourself through spectacular <strong>Himachali folk dance</strong>."
+            meals: ap
+        -   title: Manali - Solang - Manali
+            details: Today we explore the ancient temples like Vashisth Kund and Hadimba Mandir. Then we proceed to Solang Valley – A splendid valley between Solang village which offers the view of glaciers and snowcapped mountains. Later we enjoy Ropeway ride, enjoy the adventure activities at your own, free time for shopping in the evening.
+            meals: ap
+        -   title: Manali - Chandigarh
+            details: Today we proceed to Chandigarh – the capital of Punjab and Haryana. En – route we visit Vaishnomata Mandir at Kullu. Tour ends at Chandigarh in the evening from where we board the bus / train / flight for return journey.
+            meals: map-day
