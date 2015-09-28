@@ -34,7 +34,10 @@ collection:
     <div>
         {% for stay in currentPackage.stays %}
         <!--<div class="inline-block stay-item">{{stay.days}} nights at {{stay.location}}</div>-->
-        <div class="inline-block stay-item">{{stay.location}} - {{stay.days}} nights</div>
+        <div class="inline-block stay-item">
+            {{stay.location}} - {{stay.days}} nights at
+            <strong>{{stay.hotel}}</strong>
+        </div>
         {% endfor %}
     </div>
 </div>
@@ -46,7 +49,7 @@ collection:
         <h4 class="day-heading">
             <small>Day {{loop.index}}:</small> <span>{{itinerary.title}}</span>
         </h4>
-        <p>{{itinerary.details}}</p>
+        <p>{{itinerary.details | safe}}</p>
         {% endfor %}
     </div>
 </div>
