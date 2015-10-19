@@ -6,3 +6,9 @@
     {{icons.lineaIcon("icon-linea-arrows-checkbox", class=iconClass)}}
 </div>
 {% endmacro %}
+
+{% macro radiobutton(type="", value="", id="", checked, name="", divClass="", inputClass="") %}
+<div class="radio {{type}} {{divClass}}">
+    <input type="radio" id="{{id}}" class="checkbox-input {{inputClass}}" name="{{name}}" value="{{value}}" {{ "checked" if checked }} />
+</div>
+{% endmacro %}

@@ -5,14 +5,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    background-attachment: fixed;
-
     min-height: 320px;
     min-height: 30vh;
-
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -23,29 +18,26 @@
         position: absolute;
         width: 100%;
         height: 100%;
-
         top: 0;
         left: 0;
         z-index: 0;
-
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
     }
 
+    @media #{$medium-up} {
+        background-attachment: fixed;
+    }
 }
 
 .package-wall-content {
-
     color: $color-white;
     position: relative;
     z-index: 1;
-
     /* IE hack - cannot work without explicit height */
     min-height: 320px;
     min-height: 30vh;
-
     text-shadow: 0 0 24px rgba(0, 0, 0, 0.8);
     padding: 0 2%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,9 +45,7 @@
 }
 
 .package-tagline {
-
     font-size: 3rem;
-
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 2px;
@@ -106,6 +96,39 @@
 
     .day-heading {
         color: scale-color($color-celery, $lightness: -15%, $saturation: 20%);
-        /*color: $color-celery;*/
+        //color: $color-celery;
+    }
+}
+
+/* Used in upcoming packages */
+.departure-date-content {
+
+    h4 {
+        line-height: 1;
+        margin: 0;
+    }
+
+    .cost-item:nth-child(n+2) {
+        h4 {
+            margin-top: 1rem;
+        }
+    }
+
+    .tour-cost {
+        font-size: 2rem;
+        color: $color-primary-green;
+        display: inline-block;
+    }
+
+    .rupee-symbol {
+        fill: $color-primary-green;
+        vertical-align: baseline;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .service-tax-text {
+        font-size: 75%;
+        font-weight: bold;
     }
 }

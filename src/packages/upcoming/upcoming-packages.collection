@@ -3,12 +3,14 @@ title: Packages
 template: topPages
 scss:
     - /packages/packages-item
+js:
+    - /packages/upcoming/upcoming-packages.js
 collection:
     contextKey: upcomingPackages
     pageSize: 1
     generator: generatePackagesPages
 ---
-{% import "./../templates/imports/icons.nunjucks" as icons %}
+{% import "../../templates/imports/icons.nunjucks" as icons %}
 
 <div class="package-wall" style="background-image: url('/img/packages/{{currentPackage.cover}}')">
     <div class="package-wall-content text-center">
@@ -29,6 +31,32 @@ collection:
             <span class="inline-block">{{currentPackage.states}}</span>
         </div>
     </div>
+
+    <h3 class="panel-heading">Departure dates and costs</h3>
+
+    <div class="departure-date-content">
+        <div class="height-adjustor">
+            {% for date in currentPackage.dates %}
+            <div class="cost-item">
+                <h4>
+                    <small>Option {{loop.index}}</small>
+                    {{icons.lineaIcon("icon-rupee1", "rupee-symbol")}}
+                    <span class="tour-cost">{{date.basicAmount}}*</span>
+                </h4>
+                <div><strong>{{date.title}}</strong></div>
+
+                <div>
+                    {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
+                    <span class="inline-block">{{date.startDate}} - {{date.endDate}}</span>
+                </div>
+            </div>
+            <div class="text-italic service-tax-text">
+                * Additional service tax of {{date.taxPercent}} i.e. INR {{date.taxAmount}}/- is applicable per person
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <a class="view-more-link" href="#">more options</a>
 
     <h3 class="panel-heading">Night stays</h3>
     <div>

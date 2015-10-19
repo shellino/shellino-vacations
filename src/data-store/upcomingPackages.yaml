@@ -11,16 +11,20 @@
     coverSmall: ooty-600x375.jpg
     duration: 7 days / 6 nights
     dates:
-        -   title: Exit at Bhusaval junction
-            amount: INR 23500 (tour cost) + INR 830 (service tax @3.50%) per person
-            basicAmount: 23500
-            startDate: 18 Jan 2016
-            endDate: 27 Jan 2017
-        -   title: Exit at Tirupati
-            amount: INR 21000 (tour cost) + INR 735* (service tax @3.50%) per person
+        -   key: tirupati
+            title: Exit at Tirupati
             basicAmount: 21000
+            taxAmount: 735
+            taxPercent: 3.50%
             startDate: 20 Jan 2016
             endDate: 26 Jan 2016
+        -   key: bhusaval
+            title: Exit at Bhusaval
+            basicAmount: 23500
+            taxAmount: 830
+            taxPercent: 3.50%
+            startDate: 18 Jan 2016
+            endDate: 27 Jan 2017
     departure:
         - Tour will commence from Bhusawal Junction by 12782 Swarna Jayanthi Express at 2350 Hrs (Sleeper class).
         - For Coimbatore to Tirupati we will board 22620 Bilaspur Express at 1330 Hrs (Sleeper class).
@@ -71,16 +75,20 @@ chandigarh-shimla-manali:
     coverSmall: rohtang-pass-snow-600x375.jpg
     duration: 7 days / 6 nights
     dates:
-        -   title: Exit at Bhusaval junction
-            basicAmount: 23500
-            amount: INR 23500 (tour cost) + INR 830 (service tax @3.50%) per person
-            startDate: 18 Feb 2016
-            endDate: 26 Feb 2017
-        -   title: Exit at Chandigarh
-            basicAmount: 21500
-            amount: INR 21000 (tour cost) + INR 735* (service tax @3.50%) per person
+        -   key: chandigarh
+            title: Exit at Chandigarh
+            basicAmount: 21000
+            taxAmount: 735
+            taxPercent: 3.50%
             startDate: 19 Feb 2016
             endDate: 25 Feb 2016
+        -   key: bhusaval
+            title: Exit at Bhusaval
+            basicAmount: 23500
+            taxAmount: 830
+            taxPercent: 3.50%
+            startDate: 18 Feb 2016
+            endDate: 26 Feb 2016
     departure:
         - Tour will commence from Jalgaon Junction by 12715 Sachkhand Express at 1755 Hrs (Sleeper class).
         - For return Journey we will board 22456 Kalka - Sai Nagar Shirdi Express at 1940 Hrs from Ambala cantt (Sleeper class).
