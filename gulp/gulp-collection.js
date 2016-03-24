@@ -39,13 +39,9 @@ function paginationPipeline(files) {
         .pipe(through2.obj(function (file, enc, cb) {
             // This part of pipeline generates Context and collection required data
 
-            var context, collection;
-
-            context = Object.create(dataStore);
-
-            Object.keys(file.frontMatter).forEach(function (key) {
-                context[key] = file.frontMatter[key];
-            });
+            var context = {}, collection;
+            
+            Object.assign(context, file.frontMatter, dataStore);
             delete file.frontMatter;
 
             file.collectionContext = context;

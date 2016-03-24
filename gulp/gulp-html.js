@@ -34,8 +34,8 @@ var filters;
 var dataStore;
 
 function htmlPipeline(files) {
-
-    var mdFilter = gulpFilter(filters.md);
+    
+    var mdFilter = gulpFilter(filters.md, { restore: true });
     var tagStreamQueue = [];
     var blogStreamQueue = [];
 
@@ -46,18 +46,25 @@ function htmlPipeline(files) {
         }))
         .pipe(mdFilter)
         .pipe(markdown())
-        .pipe(mdFilter.restore())
-        .pipe(through2.obj(function (file, enc, cb) {
+        .pipe(mdFilter.restore)
+        .pipe(through2.obj(function(file, enc, cb) {
 
             // Create context required for template compilation
             // yamlObj is the extracted yaml frontMatter from each file
+            var context = {};
+            
+            Object.assign(context, file.frontMatter, dataStore);
+            
+            /*
             var context;
 
             context = Object.create(dataStore);
 
-            Object.keys(file.frontMatter).forEach(function (key) {
+            Object.keys(file.frontMatter).forEach(function(key) {
                 context[key] = file.frontMatter[key];
             });
+            */
+            
             delete file.frontMatter;
 
             // Special handling to scss and js files
@@ -75,7 +82,7 @@ function htmlPipeline(files) {
             cb();
 
         }))
-        .pipe(through2.obj(function (file, enc, cb) {
+        .pipe(through2.obj(function(file, enc, cb) {
 
             // Manipulate tags
             var context, filename;
@@ -92,17 +99,17 @@ function htmlPipeline(files) {
             tagStreamQueue.push(file);
             cb();
 
-        }, function (cb) {
+        }, function(cb) {
 
             var stream = this;
 
             tagManager.sortTags(dataStore.tags);
-            tagStreamQueue.forEach(function (file) {
+            tagStreamQueue.forEach(function(file) {
                 stream.push(file);
             });
             cb();
         }))
-        .pipe(through2.obj(function (file, enc, cb) {
+        .pipe(through2.obj(function(file, enc, cb) {
             // Manipulate blog
             var context, filename, blogObj;
 
@@ -116,17 +123,17 @@ function htmlPipeline(files) {
 
             blogStreamQueue.push(file);
             cb();
-        }, function (cb) {
+        }, function(cb) {
 
             var stream = this;
 
             blogManager.sortBlogs(dataStore.blogs);
-            blogStreamQueue.forEach(function (file) {
+            blogStreamQueue.forEach(function(file) {
                 stream.push(file);
             });
             cb();
         }))
-        .pipe(through2.obj(function (file, enc, cb) {
+        .pipe(through2.obj(function(file, enc, cb) {
 
             // Compile nunjucks template and produce final html file
             var template, output, context;
@@ -135,22 +142,21 @@ function htmlPipeline(files) {
             context = file.context;
 
             // First, compile content of each html/md file as template and execute against context
+            
+            /* TODO: Previous nunjucks 1.x had this syntax. Don't remember why path is used */
+            
             output = nunjucks.renderString(file.contents.toString(), context, {
                 path: file.path
             });
+            
+            // output = nunjucks.renderString(file.contents.toString(), context);
 
             // Set the contents of context to output of first compilation
             context.contents = output;
 
-            // Second, compile master template
-            //template = fs.readFileSync(paths.templates + context.template + ".nunjucks").toString();
-            //template = handlebars.compile(template);
-
             // Now execute master template against second compilation
             output = nunjucks.render(path.normalize(process.cwd() + "\\" + paths.templates + context.template + ".nunjucks"), context);
             output = output.replace(/\uFEFF/g, "");
-            //template = fs.readFileSync(paths.templates + context.template + ".nunjucks").toString();
-            //output = nunjucks.renderString(template, context);
 
             // Set the contents of file to ouput of second compilation
             file.contents = new Buffer(output);
@@ -162,7 +168,7 @@ function htmlPipeline(files) {
         .pipe(gulp.dest(paths.dest));
 }
 
-gulp.task("html", ["data-store"], function () {
+gulp.task("html", ["data-store"], function() {
     return htmlPipeline([filters.mdhtml]);
 });
 
@@ -172,7 +178,7 @@ var tagManager = {
 
     _tags: {},
 
-    updateTags: function (tags, filename) {
+    updateTags: function(tags, filename) {
 
         var manager, tagList, uniqueList, _isFileAlreadyIncluded;
 
@@ -183,7 +189,7 @@ var tagManager = {
         _isFileAlreadyIncluded = filename in manager._isIncluded;
         manager._isIncluded[filename] = true;
 
-        tags.forEach(function (tag) {
+        tags.forEach(function(tag) {
             var tagKey, tagValue, tagObj;
 
             // Replace white space with dash (hypens) & vice a versa
@@ -219,9 +225,9 @@ var tagManager = {
         return tagList;
     },
 
-    sortTags: function (tags) {
+    sortTags: function(tags) {
         // Descending sort
-        tags.sort(function (tagObj1, tagObj2) {
+        tags.sort(function(tagObj1, tagObj2) {
             if (tagObj1.count < tagObj2.count) {
                 return 1;
             } else if (tagObj1.count > tagObj2.count) {
@@ -236,7 +242,7 @@ var tagManager = {
 var blogManager = {
     _blog: {},
 
-    _updateBlogStructure: function (blogObj, file) {
+    _updateBlogStructure: function(blogObj, file) {
 
         // TODO - This needs some improvement
 
@@ -250,7 +256,7 @@ var blogManager = {
 
     },
 
-    updateBlogs: function (blogObj, filename, file) {
+    updateBlogs: function(blogObj, filename, file) {
 
         var manager, index, _isFileAlreadyIncluded;
 
@@ -273,10 +279,10 @@ var blogManager = {
 
     },
 
-    sortBlogs: function (blogs) {
+    sortBlogs: function(blogs) {
 
         // Descending sort
-        blogs.sort(function (blog1, blog2) {
+        blogs.sort(function(blog1, blog2) {
 
             var date1, date2;
 
@@ -299,7 +305,7 @@ var exported = {
     pipeline: htmlPipeline
 };
 
-module.exports = function (_paths, _filters, _config, _dataStore) {
+module.exports = function(_paths, _filters, _config, _dataStore) {
     paths = _paths;
     filters = _filters;
     config = _config;

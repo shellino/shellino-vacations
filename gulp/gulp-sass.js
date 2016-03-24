@@ -5,8 +5,8 @@ var sourcemaps = require("gulp-sourcemaps");
 
 // CSS, SASS related modules
 var sass = require("gulp-sass");
-var minifyCSS = require("gulp-minify-css");
-var autoprefixer = require("autoprefixer-core");
+var cssnano = require("gulp-cssnano");
+var autoprefixer = require("autoprefixer");
 var postCss = require("gulp-postcss");
 
 // Logger modules
@@ -29,7 +29,7 @@ function sassPipeline(files) {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(postCss([autoprefixer({ browsers: browsers })]))
-        .pipe(buildMode === "release" ? minifyCSS() : gutil.noop())
+        .pipe(buildMode === "release" ? cssnano() : gutil.noop())
         .pipe(sourcemaps.write(".", { addComment: false }))
         .pipe(utils.appendSourcemap(".css"))
         .pipe(utils.renamePipeline())

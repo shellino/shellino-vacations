@@ -21,7 +21,7 @@ var config = {
     buildMode: buildMode
 };
 
-// This 'dataStore' is the context for all handlebar templates
+// This 'dataStore' is the context for all templates
 var dataStore = {
     tags: [],
     blogs: []
@@ -76,9 +76,6 @@ require("./gulp/gulp-copy.js")(paths, filters);
 
 // Gulp task - data-store
 var taskDataStore = require("./gulp/gulp-data-store.js")(paths, filters, config, dataStore);
-
-// Handlebar utilities
-//var taskHandlebar = require("./gulp/gulp-handlebar.js")(paths, filters, config, dataStore);
 
 require("./gulp/gulp-nunjucks.js")(paths, filters, config, dataStore);
 

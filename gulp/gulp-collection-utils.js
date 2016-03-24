@@ -39,7 +39,7 @@ function generatePackagesPages(context, dataStore, collectionSrouceFile) {
     Object.keys(dataStore[collection.contextKey]).forEach(function (packageKey) {
 
         page = {
-            context: Object.create(context),
+            context: Object.assign(context),
             urlPattern: packageKey
         };
 
