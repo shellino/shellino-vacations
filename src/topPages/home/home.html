@@ -15,7 +15,7 @@ subLine: You tell a story. We make it happen.
 <section>
 
     <div class="home-wall">
-        <div class="wall-title">On way to Ladakh</div>
+        <div class="wall-title">On a way to Ladakh</div>
 
         <div class="wall-content">
             <div>Get Leh'd. Adventure into</div>
@@ -89,7 +89,7 @@ subLine: You tell a story. We make it happen.
         <div class="list-card clearfix">
             {% for packageKey, package in ladakhBikeRide %}
             <div class="card-item {% if loop.index0 % 2 %}card-left{% else %}card-right{% endif %}">
-                <a href="#"><h3>{{package.title}}</h3> &raquo;</a>
+                <a href="/packages/ladakh-rides/{{packageKey}}/"><h3>{{package.title}}</h3> &raquo;</a>
                 <div>
                     {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
                     <span class="inline-block">{{package.duration}}</span>

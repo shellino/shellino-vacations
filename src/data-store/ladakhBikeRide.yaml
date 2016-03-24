@@ -1,6 +1,10 @@
 splendorous-ladakh:
     title: Splendorous Ladakh
+    tagline: Get Leh'd
+    cover: best-of-ladakh-1600x900.jpg
+    coverSmall: best-of-ladakh-600x338.jpg
     duration: 9 days / 8 nights
+    states: Himachal Pradesh, Jammu and Kashmir
     dates:
         -   28 May 2016
         -   23 June 2016
@@ -8,58 +12,62 @@ splendorous-ladakh:
     distance: 1300
     hotels:
         -   location: Manali
-            hotel: Hotel Chandermukhi
+            name: Hotel Chandermukhi
         -   location: Sarchu
-            hotel: Biru Dhaba
+            name: Biru Dhaba
         -   location: Leh
-            hotel: Tongspon Guest House
+            name: Tongspon Guest House
         -   location: Pangong
-            hotel: The Gongma Inn
+            name: The Gongma Inn
         -   location: Pang
-            hotel: Nomadiac Camp
+            name: Nomadiac Camp
         -   location: Keylong
-            hotel: Hotel Valley View
+            name: Hotel Valley View
 
     itinerary:
         -   title: Manali around the town
             distance: 50
-            description: "Welcome to Manali, after an overnight journey from Delhi check-in to the hotel and relax till afternoon. Have your lunch and then leave for your motorbike ride. Go all the way riding through Kullu Valley through the rough roads exploring Vashishth Temple and Hidimba Temple. There are tricky bends and stretches on the road which will help you know the torque characteristics of the bike. Enjoy the ride to the beautiful Kullu Valley. Later, come back to the hotel and have a comfortable stay."
+            details: "Welcome to Manali, after an overnight journey from Delhi check-in to the hotel and relax till afternoon. Have your lunch and then leave for your motorbike ride. Go all the way riding through Kullu Valley through the rough roads exploring Vashishth Temple and Hidimba Temple. There are tricky bends and stretches on the road which will help you know the torque characteristics of the bike. Enjoy the ride to the beautiful Kullu Valley. Later, come back to the hotel and have a comfortable stay."
             
         -   title: Manali - Sarchu
             distance: 222
-            description: "We will leave early in the morning for a full day Adventure. So, we start the day with Rohtang Pass (3978 meters). This would really turn out to be a challenge as the roads you will bike through are really bad and the weather conditions are also uncertain. Further, you will get to face millions of people moving here and there to see the snow. Pass through the Lahaul Valley where there are mountains capped with snow all around. We will pass through the Barlacha-La Pass (4892 m) where mountains are bigger on this part of the highway and will halt at Sarchu which forms a border line between Kashmir and Himachal."
+            details: "We will leave early in the morning for a full day Adventure. So, we start the day with Rohtang Pass (3978 meters). This would really turn out to be a challenge as the roads you will bike through are really bad and the weather conditions are also uncertain. Further, you will get to face millions of people moving here and there to see the snow. Pass through the Lahaul Valley where there are mountains capped with snow all around. We will pass through the Barlacha-La Pass (4892 m) where mountains are bigger on this part of the highway and will halt at Sarchu which forms a border line between Kashmir and Himachal."
              
         -   title: Sarchu - Leh
             distance: 253
-            description: "Today, you will be leaving for the next destination Leh reroute Pang is a place where you will witness a mix of different natural formations which are seen through the roads and sand. Flaunt the torque of your Bullet at Moore Plains this stretch of 40 km road has an average elevation of 4800 meters and is flanked by mountain ranges on both sides. At some places the road runs along the Sumkhel Lungpa River featuring some stunning sand and rock natural formations with a lot of challenges as you will have to bike through flatlands and get into the mountain-range-horizon. Cross the Tanglang-La Pass which is the second-highest motorable mountain pass in the world at the height of 5360 meters. After crossing this pass, you will have to bike through well-maintained roads all the way to Leh. En-route you will get to see the monasteries of Thiksey and Shey which are set on the top of a hill. Check-in at the hotel in Leh. Spend evening chilling out at the place. Explore the culture and geography of Ladakh in the next few days."
+            details: "Today, you will be leaving for the next destination Leh reroute Pang is a place where you will witness a mix of different natural formations which are seen through the roads and sand. Flaunt the torque of your Bullet at Moore Plains this stretch of 40 km road has an average elevation of 4800 meters and is flanked by mountain ranges on both sides. At some places the road runs along the Sumkhel Lungpa River featuring some stunning sand and rock natural formations with a lot of challenges as you will have to bike through flatlands and get into the mountain-range-horizon. Cross the Tanglang-La Pass which is the second-highest motorable mountain pass in the world at the height of 5360 meters. After crossing this pass, you will have to bike through well-maintained roads all the way to Leh. En-route you will get to see the monasteries of Thiksey and Shey which are set on the top of a hill. Check-in at the hotel in Leh. Spend evening chilling out at the place. Explore the culture and geography of Ladakh in the next few days."
             
         -   title: Leh around the Town
             distance:
-            description: "Spend the whole day sightseeing at Leh. With a mixed population of Muslim and Buddhist, the place houses a large Masjid and a Tibetan Gompa. There are many eating joints at the central street which serve a wide variety of cuisines. This day, explore Leh on foot and visit the Old Fort which looks over the city. Spend the evening at any of the garden restaurants which are popular in this place, Always keep it high on fluids."
+            details: "Spend the whole day sightseeing at Leh. With a mixed population of Muslim and Buddhist, the place houses a large Masjid and a Tibetan Gompa. There are many eating joints at the central street which serve a wide variety of cuisines. This day, explore Leh on foot and visit the Old Fort which looks over the city. Spend the evening at any of the garden restaurants which are popular in this place, Always keep it high on fluids."
             
         -   title: Leh - Khardung-la Pass - Leh
             distance: 150
-            description: "Travel to the world’s highest motorable pass in the world maintained by BRO (Border Roads Organization). Ride back to Leh, later in the afternoon we will ride to the Magnetic hills and return to Leh. Explore the Local Market as this will be last day in Leh."
+            details: "Travel to the world’s highest motorable pass in the world maintained by BRO (Border Roads Organization). Ride back to Leh, later in the afternoon we will ride to the Magnetic hills and return to Leh. Explore the Local Market as this will be last day in Leh."
             
         -   title: Leh - Pangong
             distance: 150
-            description: "Immortalized by Bollywood, adorned by Nature, the Pangong is Ladakh's gift to us! On our agenda today is riding up the breathtakingly beautiful Chang la pass, which is a true test of good riding, unbridled passion and ultimate love for the outdoors! The occasional snow and gravel on top of the Chang la might make it an even more adventurous ride! On the other side of the Changla are the beautiful Changthang meadows beyond which, like a glistening jewel, is the Pangong, which is the largest brackish water lake in Asia, the 2/3rd portion of the lake lie in China where one can witness interplay of colors take in the beauty of the Pangong. Go for a leisurely ride along the water! The sight of the evening sun setting against those differently-hued mountains would bowl you over! Sometimes at night, the waters shine in the starlight as if it's molten silver! Have a comfortable stay at night in the Camp resort."
+            details: "Immortalized by Bollywood, adorned by Nature, the Pangong is Ladakh's gift to us! On our agenda today is riding up the breathtakingly beautiful Chang la pass, which is a true test of good riding, unbridled passion and ultimate love for the outdoors! The occasional snow and gravel on top of the Chang la might make it an even more adventurous ride! On the other side of the Changla are the beautiful Changthang meadows beyond which, like a glistening jewel, is the Pangong, which is the largest brackish water lake in Asia, the 2/3rd portion of the lake lie in China where one can witness interplay of colors take in the beauty of the Pangong. Go for a leisurely ride along the water! The sight of the evening sun setting against those differently-hued mountains would bowl you over! Sometimes at night, the waters shine in the starlight as if it's molten silver! Have a comfortable stay at night in the Camp resort."
             
         -   title: Pangong - Pang
             distance: 245
-            description: "Have your breakfast early in the morning and get ready to head towards Pang. Enroute we will cross over Upshi and Moore Plains. Overnight stay will be in tented resorts at Pang."
+            details: "Have your breakfast early in the morning and get ready to head towards Pang. Enroute we will cross over Upshi and Moore Plains. Overnight stay will be in tented resorts at Pang."
             
         -   title: Pang - Keylong
             distance: 185 
-            description: "This day, you will get back to the biking track through which you reached Leh. En-route, you will see Sarchu and Jispa. Enjoy the Himalayan soup which is made by mixing meat and vegetables. Have a comfortable stay at Keylong in the night."
+            details: "This day, you will get back to the biking track through which you reached Leh. En-route, you will see Sarchu and Jispa. Enjoy the Himalayan soup which is made by mixing meat and vegetables. Have a comfortable stay at Keylong in the night."
             
         -   title: Keylong - Manali
             distance: 115
-            description: "This day we will be returning to our base from where we had started the adventurous journey, Manali. Enjoy a smooth ride up the Lahaul ranges and reach Rohtang pass. Rohtang pass will come with a number of challenges with mini-rivers of mud, enjoy the Mall Road Shopping and collect the souvenirs for family, Tour ends with happy memories."        
+            details: "This day we will be returning to our base from where we had started the adventurous journey, Manali. Enjoy a smooth ride up the Lahaul ranges and reach Rohtang pass. Rohtang pass will come with a number of challenges with mini-rivers of mud, enjoy the Mall Road Shopping and collect the souvenirs for family, Tour ends with happy memories."        
 
 adventurous-ladakh:
     title: Adventurous Ladakh
+    tagline: Get Leh'd
+    cover: best-of-ladakh-1600x900.jpg
+    coverSmall: best-of-ladakh-600x338.jpg
     duration: 13 days / 12 nights
+    states: Himachal Pradesh, Jammu and Kashmir
     dates:
         -   8 June 2016
         -   4 July 2016
@@ -67,68 +75,68 @@ adventurous-ladakh:
     distance: 2000
     hotels:
         -   location: Manali
-            hotel: Hotel Chandermukhi
+            name: Hotel Chandermukhi
         -   location: Sarchu
-            hotel: Biru Dhaba
+            name: Biru Dhaba
         -   location: Leh
-            hotel: Tongspon Guest House
+            name: Tongspon Guest House
         -   location: Pangong
-            hotel: The Gongma Inn
+            name: The Gongma Inn
         -   location: Pang
-            hotel: Nomadiac Camp
+            name: Nomadiac Camp
         -   location: Tso Moriri
-            hotel: Hotel Lake View
+            name: Hotel Lake View
 
     itinerary:
-        -   tile:
-            distance:
-            description: "Welcome to Manali, after an overnight journey from Delhi check-in to the hotel and relax till afternoon. Have your lunch and then leave for your motorbike ride. Go all the way riding through Kullu Valley through the rough roads exploring Vashishth Temple and Hidimba Temple. There are tricky bends and stretches on the road which will help you know the torque characteristics of the bike. Enjoy the ride to the beautiful Kullu Valley. Later, come back to the hotel and have a comfortable stay." 
+        -   title: Manali around the town
+            distance: 50
+            details: "Welcome to Manali, after an overnight journey from Delhi check-in to the hotel and relax till afternoon. Have your lunch and then leave for your motorbike ride. Go all the way riding through Kullu Valley through the rough roads exploring Vashishth Temple and Hidimba Temple. There are tricky bends and stretches on the road which will help you know the torque characteristics of the bike. Enjoy the ride to the beautiful Kullu Valley. Later, come back to the hotel and have a comfortable stay." 
             
-        -   tile: Manali - Sarchu
+        -   title: Manali - Sarchu
             distance: 222
-            description: "We will leave early in the morning for a full day Adventure. So, we start the day with Rohtang Pass (3978 meters). This would really turn out to be a challenge as the roads you will bike through are really bad and the weather conditions are also uncertain. Further, you will get to face millions of people moving here and there to see the snow. Pass through the Lahaul Valley where there are mountains capped with snow all around. We will pass through the Barlacha-La Pass (4892 m) where mountains are bigger on this part of the highway and will halt at Sarchu which forms a border line between Kashmir and Himachal."
+            details: "We will leave early in the morning for a full day Adventure. So, we start the day with Rohtang Pass (3978 meters). This would really turn out to be a challenge as the roads you will bike through are really bad and the weather conditions are also uncertain. Further, you will get to face millions of people moving here and there to see the snow. Pass through the Lahaul Valley where there are mountains capped with snow all around. We will pass through the Barlacha-La Pass (4892 m) where mountains are bigger on this part of the highway and will halt at Sarchu which forms a border line between Kashmir and Himachal."
             
-        -   tile: Sarchu - Leh
+        -   title: Sarchu - Leh
             distance: 253
-            description: "Today, you will be leaving for the next destination Leh reroute Pang is a place where you will witness a mix of different natural formations which are seen through the roads and sand. Flaunt the torque of your Bullet at Moore Plains this stretch of 40 km road has an average elevation of 4800 meters and is flanked by mountain ranges on both sides. At some places the road runs along the Sumkhel Lungpa River featuring some stunning sand and rock natural formations with a lot of challenges as you will have to bike through flatlands and get into the mountain-range-horizon. Cross the Tanglang-La Pass which is the second-highest motorable mountain pass in the world at the height of 5360 meters. After crossing this pass, you will have to bike through well-maintained roads all the way to Leh. En-route you will get to see the monasteries of Thiksey and Shey which are set on the top of a hill. Check-in at the hotel in Leh. Spend evening chilling out at the place. Explore the culture and geography of Ladakh in the next few days."
+            details: "Today, you will be leaving for the next destination Leh reroute Pang is a place where you will witness a mix of different natural formations which are seen through the roads and sand. Flaunt the torque of your Bullet at Moore Plains this stretch of 40 km road has an average elevation of 4800 meters and is flanked by mountain ranges on both sides. At some places the road runs along the Sumkhel Lungpa River featuring some stunning sand and rock natural formations with a lot of challenges as you will have to bike through flatlands and get into the mountain-range-horizon. Cross the Tanglang-La Pass which is the second-highest motorable mountain pass in the world at the height of 5360 meters. After crossing this pass, you will have to bike through well-maintained roads all the way to Leh. En-route you will get to see the monasteries of Thiksey and Shey which are set on the top of a hill. Check-in at the hotel in Leh. Spend evening chilling out at the place. Explore the culture and geography of Ladakh in the next few days."
             
-        -   tile: Leh around the town
+        -   title: Leh around the town
             distance:
-            description: "Spend the whole day sightseeing at Leh with a mixed population of Muslim and Buddhist, the place houses a large Masjid and a Tibetan Gompa. There are many eating joints at the central street which serve a wide variety of cuisines. This day, explore Leh on foot and visit the Old Fort which looks over the city. Spend the evening at any of the garden restaurants which are popular in this place, always keep it high on fluids."
+            details: "Spend the whole day sightseeing at Leh with a mixed population of Muslim and Buddhist, the place houses a large Masjid and a Tibetan Gompa. There are many eating joints at the central street which serve a wide variety of cuisines. This day, explore Leh on foot and visit the Old Fort which looks over the city. Spend the evening at any of the garden restaurants which are popular in this place, always keep it high on fluids."
             
-        -   tile: Leh - Nubra Valley
+        -   title: Leh - Nubra Valley
             distance: 125
-            description: "Travel to the picturesque Nubra valley. Made famous as a high-altitude desert, Nubra valley houses some of Ladakh`s best treasures. We go via the Khardung La pass on the way, the world`s highest motorable road. Explore the Diskit monastery and spend time on a camel safari at Hundar (a desert at 10000 ft above sea level). By evening, we will reach Turtuk, the last village in Ladakh (and India) and one of the 3 Balti villages left in India. This is an extraordinary cultural experience which coupled with the enchanting mountain views would leave you spellbound, overnight in Turtuk."
+            details: "Travel to the picturesque Nubra valley. Made famous as a high-altitude desert, Nubra valley houses some of Ladakh`s best treasures. We go via the Khardung La pass on the way, the world`s highest motorable road. Explore the Diskit monastery and spend time on a camel safari at Hundar (a desert at 10000 ft above sea level). By evening, we will reach Turtuk, the last village in Ladakh (and India) and one of the 3 Balti villages left in India. This is an extraordinary cultural experience which coupled with the enchanting mountain views would leave you spellbound, overnight in Turtuk."
             
-        -   tile: Turtuk - Leh
+        -   title: Turtuk - Leh
             distance: 125
-            description: "Spend the morning exploring Turtuk’s apricot fields, old Balti houses and interacting with the locals. Still pretty much untouched by tourism, this is one of the most authentic Ladakhi experiences. We trace our way back to Leh to reach in time for a sumptuous hot dinner."
+            details: "Spend the morning exploring Turtuk’s apricot fields, old Balti houses and interacting with the locals. Still pretty much untouched by tourism, this is one of the most authentic Ladakhi experiences. We trace our way back to Leh to reach in time for a sumptuous hot dinner."
             
-        -   tile: Leh - Kargil
+        -   title: Leh - Kargil
             distance: 220
-            description: "After leisurely breakfast drive down the Indus Valley on the first leg of your journey to Kargil. On the way, visit Hall of Fame, Gurudwara Pathar Sahib, Magnetic Point, Sangam (confluence of Indus & Zanskar Rivers) and then the 11th century Alchi Choskor, oldest surviving monastic complex famous for its wall frescoes and architecture - a UNESCO listed heritage site. , on the way to Kargil you can view the 9-Mtrs. tall rock sculpture of the Maitreya Buddha at Mulbek (7th -8th century AD), have a comfortable stay at Kargil."
+            details: "After leisurely breakfast drive down the Indus Valley on the first leg of your journey to Kargil. On the way, visit Hall of Fame, Gurudwara Pathar Sahib, Magnetic Point, Sangam (confluence of Indus & Zanskar Rivers) and then the 11th century Alchi Choskor, oldest surviving monastic complex famous for its wall frescoes and architecture - a UNESCO listed heritage site. , on the way to Kargil you can view the 9-Mtrs. tall rock sculpture of the Maitreya Buddha at Mulbek (7th -8th century AD), have a comfortable stay at Kargil."
             
-        -   tile: Kargil - Leh
+        -   title: Kargil - Leh
             distance: 220
-            description: "After Breakfast we will move towards Drass for Kargil war Memorial, on the return journey to Leh we will visit the dramatically located Lamayuru monastery and the adjoining 'Moonland' hills, overnight at Leh."
+            details: "After Breakfast we will move towards Drass for Kargil war Memorial, on the return journey to Leh we will visit the dramatically located Lamayuru monastery and the adjoining 'Moonland' hills, overnight at Leh."
             
-        -   tile: Leh around the Town
+        -   title: Leh around the Town
             distance: 
-            description: "Today will be the last day at Leh; we will visit the Leh Palace and visit the Local Market to collect the souvenirs for Family. In the evening chill out at a local restaurant and overnight stay at Leh resort."
+            details: "Today will be the last day at Leh; we will visit the Leh Palace and visit the Local Market to collect the souvenirs for Family. In the evening chill out at a local restaurant and overnight stay at Leh resort."
             
-        -   tile: Leh - Pangong
+        -   title: Leh - Pangong
             distance: 150
-            description: "Immortalized by Bollywood, adorned by Nature, the Pangong is Ladakh's gift to us! On our agenda today is riding up the breathtakingly beautiful Chang la pass, which is a true test of good riding, unbridled passion and ultimate love for the outdoors! The occasional snow and gravel on top of the Chang la might make it an even more adventurous ride! On the other side of the Changla are the beautiful Changthang meadows beyond which, like a glistening jewel, is the Pangong, which is the largest brackish water lake in Asia, the 2/3rd portion of the lake lie in China where one can witness interplay of colors take in the beauty of the Pangong. Go for a leisurely ride along the water! The sight of the evening sun setting against those differently-hued mountains would bowl you over! Sometimes at night, the waters shine in the starlight as if it's molten silver! Have a comfortable stay at night in the Camp resort."
+            details: "Immortalized by Bollywood, adorned by Nature, the Pangong is Ladakh's gift to us! On our agenda today is riding up the breathtakingly beautiful Chang la pass, which is a true test of good riding, unbridled passion and ultimate love for the outdoors! The occasional snow and gravel on top of the Chang la might make it an even more adventurous ride! On the other side of the Changla are the beautiful Changthang meadows beyond which, like a glistening jewel, is the Pangong, which is the largest brackish water lake in Asia, the 2/3rd portion of the lake lie in China where one can witness interplay of colors take in the beauty of the Pangong. Go for a leisurely ride along the water! The sight of the evening sun setting against those differently-hued mountains would bowl you over! Sometimes at night, the waters shine in the starlight as if it's molten silver! Have a comfortable stay at night in the Camp resort."
             
-        -   tile: Pangong Lake - Tso Moriri Lake (via restricted area)
+        -   title: Pangong Lake - Tso Moriri Lake (via restricted area)
             distance: 230
-            description: "Have your Breakfast early and we will ride through the restricted area to reach to Tso-Moriri. This stretch is mostly in between the Indian - Chinese - Tibetan Border and is taken care by ITBP. We will rest at Tso-Moriri Lake."
+            details: "Have your Breakfast early and we will ride through the restricted area to reach to Tso-Moriri. This stretch is mostly in between the Indian - Chinese - Tibetan Border and is taken care by ITBP. We will rest at Tso-Moriri Lake."
             
-        -   tile: Tso Moriri - Sarchu
+        -   title: Tso Moriri - Sarchu
             distance: 215
-            description: "Today we will head back to Sarchu via Polo Kongka La, a tough terrain to ride on later we will ride through Moore Plains and via Pang we will reach Sarchu, rest your machine at Sarchu and be prepared for the final day ride to Manali."
+            details: "Today we will head back to Sarchu via Polo Kongka La, a tough terrain to ride on later we will ride through Moore Plains and via Pang we will reach Sarchu, rest your machine at Sarchu and be prepared for the final day ride to Manali."
             
-        -   tile: Sarchu - Manali
+        -   title: Sarchu - Manali
             distance: 222
-            description: "In the morning, drive through the Sarchu plain and reach the Barlacha-La plain till noon. Enjoy a smooth ride up the Lahaul ranges and reach Rohtang pass. Rohtang pass will come with a number of challenges with mini-rivers of mud, enjoy the Mall Road Shopping and collect the souvenirs for family, tour ends with happy memories!!"
+            details: "In the morning, drive through the Sarchu plain and reach the Barlacha-La plain till noon. Enjoy a smooth ride up the Lahaul ranges and reach Rohtang pass. Rohtang pass will come with a number of challenges with mini-rivers of mud, enjoy the Mall Road Shopping and collect the souvenirs for family, tour ends with happy memories!!"
         

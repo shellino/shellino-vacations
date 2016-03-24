@@ -1,0 +1,83 @@
+@import "../../scss/_variables.scss";
+@import "../../scss/_foundation_media_queries.scss";
+
+.contact-request-form-panel {
+    margin-top: $global-margin;
+    
+    .book-now-button {
+        span.inline-block {
+            margin-left: 0.5rem;
+        }
+    }
+    
+    
+    .contact-request-form {
+        padding-top: $global-padding;
+        border: 1px solid $color-casper;
+        background-color: #EAEAEA;
+        box-shadow: 0 0 2px rgba(160, 160, 160, 0.2);
+    }
+    
+    .contact-form {
+        // Overriding foundation rule
+        // .error label, .error label.error {
+        //     color: $color-body-text;
+        // }
+        
+        .error small.error {
+            display: inline;
+        }
+
+    }
+    
+    .contact-input {
+        font-weight: 400;
+        transition-property: border-color, box-shadow !important;
+        margin-bottom: $global-margin;
+    }
+    
+    .submit-button {
+        display: block;
+        height: 2.3125rem;
+        padding: 0;
+        letter-spacing: 1px;
+        max-width: 240px;
+    }
+    
+    #form-sent-feedback {
+        display: none;
+    }
+}
+
+.itinerary-description {
+    margin-bottom: 0;
+}
+
+.riding-distance {
+    display: inline-block;
+    background-color: scale-color($color-celery, $lightness: 0%, $alpha: -50%);
+    border: 1px solid $color-celery;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.things-needed {
+    margin: 0;
+    
+    .icon-big {
+        width: 2rem;
+        height: 2rem;
+        float: left;
+    }
+    
+    li {
+        list-style: none;
+        
+        .feature-item {
+            margin-left: 2.5rem;
+            font-size: 1.125rem;
+        }
+    }
+    
+}
