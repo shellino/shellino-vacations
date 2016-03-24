@@ -1,0 +1,59 @@
+---
+title: Shellino Vacations
+template: topPages
+permalink: true
+scss:
+    - /home/home
+js:
+    - /home/home.js
+tagLine: Find your vacation story
+subLine: You tell a story. We make it happen.
+---
+
+<section>
+
+    <div class="home-wall">
+        <div class="wall-title">Red fort, Agra, India</div>
+    </div>
+
+    <div class="upcoming-packages max-width-panel">
+        <h2 class="packages-panel-heading">Upcoming packages</h2>
+        <ul class="packages-list upcoming-list clearfix">
+            {% for packageKey, package in upcomingPackages %}
+            <li class="list-item two-items" style="background-image:url('/img/packages/{{package.coverSmall}}')">
+                <a href="/packages/upcoming/{{packageKey}}/" class="package-link">
+                    <h3 class="package-heading">{{package.title}}</h3>
+                    <div>{{package.duration}} on {{package.dates[0].startDate}}</div>
+                    <div>at just <strong style="font-size: 1.5rem">INR {{package.dates[0].basicAmount}}/-</strong> per person</div>
+                </a>
+            </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+
+    <div class="featured-packages max-width-panel">
+        <h2 class="packages-panel-heading">Featured packages</h2>
+
+        <ul class="packages-list featured-list clearfix">
+            {% set tileSize = "large" %}
+            {% for packageKey, package in packages %}
+
+                {% if package.isFeatured %}
+                <li class="list-item featured-list-item {{tileSize}}" style="background-image:url('/img/packages/{{package.coverSmall}}')">
+                    <a href="/packages/{{packageKey}}/" class="package-link">
+                        <h3 class="package-heading">{{package.title}}</h3>
+                    </a>
+                </li>
+                {% set tileSize = "small" %}
+                {% endif %}
+
+            {% endfor %}
+
+        </ul>
+
+        <a class="explore-link" href="/packages/">Explore all packages &raquo;</a>
+
+    </div>
+
+</section>

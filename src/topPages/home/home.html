@@ -10,50 +10,43 @@ tagLine: Find your vacation story
 subLine: You tell a story. We make it happen.
 ---
 
+{% import "../../templates/imports/icons.nunjucks" as icons %}
+
 <section>
 
     <div class="home-wall">
-        <div class="wall-title">Red fort, Agra, India</div>
+        <div class="wall-title">On way to Ladakh</div>
+
+        <div class="wall-content">
+            <div>Get Leh'd. Adventure into</div>
+            <h2>Ladakh - the Land of High Pass</h2>
+        </div>
     </div>
 
-    <div class="upcoming-packages max-width-panel">
-        <h2 class="packages-panel-heading">Upcoming packages</h2>
-        <ul class="packages-list upcoming-list clearfix">
-            {% for packageKey, package in upcomingPackages %}
-            <li class="list-item two-items" style="background-image:url('/img/packages/{{package.coverSmall}}')">
-                <a href="/packages/upcoming/{{packageKey}}/" class="package-link">
-                    <h3 class="package-heading">{{package.title}}</h3>
-                    <div>{{package.duration}} on {{package.dates[0].startDate}}</div>
-                    <div>at just <strong style="font-size: 1.5rem">INR {{package.dates[0].basicAmount}}/-</strong> per person</div>
-                </a>
-            </li>
-            {% endfor %}
-
-        </ul>
+    <div class="max-width-panel">
+        <h2>All you need is a backpack</h2>
+        <p>
+            Buckle up for the most precious bike trip of your life time. Stopover in sapphire lakes, rusty terrains, peaceful outbacks
+            and almost anywhere your heart wants to. This is not where your burdens will dare to follow you; this is where
+            you dig out your fantasy and put it straight into reality. So, let the magic of marooned monastery, independence
+            and soft breeze, swirl up your senses for the good.
+        </p>
     </div>
 
-    <div class="featured-packages max-width-panel">
-        <h2 class="packages-panel-heading">Featured packages</h2>
-
-        <ul class="packages-list featured-list clearfix">
-            {% set tileSize = "large" %}
-            {% for packageKey, package in packages %}
-
-                {% if package.isFeatured %}
-                <li class="list-item featured-list-item {{tileSize}}" style="background-image:url('/img/packages/{{package.coverSmall}}')">
-                    <a href="/packages/{{packageKey}}/" class="package-link">
-                        <h3 class="package-heading">{{package.title}}</h3>
-                    </a>
-                </li>
-                {% set tileSize = "small" %}
-                {% endif %}
-
+    <div class="max-width-panel">
+        <h2>Adventure details</h2>
+        <div class="list-card clearfix">
+            {% for packageKey, package in ladakhBikeRide %}
+            <div class="card-item {% if loop.index0 % 2 %}card-left{% else %}card-right{% endif %}">
+                <h3>{{package.title}}</h3>
+                <div>
+                    {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
+                    <span class="inline-block">{{package.duration}}</span>
+                    {{icons.lineaIcon("icon-motorbike", "icon-big")}}
+                </div>
+            </div>
             {% endfor %}
-
-        </ul>
-
-        <a class="explore-link" href="/packages/">Explore all packages &raquo;</a>
-
+        </div>
     </div>
 
 </section>

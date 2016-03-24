@@ -3,101 +3,20 @@
 
 
 .home-wall {
-    background-image: url(/img/packages/ladakh-bike-1600x900.jpg);
+    background-image: url(/img/walls/agra-fort-india-1600x1000.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    height: 540px;
-    height: 80vh;
+    height: 480px;
+    height: 50vh;
     position: relative;
-    
-    text-align: center;
 
-    &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 0;
-    }
-    
     .wall-title {
         color: $color-white;
-        background-color: rgba(0, 0, 0, 0.1);
         position: absolute;
         right: 1rem;
         bottom: 1rem;
         font-size: 1.125rem;
-        padding: 0.1rem 0.3rem;
-    }
-    
-    .wall-content {
-        line-height: 1;
-        padding: 15% 0.5rem 0 0.5rem;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        
-        text-align: left;
-        color: $color-white;
-        
-        h2 {
-            color: inherit;
-            line-height: inherit;
-            letter-spacing: 2px;
-            font-size: 2rem;
-            text-transform: uppercase;
-            margin: 0;
-            font-weight: 900;
-        }
-        
-    }
-    
-    @media #{$medium-up} {
-        .wall-content {
-            h2 {
-                font-size: 3rem;
-            }
-        }
-
-    }
-    
-    @media #{$large-up} {
-        .wall-content {
-            h2 {
-                font-size: 4rem;
-            }
-        }
-
-    }
-    
-}
-
-.list-card {
-    
-    .card-item {
-        border: 1px solid $color-casper;
-        margin-bottom: 0.5rem;
-    }
-    
-    @media #{$medium-up} {
-        .card-item {
-            padding: 0.5rem;
-            width: 49%;
-            width: calc(50% - 5px);
-            
-            &.card-left {
-                float: left;
-            }
-            
-            &.card-right {
-                float: right;
-            }
-        }
-
     }
 }
 
