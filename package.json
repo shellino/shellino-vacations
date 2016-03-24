@@ -5,6 +5,10 @@
     "main": "index.js",
     "author": "Harshal Patil",
     "license": "MIT",
+    "engines": {
+        "node": "5.9.1",
+        "npm": "3.7.3"
+    },
     "devDependencies": {
         "autoprefixer-core": "^5.1.8",
         "cheerio": "^0.18.0",
