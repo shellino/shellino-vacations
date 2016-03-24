@@ -22,31 +22,123 @@ subLine: You tell a story. We make it happen.
             <h2>Ladakh - the Land of High Pass</h2>
         </div>
     </div>
+    
+    <div class="max-width-panel intro-panel">
+        <h2>Starting on <strong>28 May, 2016</strong></h2>
+        <p>
+            Tours of <strong>13 days</strong> and <strong>9 days</strong> respectively
+        </p>
+    </div>
 
-    <div class="max-width-panel">
+    <div class="max-width-panel intro-panel">
         <h2>All you need is a backpack</h2>
         <p>
-            Buckle up for the most precious bike trip of your life time. Stopover in sapphire lakes, rusty terrains, peaceful outbacks
+            Buckle up for the most precious bike trip of your life time. Stop over in sapphire lakes, rusty terrains, peaceful outbacks
             and almost anywhere your heart wants to. This is not where your burdens will dare to follow you; this is where
             you dig out your fantasy and put it straight into reality. So, let the magic of marooned monastery, independence
             and soft breeze, swirl up your senses for the good.
         </p>
     </div>
+    
+    <div class="max-width-panel tour-feature">
+        <div class="row full-width">
+            <div class="columns medium-6">
+                <ul class="tour-features">
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Don't worry about bike. We will arrange it.</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Royal Enfield 350CC for Solo rider</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Royal Enfield 500CC for Sharing riders</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Accomodation with meals</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Tour leader and guide</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Backup tempo along with mechanic</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">First aid kits, oxygen cylinder and helmet</div>
+                    </li>
+                    <li class="clearfix">
+                        {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+                        <div class="feature-item">Bungee cords, luggage racks and others</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="columns medium-6">
+                <img class="royal-enfield" src="/img/others/bullet-600x463.png" />
+            </div>
+        </div>
+    </div>
 
-    <div class="max-width-panel">
+    <div class="max-width-panel tour-list-panel">
         <h2>Adventure details</h2>
         <div class="list-card clearfix">
             {% for packageKey, package in ladakhBikeRide %}
             <div class="card-item {% if loop.index0 % 2 %}card-left{% else %}card-right{% endif %}">
-                <h3>{{package.title}}</h3>
+                <a href="#"><h3>{{package.title}}</h3> &raquo;</a>
                 <div>
                     {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
                     <span class="inline-block">{{package.duration}}</span>
-                    {{icons.lineaIcon("icon-motorbike", "icon-big")}}
+                </div>
+                <div>
+                    <span class="text-bold">{{package.distance}}+</span>
+                    <span>KM of ride</span>
+                </div>
+                <div class="tour-dates">
+                    <!--{{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}-->
+                    <span>On</span>
+                    {% for date in package.dates %}
+                        {% if not loop.first %}
+                            {% if loop.last %}
+                            <span>and</span>
+                            {% else %}
+                            <span>,</span>
+                            {% endif %}
+                        {% endif %}
+                        <span class="date-green">{{date}}</span>
+                    {% endfor %}
                 </div>
             </div>
             {% endfor %}
         </div>
+    </div>
+    
+    <div class="featured-packages max-width-panel">
+        <h2 class="packages-panel-heading">Our other packages</h2>
+
+        <ul class="packages-list featured-list clearfix">
+            {% set tileSize = "large" %}
+            {% for packageKey, package in packages %}
+
+                {% if package.isFeatured %}
+                <li class="list-item featured-list-item {{tileSize}}" style="background-image:url('/img/packages/{{package.coverSmall}}')">
+                    <a href="/packages/{{packageKey}}/" class="package-link">
+                        <h3 class="package-heading">{{package.title}}</h3>
+                    </a>
+                </li>
+                {% set tileSize = "small" %}
+                {% endif %}
+
+            {% endfor %}
+
+        </ul>
+
+        <a class="explore-link" href="/packages/">Explore all packages &raquo;</a>
+
     </div>
 
 </section>

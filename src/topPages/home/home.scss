@@ -76,16 +76,81 @@
     
 }
 
+.intro-panel {
+    
+    margin-top: $global-margin;
+    padding-bottom: $global-padding;
+    
+    h2, p {
+        margin: 0 $global-margin;
+    }
+    
+    strong {
+        color: $color-celery;
+    }
+}
+
+.tour-feature {
+    
+    margin-top: $global-margin;
+    padding-bottom: $global-padding;
+    
+    .royal-enfield {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .icon-big {
+        width: 2rem;
+        height: 2rem;
+        float: left;
+    }
+
+    .tour-features {
+        margin: 0;
+        li {
+            list-style: none;
+            
+            .feature-item {
+                margin-left: 2.5rem;
+                font-size: 1.25rem;
+            }
+        }
+        
+    }
+}
+
+.tour-list-panel {
+    h2, .list-card {
+        margin: 0 $global-margin;
+    }
+}
+
 .list-card {
     
     .card-item {
         border: 1px solid $color-casper;
+        padding: 0.5rem;
         margin-bottom: 0.5rem;
+        
+        h3 {
+            display: inline-block;
+            color: inherit;
+        }
+        
+    }
+    
+    .tour-dates {
+
+        .date-green {
+            font-weight: 700;
+            color: $color-celery;
+        }
+        
     }
     
     @media #{$medium-up} {
         .card-item {
-            padding: 0.5rem;
             width: 49%;
             width: calc(50% - 5px);
             

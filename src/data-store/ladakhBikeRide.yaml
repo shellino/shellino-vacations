@@ -5,6 +5,7 @@ splendorous-ladakh:
         -   28 May 2016
         -   23 June 2016
     route: Manali - Sarchu - Leh - Khardung La - Pangong - Pang - Keylong - Manali
+    distance: 1300
     hotels:
         -   location: Manali
             hotel: Hotel Chandermukhi
@@ -63,6 +64,7 @@ adventurous-ladakh:
         -   8 June 2016
         -   4 July 2016
     route: Manali - Sarchu - Leh - Nubra - Kargil - Pangong - Tso Moriri - Sarchu - Manali
+    distance: 2000
     hotels:
         -   location: Manali
             hotel: Hotel Chandermukhi
