@@ -33,7 +33,7 @@ collection:
         </div>
     </div>
 
-    <h5 class="panel-heading">Departure dates and costs</h5>
+    <h5 class="panel-heading">Departure dates</h5>
 
     <div class="departure-date-content">
         <div class="height-adjustor">
