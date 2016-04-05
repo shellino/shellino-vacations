@@ -5,6 +5,9 @@
     margin-top: $global-margin;
     
     .book-now-button {
+        
+        font-size: 1.5rem;
+        
         span.inline-block {
             margin-left: 0.5rem;
         }
@@ -43,10 +46,6 @@
         letter-spacing: 1px;
         max-width: 240px;
     }
-    
-    #form-sent-feedback {
-        display: none;
-    }
 }
 
 .itinerary-description {
@@ -66,8 +65,8 @@
     margin: 0;
     
     .icon-big {
-        width: 2rem;
-        height: 2rem;
+        width: 1.75rem;
+        height: 1.75rem;
         float: left;
     }
     
@@ -75,8 +74,8 @@
         list-style: none;
         
         .feature-item {
-            margin-left: 2.5rem;
-            font-size: 1.125rem;
+            margin-left: 2.25rem;
+            font-size: 1rem;
         }
     }
     

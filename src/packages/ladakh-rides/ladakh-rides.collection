@@ -51,11 +51,7 @@ collection:
     </div>
     
     <div class="contact-request-form-panel">
-        <button class="small book-now-button" href="#">BOOK NOW!!!</button>
-        
-        <div id="form-sent-feedback" data-alert class="alert-box success">
-            Thanks for your message. We will call you back.
-        </div>
+        <button class="small book-now-button" href="#">Get Quote...</button>
         
         <div class="contact-request-form">
             <form id="contact-form" class="contact-form" method="post" action="//formspree.io/info@shellinovacations.com" data-abide="ajax">
@@ -114,7 +110,7 @@ collection:
     </div>
 </div>
 
-<div class="max-width-panel quick-info-panel">
+<!--<div class="max-width-panel quick-info-panel">
     <h3 class="panel-heading">Suggested hotels</h3>
     <div>
         {% for hotel in currentPackage.hotels %}
@@ -123,10 +119,121 @@ collection:
         </div>
         {% endfor %}
     </div>
+</div>-->
+
+<div class="max-width-panel quick-info-panel">
+    <h3 class="panel-heading">Your tour price includes</h3>
+    <ul class="things-needed">
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">All hotel, guesthouse and camping charges in Himachal and Ladakh, will be on twin / triple sharing / dormitory basis</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">350cc Royal Enfield’s for solo riders & 500cc Royal Enfield’s for sharing riders</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Tour leader and tour guide</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Luggage racks and bungee cords for strapping on soft luggage</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Backup Tempo along with mechanic</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Petrol expenses throughout the tour</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">First aid kit, oxygen cylinder &amp; helmets</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">All hotels with breakfast &amp; dinner</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Guide tips, drive tips &amp; restaurant tips</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Services of the tour manager from first day till the last day of tour</div>
+        </li>
+    </ul>
 </div>
 
 <div class="max-width-panel quick-info-panel">
-    <h3 class="panel-heading">Things you need will</h3>
+    <h3 class="panel-heading">Your tour price excludes</h3>
+    <ul class="things-needed">
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Inline permit charges if required</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Any mishandling & repair charges for the vehicle to be borne by the rider</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Gloves, jackets, boots, strap</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Service tax extra @3.63% of the total bill amount</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Any increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Cost of extension of the validity or deviation from the route of the tour</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Porterage, laundry, wines & alcoholic beverages, mineral water (unless specified), telephone charge, shopping, all item of personal nature and also food and drinks not forming the part of the group menus</div>
+        </li>
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">
+                Cost of insurance, any extra stay per/post tour</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Any extra expenses incurred for changing the route due to any unforeseen circumstances, forced majeure instances, natural calamities, political disturbances, strikes etc.</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Extra cost incurred due to illness, accident, hospitalization or any individual unforeseen cost incurring incidence</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Cost of any individual airport/railway station transfers</div>
+        </li>
+
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">Anything not specifically mentioned in 'Your Tour Price Includes Column'</div>
+        </li>
+    </ul>
+</div>
+
+<div class="max-width-panel quick-info-panel">
+    <h3 class="panel-heading">Additionally, It's good to have</h3>
     <ul class="things-needed">
         <li class="clearfix">
             {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}

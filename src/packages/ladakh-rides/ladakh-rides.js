@@ -58,7 +58,7 @@
                         
                         bookNowButton
                             .html("<svg class='linea-icons icon-big'><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='/svg/sprite.symbol.svg#icon-linea-arrows-checkbox'></use></svg>")
-                            .append("<span class='inline-block'>Thanks. You will call you soon.</span>")
+                            .append("<span class='inline-block'>Thanks. We will call you soon.</span>")
                             .prop('disabled', true);
                     });
 

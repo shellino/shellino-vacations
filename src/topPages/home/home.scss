@@ -95,6 +95,10 @@
     margin-top: $global-margin;
     padding-bottom: $global-padding;
     
+    h2, p {
+        margin: 0 $global-margin;
+    }
+    
     .royal-enfield {
         width: 100%;
         max-width: 400px;
@@ -118,10 +122,15 @@
         }
         
     }
+    
+    .fuel-on-us {
+        color: $color-primary-green;
+        font-weight: 700;
+    }
 }
 
 .tour-list-panel {
-    h2, .list-card {
+    h2, p, .list-card {
         margin: 0 $global-margin;
     }
 }
@@ -136,6 +145,7 @@
         h3 {
             display: inline-block;
             color: inherit;
+            text-decoration: underline;
         }
         
     }

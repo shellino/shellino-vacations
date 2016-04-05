@@ -18,7 +18,7 @@ subLine: You tell a story. We make it happen.
         <div class="wall-title">On a way to Ladakh</div>
 
         <div class="wall-content">
-            <div>Get Leh'd. Adventure into</div>
+            <div>Get Leh'd into</div>
             <h2>Ladakh - the Land of High Pass</h2>
         </div>
     </div>
@@ -29,18 +29,48 @@ subLine: You tell a story. We make it happen.
             Tours of <strong>13 days</strong> and <strong>9 days</strong> respectively
         </p>
     </div>
-
-    <div class="max-width-panel intro-panel">
-        <h2>All you need is a backpack</h2>
+    
+    <div class="max-width-panel tour-list-panel">
+        <h2>Adventure details</h2>
         <p>
             Buckle up for the most precious bike trip of your life time. Stop over in sapphire lakes, rusty terrains, peaceful outbacks
             and almost anywhere your heart wants to. This is not where your burdens will dare to follow you; this is where
             you dig out your fantasy and put it straight into reality. So, let the magic of marooned monastery, independence
             and soft breeze, swirl up your senses for the good.
         </p>
+        <div class="list-card clearfix">
+            {% for packageKey, package in ladakhBikeRide %}
+            <div class="card-item {% if loop.index0 % 2 %}card-left{% else %}card-right{% endif %}">
+                <a href="/packages/ladakh-rides/{{packageKey}}/"><h3>{{package.title}}</h3> &raquo;</a>
+                <div>
+                    {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
+                    <span class="inline-block">{{package.duration}}</span>
+                </div>
+                <div>
+                    <span class="text-bold">{{package.distance}}+</span>
+                    <span>KM of ride</span>
+                </div>
+                <div class="tour-dates">
+                    <!--{{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}-->
+                    <span>On</span>
+                    {% for date in package.dates %}
+                        {% if not loop.first %}
+                            {% if loop.last %}
+                            <span>and</span>
+                            {% else %}
+                            <span>,</span>
+                            {% endif %}
+                        {% endif %}
+                        <span class="date-green">{{date}}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    
+
     <div class="max-width-panel tour-feature">
+        <h2>All you need is a backpack</h2>
         <div class="row full-width">
             <div class="columns medium-6">
                 <ul class="tour-features">
@@ -77,6 +107,7 @@ subLine: You tell a story. We make it happen.
                         <div class="feature-item">Bungee cords, luggage racks and others</div>
                     </li>
                 </ul>
+                <h3 class="fuel-on-us">Finally, the fuel is on us...</h3>
             </div>
             <div class="columns medium-6">
                 <img class="royal-enfield" src="/img/others/bullet-600x463.png" />
@@ -84,38 +115,6 @@ subLine: You tell a story. We make it happen.
         </div>
     </div>
 
-    <div class="max-width-panel tour-list-panel">
-        <h2>Adventure details</h2>
-        <div class="list-card clearfix">
-            {% for packageKey, package in ladakhBikeRide %}
-            <div class="card-item {% if loop.index0 % 2 %}card-left{% else %}card-right{% endif %}">
-                <a href="/packages/ladakh-rides/{{packageKey}}/"><h3>{{package.title}}</h3> &raquo;</a>
-                <div>
-                    {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
-                    <span class="inline-block">{{package.duration}}</span>
-                </div>
-                <div>
-                    <span class="text-bold">{{package.distance}}+</span>
-                    <span>KM of ride</span>
-                </div>
-                <div class="tour-dates">
-                    <!--{{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}-->
-                    <span>On</span>
-                    {% for date in package.dates %}
-                        {% if not loop.first %}
-                            {% if loop.last %}
-                            <span>and</span>
-                            {% else %}
-                            <span>,</span>
-                            {% endif %}
-                        {% endif %}
-                        <span class="date-green">{{date}}</span>
-                    {% endfor %}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
     
     <div class="featured-packages max-width-panel">
         <h2 class="packages-panel-heading">Our other packages</h2>
