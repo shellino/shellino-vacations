@@ -49,10 +49,10 @@ collection:
             {% endfor %}
         </div>
     </div>
-    
+
     <div class="contact-request-form-panel">
         <button class="small book-now-button" href="#">Get Quote...</button>
-        
+
         <div class="contact-request-form">
             <form id="contact-form" class="contact-form" method="post" action="//formspree.io/info@shellinovacations.com" data-abide="ajax">
                     <div class="row full-width">
@@ -264,12 +264,12 @@ collection:
 
 <div class="max-width-panel quick-info-panel">
     <h3 class="panel-heading">Finally Ladakh - the Land of High Pass</h3>
-    
+
     <p>Ladakh, situated in Jammu, without any shred of doubt, has some of the most unreal and scenic views in the country. You will be stumped and hypnotized by everything surrounding you. The sun-kissed mountains that are capped with white spotless snow, the clear lakes that look like giant, blue, precious crystal and the untouched, pristine greenery radiates such calmness, that it all becomes a part of you. The moment you step here, you feel like you have stepped into a magical land which you never want to leave.</p>
-    
+
     <p>A staggering experience of wild, untamed beauty, monumental scale and a hushed, haunting silence symbolizes Ladakh. Perhaps, the most mysterious of all Indian districts, Ladakh is a wonder-world of the raw forces of Nature, forces those haven’t been disgraced by the deeds of men. A photographer`s favorite, Ladakh can`t help but throw up landscape stunners all year round. But, it’s in the summers that the region really sparkles, with pristine, blue lakes which look like paintings and surrounded by silvery, gray mountains that conjure up images of the moon!</p>
-    
+
     <p>In Ladakh, they say, never put the camera away, as vistas after vistas of breathtaking charm and grandeur unfold before your eyes! This arduous journey takes you right through the heart of this amazing land dubbed `The Little Tibet`, the land, where, as the sun rises, beauty in its most complete form descends upon the ground embracing everything within sight!</p>
-    
+
     <p>The influence of Tibetan culture reflects through the architecture and designs. The eye-boggling landscape sprinkled with beautiful cottages and monuments just pleases the eye. If the low temperatures in Ladakh makes you shiver, the extreme warmth of the locals grandly makes up for it. They welcome you with such tenderness and affection that you might just extend your stay. During your time there, feast upon the unbelievably delicious food, that you might not get easily elsewhere. An aura of surreal and serenity will engulf you almost the entire time. The magnificence of the every turn and corner is so palpable that it might just make you cry happy tears, just at the thought of being at such a fascinating place. No artist could capture the beauty of this place, or do justice by their trials. And it just seems apt, that you too give it your best shot. And if you think that a part of your was left behind, don’t worry, you are not the only one!</p>
 </div>

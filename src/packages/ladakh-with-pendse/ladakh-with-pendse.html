@@ -1,0 +1,154 @@
+---
+title: Ladakh with Mr. Pendse
+template: topPages
+scss:
+    - /packages/packages-item
+    - /packages/ladakh-rides/ladakh-rides
+js:
+    - /packages/ladakh-rides/ladakh-rides.js
+---
+{% import "./../../templates/imports/icons.nunjucks" as icons %}
+
+<div class="package-wall" style="background-image: url('/img/packages/{{ladakhWithPendse.cover}}')">
+    <div class="package-wall-content text-center">
+        <div>{{ladakhWithPendse.title}}</div>
+        <div class="package-tagline">{{ladakhWithPendse.tagline}}</div>
+    </div>
+</div>
+
+<div class="max-width-panel quick-info-panel">
+    <h2 class="package-title panel-heading">{{ladakhWithPendse.title}}</h2>
+    <div>
+        <div class="inline-block quick-info-item">
+            {{icons.lineaIcon("icon-linea-basic-calendar", "icon-big")}}
+            <span class="inline-block">{{ladakhWithPendse.duration}}</span>
+        </div>
+        <div class="inline-block quick-info-item">
+            {{icons.lineaIcon("icon-linea-basic-compass", "icon-big")}}
+            <span class="inline-block">{{ladakhWithPendse.states}}</span>
+        </div>
+    </div>
+
+    <h5 class="panel-heading">Departure dates</h5>
+
+    <div class="departure-date-content">
+        <div class="height-adjustor">
+            {% for date in ladakhWithPendse.dates %}
+                {% if not loop.first %}
+                    {% if loop.last %}
+                    <span>and</span>
+                    {% else %}
+                    <span>,</span>
+                    {% endif %}
+                {% endif %}
+                <h4 class="tour-cost">{{date}}</h4>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="contact-request-form-panel">
+        <button class="small book-now-button" href="#">Get Quote...</button>
+
+        <div class="contact-request-form">
+            <form id="contact-form" class="contact-form" method="post" action="//formspree.io/info@shellinovacations.com" data-abide="ajax">
+                    <div class="row full-width">
+                        <div class="columns medium-6 input-wrapper">
+                            <label class="contact-us-label">
+                                NAME <small class="error">required</small>
+                                <input class="contact-input" name="contactName" type="text" placeholder="Name" required="" />
+                            </label>
+                        </div>
+
+                        <div class="columns medium-6 input-wrapper">
+                            <label class="contact-us-label">
+                                EMAIL <small class="error">valid email required</small>
+                                <input class="contact-input" name="contactEmail" type="email" placeholder="Email" required="" />
+                            </label>
+                        </div>
+
+                        <div class="columns medium-6 input-wrapper">
+                            <label class="contact-us-label">
+                                CONTACT NUMBER
+                                <input class="contact-input" name="contactNumber" type="text" placeholder="Contact number" />
+                            </label>
+                        </div>
+
+                        <input type="hidden" name="_next" value="//shellinovacations.com" />
+                        <input type="hidden" name="_subject" value="Enquiry for Ladakh tour - {{ladakhWithPendse.title}}" />
+                        <input type="hidden" name="_cc" value="nilesh@shellinovacations.com" />
+                        <input type="text" name="_gotcha" style="display:none" />
+
+                        <div class="columns medium-6">
+                            <label class="contact-us-label">
+                                <span class="invisible">OK:</span>
+                                <button class="button expand submit-button" type="submit">SEND</button>
+                            </label>
+                        </div>
+
+                    </div>
+                </form>
+        </div>
+    </div>
+</div>
+
+<div class="itinerary-panel max-width-panel">
+    <h3 class="panel-heading">Detailed Itinerary</h3>
+    <div class="itinerary-content">
+        {% for itinerary in ladakhWithPendse.itinerary %}
+        <h4 class="day-heading">
+            <small>Day {{loop.index}}:</small> <span>{{itinerary.title}}</span>
+        </h4>
+        <p class="itinerary-description">{{itinerary.details | safe}}</p>
+        {% if itinerary.distance > 0 %}
+        <div class="riding-distance">Riding: {{itinerary.distance}}KM</div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<!--<div class="max-width-panel quick-info-panel">
+    <h3 class="panel-heading">Suggested hotels</h3>
+    <div>
+        {% for hotel in ladakhWithPendse.hotels %}
+        <div class="inline-block stay-item">
+            <strong>{{hotel.name}}</strong> at {{hotel.location}}
+        </div>
+        {% endfor %}
+    </div>
+</div>-->
+
+<div class="max-width-panel quick-info-panel">
+    <h3 class="panel-heading">Your tour price includes</h3>
+    <ul class="things-needed">
+        {% for item in ladakhWithPendse.tourInclusions %}
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">{{item}}</div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="max-width-panel quick-info-panel">
+    <h3 class="panel-heading">Your tour price excludes</h3>
+    <ul class="things-needed">
+        {% for item in ladakhWithPendse.tourExclusions %}
+        <li class="clearfix">
+            {{icons.lineaIcon("icon-linea-arrows-checkbox", class="icon-big")}}
+            <div class="feature-item">{{item}}</div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="max-width-panel quick-info-panel">
+    <h3 class="panel-heading">Finally Ladakh - the Land of High Pass</h3>
+
+    <p>Ladakh, situated in Jammu, without any shred of doubt, has some of the most unreal and scenic views in the country. You will be stumped and hypnotized by everything surrounding you. The sun-kissed mountains that are capped with white spotless snow, the clear lakes that look like giant, blue, precious crystal and the untouched, pristine greenery radiates such calmness, that it all becomes a part of you. The moment you step here, you feel like you have stepped into a magical land which you never want to leave.</p>
+
+    <p>A staggering experience of wild, untamed beauty, monumental scale and a hushed, haunting silence symbolizes Ladakh. Perhaps, the most mysterious of all Indian districts, Ladakh is a wonder-world of the raw forces of Nature, forces those haven’t been disgraced by the deeds of men. A photographer`s favorite, Ladakh can`t help but throw up landscape stunners all year round. But, it’s in the summers that the region really sparkles, with pristine, blue lakes which look like paintings and surrounded by silvery, gray mountains that conjure up images of the moon!</p>
+
+    <p>In Ladakh, they say, never put the camera away, as vistas after vistas of breathtaking charm and grandeur unfold before your eyes! This arduous journey takes you right through the heart of this amazing land dubbed `The Little Tibet`, the land, where, as the sun rises, beauty in its most complete form descends upon the ground embracing everything within sight!</p>
+
+    <p>The influence of Tibetan culture reflects through the architecture and designs. The eye-boggling landscape sprinkled with beautiful cottages and monuments just pleases the eye. If the low temperatures in Ladakh makes you shiver, the extreme warmth of the locals grandly makes up for it. They welcome you with such tenderness and affection that you might just extend your stay. During your time there, feast upon the unbelievably delicious food, that you might not get easily elsewhere. An aura of surreal and serenity will engulf you almost the entire time. The magnificence of the every turn and corner is so palpable that it might just make you cry happy tears, just at the thought of being at such a fascinating place. No artist could capture the beauty of this place, or do justice by their trials. And it just seems apt, that you too give it your best shot. And if you think that a part of your was left behind, don’t worry, you are not the only one!</p>
+</div>
