@@ -33,6 +33,11 @@ collection:
         </div>
     </div>
 
+    <div>
+        <span class="text-bold">{{currentPackage.distance}}+</span>
+        <span>KM of ride</span>
+    </div>
+
     <h5 class="panel-heading">Departure dates</h5>
 
     <div class="departure-date-content">

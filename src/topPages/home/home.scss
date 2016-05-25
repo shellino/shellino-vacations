@@ -3,12 +3,12 @@
 
 
 .home-wall {
-    background-image: url(/img/packages/ladakh-bike-1600x900.jpg);
+
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    height: 540px;
-    height: 80vh;
+    min-height: 540px;
+    min-height: 80vh;
     position: relative;
 
     text-align: center;
@@ -54,6 +54,17 @@
             font-weight: 900;
         }
 
+        h3, a {
+            color: inherit;
+        }
+
+        a {
+
+            h3 {
+                text-decoration: underline;
+            }
+        }
+
     }
 
     @media #{$medium-up} {
@@ -74,6 +85,19 @@
 
     }
 
+}
+
+.home-wall-1 {
+    background-image: url(/img/packages/best-of-ladakh-1600x900.jpg);
+
+    &:before {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.home-wall-2 {
+    border-top: 1px dashed;
+    background-image: url(/img/packages/ladakh-bike-1600x900.jpg);
 }
 
 h3.heading {

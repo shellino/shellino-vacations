@@ -104,6 +104,17 @@ js:
         {% endif %}
         {% endfor %}
     </div>
+
+</div>
+
+<div class="quick-info-panel max-width-panel">
+    <h3 class="panel-heading">Night stays</h3>
+    <div>
+        {% for stay in ladakhWithPendse.stays %}
+        <!--<div class="inline-block stay-item">{{stay.days}} nights at {{stay.location}}</div>-->
+        <div class="inline-block stay-item">{{stay.location}} - {{stay.days}} nights</div>
+        {% endfor %}
+    </div>
 </div>
 
 <!--<div class="max-width-panel quick-info-panel">
